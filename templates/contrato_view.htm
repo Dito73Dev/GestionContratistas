@@ -1,0 +1,527 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel contrato view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN prenumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prenumero}  r-vertical-field" data-fieldname="prenumero" data-signal-error-for="prenumero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="prenumero" data-fieldname="prenumero" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_prenumero}">
+		
+		{BEGIN prenumero_label}{$label contrato prenumero }{END prenumero_label}
+	</label>
+	<div class="" >
+		{$prenumero_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END prenumero_fieldblock}
+											
+{BEGIN pre_contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pre_contnumero}  r-vertical-field" data-fieldname="pre_contnumero" data-signal-error-for="pre_contnumero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="pre_contnumero" data-fieldname="pre_contnumero" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_pre_contnumero}">
+		
+		{BEGIN pre_contnumero_label}{$label contrato pre_contnumero }{END pre_contnumero_label}
+	</label>
+	<div class="" >
+		{$pre_contnumero_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END pre_contnumero_fieldblock}
+											
+{BEGIN cont_ano_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_ano}  r-vertical-field" data-fieldname="cont_ano" data-signal-error-for="cont_ano{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="cont_ano" data-fieldname="cont_ano" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_ano}">
+		
+		{BEGIN cont_ano_label}{$label contrato cont_ano }{END cont_ano_label}
+	</label>
+	<div class="" >
+		{$cont_ano_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_ano_fieldblock}
+											
+{BEGIN cont_catalogo_presupuestal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_catalogo_presupuestal}  r-vertical-field" data-fieldname="cont_catalogo_presupuestal" data-signal-error-for="cont_catalogo_presupuestal{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="cont_catalogo_presupuestal" data-fieldname="cont_catalogo_presupuestal" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_catalogo_presupuestal}">
+		
+		{BEGIN cont_catalogo_presupuestal_label}{$label contrato cont_catalogo_presupuestal }{END cont_catalogo_presupuestal_label}
+	</label>
+	<div class="" >
+		{$cont_catalogo_presupuestal_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_catalogo_presupuestal_fieldblock}
+											
+{BEGIN cont_fechafinal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechafinal}  r-vertical-field" data-fieldname="cont_fechafinal" data-signal-error-for="cont_fechafinal{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="cont_fechafinal" data-fieldname="cont_fechafinal" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_fechafinal}">
+		
+		{BEGIN cont_fechafinal_label}{$label contrato cont_fechafinal }{END cont_fechafinal_label}
+	</label>
+	<div class="" >
+		{$cont_fechafinal_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_fechafinal_fieldblock}
+											
+{BEGIN cont_valorinicial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorinicial}  r-vertical-field" data-fieldname="cont_valorinicial" data-signal-error-for="cont_valorinicial{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="cont_valorinicial" data-fieldname="cont_valorinicial" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_valorinicial}">
+		
+		{BEGIN cont_valorinicial_label}{$label contrato cont_valorinicial }{END cont_valorinicial_label}
+	</label>
+	<div class="" >
+		{$cont_valorinicial_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_valorinicial_fieldblock}
+											
+{BEGIN cont_objeto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_objeto}  r-vertical-field" data-fieldname="cont_objeto" data-signal-error-for="cont_objeto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field55" {$item_integrated_edit_field55} data-pageid="{$pageid}" data-field="cont_objeto" data-fieldname="cont_objeto" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_objeto}">
+		
+		{BEGIN cont_objeto_label}{$label contrato cont_objeto }{END cont_objeto_label}
+	</label>
+	<div class="" >
+		{$cont_objeto_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_objeto_fieldblock}
+											
+{BEGIN cont_plazo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_plazo}  r-vertical-field" data-fieldname="cont_plazo" data-signal-error-for="cont_plazo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field57" {$item_integrated_edit_field57} data-pageid="{$pageid}" data-field="cont_plazo" data-fieldname="cont_plazo" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_plazo}">
+		
+		{BEGIN cont_plazo_label}{$label contrato cont_plazo }{END cont_plazo_label}
+	</label>
+	<div class="" >
+		{$cont_plazo_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_plazo_fieldblock}
+											
+{BEGIN cont_secop_enlace_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_secop_enlace}  r-vertical-field" data-fieldname="cont_secop_enlace" data-signal-error-for="cont_secop_enlace{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field61" {$item_integrated_edit_field61} data-pageid="{$pageid}" data-field="cont_secop_enlace" data-fieldname="cont_secop_enlace" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_secop_enlace}">
+		
+		{BEGIN cont_secop_enlace_label}{$label contrato cont_secop_enlace }{END cont_secop_enlace_label}
+	</label>
+	<div class="" >
+		{$cont_secop_enlace_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_secop_enlace_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN numregistro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_numregistro}  r-vertical-field" data-fieldname="numregistro" data-signal-error-for="numregistro{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="numregistro" data-fieldname="numregistro" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_numregistro}">
+		
+		{BEGIN numregistro_label}{$label contrato numregistro }{END numregistro_label}
+	</label>
+	<div class="" >
+		{$numregistro_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END numregistro_fieldblock}
+											
+{BEGIN contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contnumero}  r-vertical-field" data-fieldname="contnumero" data-signal-error-for="contnumero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="contnumero" data-fieldname="contnumero" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_contnumero}">
+		
+		{BEGIN contnumero_label}{$label contrato contnumero }{END contnumero_label}
+	</label>
+	<div class="" >
+		{$contnumero_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END contnumero_fieldblock}
+											
+{BEGIN cont_codrubro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_codrubro}  r-vertical-field" data-fieldname="cont_codrubro" data-signal-error-for="cont_codrubro{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="cont_codrubro" data-fieldname="cont_codrubro" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_codrubro}">
+		
+		{BEGIN cont_codrubro_label}{$label contrato cont_codrubro }{END cont_codrubro_label}
+	</label>
+	<div class="" >
+		{$cont_codrubro_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_codrubro_fieldblock}
+											
+{BEGIN cont_fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fecha_inicio}  r-vertical-field" data-fieldname="cont_fecha_inicio" data-signal-error-for="cont_fecha_inicio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="cont_fecha_inicio" data-fieldname="cont_fecha_inicio" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_fecha_inicio}">
+		
+		{BEGIN cont_fecha_inicio_label}{$label contrato cont_fecha_inicio }{END cont_fecha_inicio_label}
+	</label>
+	<div class="" >
+		{$cont_fecha_inicio_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_fecha_inicio_fieldblock}
+											
+{BEGIN cont_periodicidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_periodicidad}  r-vertical-field" data-fieldname="cont_periodicidad" data-signal-error-for="cont_periodicidad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="cont_periodicidad" data-fieldname="cont_periodicidad" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_periodicidad}">
+		
+		{BEGIN cont_periodicidad_label}{$label contrato cont_periodicidad }{END cont_periodicidad_label}
+	</label>
+	<div class="" >
+		{$cont_periodicidad_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_periodicidad_fieldblock}
+											
+{BEGIN cont_valormensual_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valormensual}  r-vertical-field" data-fieldname="cont_valormensual" data-signal-error-for="cont_valormensual{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="cont_valormensual" data-fieldname="cont_valormensual" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_valormensual}">
+		
+		{BEGIN cont_valormensual_label}{$label contrato cont_valormensual }{END cont_valormensual_label}
+	</label>
+	<div class="" >
+		{$cont_valormensual_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_valormensual_fieldblock}
+											
+{BEGIN cont_obligaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_obligaciones}  r-vertical-field" data-fieldname="cont_obligaciones" data-signal-error-for="cont_obligaciones{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="cont_obligaciones" data-fieldname="cont_obligaciones" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_obligaciones}">
+		
+		{BEGIN cont_obligaciones_label}{$label contrato cont_obligaciones }{END cont_obligaciones_label}
+	</label>
+	<div class="" >
+		{$cont_obligaciones_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_obligaciones_fieldblock}
+											
+{BEGIN cont_secop_proceso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_secop_proceso}  r-vertical-field" data-fieldname="cont_secop_proceso" data-signal-error-for="cont_secop_proceso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field60" {$item_integrated_edit_field60} data-pageid="{$pageid}" data-field="cont_secop_proceso" data-fieldname="cont_secop_proceso" data-compact >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_secop_proceso}">
+		
+		{BEGIN cont_secop_proceso_label}{$label contrato cont_secop_proceso }{END cont_secop_proceso_label}
+	</label>
+	<div class="" >
+		{$cont_secop_proceso_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_secop_proceso_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="contrato_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,1437 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel admin_users add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_type}  r-vertical-field" 
+	data-signal-error-for="contractor_type{$id}" {$required_attr_contractor_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="contractor_type" data-fieldname="contractor_type" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_type}">
+		{BEGIN contractor_type_label}{$label admin_users contractor_type }{END contractor_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_type" {$tooltipAttr admin_users contractor_type } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_type }		</div>
+	</div>
+</div>
+
+
+{END contractor_type_fieldblock}
+											
+{BEGIN contractor_doc_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_id}  r-vertical-field" 
+	data-signal-error-for="contractor_doc_id{$id}" {$required_attr_contractor_doc_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="contractor_doc_id" data-fieldname="contractor_doc_id" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_doc_id}">
+		{BEGIN contractor_doc_id_label}{$label admin_users contractor_doc_id }{END contractor_doc_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_doc_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_doc_id" {$tooltipAttr admin_users contractor_doc_id } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_doc_id }		</div>
+	</div>
+</div>
+
+
+{END contractor_doc_id_fieldblock}
+											
+{BEGIN contractor_doc_dv_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_dv}  r-vertical-field" 
+	data-signal-error-for="contractor_doc_dv{$id}" {$required_attr_contractor_doc_dv}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="contractor_doc_dv" data-fieldname="contractor_doc_dv" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_doc_dv}">
+		{BEGIN contractor_doc_dv_label}{$label admin_users contractor_doc_dv }{END contractor_doc_dv_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_doc_dv_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_doc_dv" {$tooltipAttr admin_users contractor_doc_dv } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_doc_dv }		</div>
+	</div>
+</div>
+
+
+{END contractor_doc_dv_fieldblock}
+											
+{BEGIN contractor_pwd_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_pwd}  r-vertical-field" 
+	data-signal-error-for="contractor_pwd{$id}" {$required_attr_contractor_pwd}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="contractor_pwd" data-fieldname="contractor_pwd" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_pwd}">
+		{BEGIN contractor_pwd_label}{$label admin_users contractor_pwd }{END contractor_pwd_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_pwd_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_pwd" {$tooltipAttr admin_users contractor_pwd } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_pwd }		</div>
+	</div>
+</div>
+
+
+{END contractor_pwd_fieldblock}
+											
+{BEGIN contractor_image_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_image}  r-vertical-field" 
+	data-signal-error-for="contractor_image{$id}" {$required_attr_contractor_image}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="contractor_image" data-fieldname="contractor_image" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_image}">
+		{BEGIN contractor_image_label}{$label admin_users contractor_image }{END contractor_image_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_image_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_image" {$tooltipAttr admin_users contractor_image } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_image }		</div>
+	</div>
+</div>
+
+
+{END contractor_image_fieldblock}
+											
+{BEGIN contractor_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_name}  r-vertical-field" 
+	data-signal-error-for="contractor_name{$id}" {$required_attr_contractor_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="contractor_name" data-fieldname="contractor_name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_name}">
+		{BEGIN contractor_name_label}{$label admin_users contractor_name }{END contractor_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_name" {$tooltipAttr admin_users contractor_name } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_name }		</div>
+	</div>
+</div>
+
+
+{END contractor_name_fieldblock}
+											
+{BEGIN contractor_lname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_lname}  r-vertical-field" 
+	data-signal-error-for="contractor_lname{$id}" {$required_attr_contractor_lname}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="contractor_lname" data-fieldname="contractor_lname" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_lname}">
+		{BEGIN contractor_lname_label}{$label admin_users contractor_lname }{END contractor_lname_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_lname_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_lname" {$tooltipAttr admin_users contractor_lname } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_lname }		</div>
+	</div>
+</div>
+
+
+{END contractor_lname_fieldblock}
+											
+{BEGIN contractor_nombresfull_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_nombresfull}  r-vertical-field" 
+	data-signal-error-for="contractor_nombresfull{$id}" {$required_attr_contractor_nombresfull}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="contractor_nombresfull" data-fieldname="contractor_nombresfull" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_nombresfull}">
+		{BEGIN contractor_nombresfull_label}{$label admin_users contractor_nombresfull }{END contractor_nombresfull_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_nombresfull_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_nombresfull" {$tooltipAttr admin_users contractor_nombresfull } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_nombresfull }		</div>
+	</div>
+</div>
+
+
+{END contractor_nombresfull_fieldblock}
+											
+{BEGIN enlace_sigep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_enlace_sigep}  r-vertical-field" 
+	data-signal-error-for="enlace_sigep{$id}" {$required_attr_enlace_sigep}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="enlace_sigep" data-fieldname="enlace_sigep" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_enlace_sigep}">
+		{BEGIN enlace_sigep_label}{$label admin_users enlace_sigep }{END enlace_sigep_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$enlace_sigep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="enlace_sigep" {$tooltipAttr admin_users enlace_sigep } >
+		<div class="text-muted" >
+		{$tooltip admin_users enlace_sigep }		</div>
+	</div>
+</div>
+
+
+{END enlace_sigep_fieldblock}
+											
+{BEGIN contractor_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email}  r-vertical-field" 
+	data-signal-error-for="contractor_email{$id}" {$required_attr_contractor_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="contractor_email" data-fieldname="contractor_email" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_email}">
+		{BEGIN contractor_email_label}{$label admin_users contractor_email }{END contractor_email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_email" {$tooltipAttr admin_users contractor_email } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_email }		</div>
+	</div>
+</div>
+
+
+{END contractor_email_fieldblock}
+											
+{BEGIN contractor_email_mincit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email_mincit}  r-vertical-field" 
+	data-signal-error-for="contractor_email_mincit{$id}" {$required_attr_contractor_email_mincit}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="contractor_email_mincit" data-fieldname="contractor_email_mincit" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_email_mincit}">
+		{BEGIN contractor_email_mincit_label}{$label admin_users contractor_email_mincit }{END contractor_email_mincit_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_email_mincit_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_email_mincit" {$tooltipAttr admin_users contractor_email_mincit } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_email_mincit }		</div>
+	</div>
+</div>
+
+
+{END contractor_email_mincit_fieldblock}
+											
+{BEGIN contractor_address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_address}  r-vertical-field" 
+	data-signal-error-for="contractor_address{$id}" {$required_attr_contractor_address}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="contractor_address" data-fieldname="contractor_address" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_address}">
+		{BEGIN contractor_address_label}{$label admin_users contractor_address }{END contractor_address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_address_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_address" {$tooltipAttr admin_users contractor_address } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_address }		</div>
+	</div>
+</div>
+
+
+{END contractor_address_fieldblock}
+											
+{BEGIN contractor_phone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_phone}  r-vertical-field" 
+	data-signal-error-for="contractor_phone{$id}" {$required_attr_contractor_phone}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="contractor_phone" data-fieldname="contractor_phone" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_phone}">
+		{BEGIN contractor_phone_label}{$label admin_users contractor_phone }{END contractor_phone_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_phone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_phone" {$tooltipAttr admin_users contractor_phone } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_phone }		</div>
+	</div>
+</div>
+
+
+{END contractor_phone_fieldblock}
+											
+{BEGIN contractor_mobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_mobile}  r-vertical-field" 
+	data-signal-error-for="contractor_mobile{$id}" {$required_attr_contractor_mobile}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="contractor_mobile" data-fieldname="contractor_mobile" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_mobile}">
+		{BEGIN contractor_mobile_label}{$label admin_users contractor_mobile }{END contractor_mobile_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_mobile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_mobile" {$tooltipAttr admin_users contractor_mobile } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_mobile }		</div>
+	</div>
+</div>
+
+
+{END contractor_mobile_fieldblock}
+											
+{BEGIN contractor_city_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_city}  r-vertical-field" 
+	data-signal-error-for="contractor_city{$id}" {$required_attr_contractor_city}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="contractor_city" data-fieldname="contractor_city" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_city}">
+		{BEGIN contractor_city_label}{$label admin_users contractor_city }{END contractor_city_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_city_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_city" {$tooltipAttr admin_users contractor_city } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_city }		</div>
+	</div>
+</div>
+
+
+{END contractor_city_fieldblock}
+											
+{BEGIN bank_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bank_name}  r-vertical-field" 
+	data-signal-error-for="bank_name{$id}" {$required_attr_bank_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="bank_name" data-fieldname="bank_name" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_bank_name}">
+		{BEGIN bank_name_label}{$label admin_users bank_name }{END bank_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$bank_name_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="bank_name" {$tooltipAttr admin_users bank_name } >
+		<div class="text-muted" >
+		{$tooltip admin_users bank_name }		</div>
+	</div>
+</div>
+
+
+{END bank_name_fieldblock}
+											
+{BEGIN bank_cta_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bank_cta_type}  r-vertical-field" 
+	data-signal-error-for="bank_cta_type{$id}" {$required_attr_bank_cta_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="bank_cta_type" data-fieldname="bank_cta_type" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_bank_cta_type}">
+		{BEGIN bank_cta_type_label}{$label admin_users bank_cta_type }{END bank_cta_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$bank_cta_type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="bank_cta_type" {$tooltipAttr admin_users bank_cta_type } >
+		<div class="text-muted" >
+		{$tooltip admin_users bank_cta_type }		</div>
+	</div>
+</div>
+
+
+{END bank_cta_type_fieldblock}
+											
+{BEGIN bank_cta_number_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_bank_cta_number}  r-vertical-field" 
+	data-signal-error-for="bank_cta_number{$id}" {$required_attr_bank_cta_number}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="bank_cta_number" data-fieldname="bank_cta_number" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_bank_cta_number}">
+		{BEGIN bank_cta_number_label}{$label admin_users bank_cta_number }{END bank_cta_number_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$bank_cta_number_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="bank_cta_number" {$tooltipAttr admin_users bank_cta_number } >
+		<div class="text-muted" >
+		{$tooltip admin_users bank_cta_number }		</div>
+	</div>
+</div>
+
+
+{END bank_cta_number_fieldblock}
+											
+{BEGIN iva_regimen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_iva_regimen}  r-vertical-field" 
+	data-signal-error-for="iva_regimen{$id}" {$required_attr_iva_regimen}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="iva_regimen" data-fieldname="iva_regimen" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_iva_regimen}">
+		{BEGIN iva_regimen_label}{$label admin_users iva_regimen }{END iva_regimen_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$iva_regimen_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="iva_regimen" {$tooltipAttr admin_users iva_regimen } >
+		<div class="text-muted" >
+		{$tooltip admin_users iva_regimen }		</div>
+	</div>
+</div>
+
+
+{END iva_regimen_fieldblock}
+											
+{BEGIN sys_update_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_update}  r-vertical-field" 
+	data-signal-error-for="sys_update{$id}" {$required_attr_sys_update}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="sys_update" data-fieldname="sys_update" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_update}">
+		{BEGIN sys_update_label}{$label admin_users sys_update }{END sys_update_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_update_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_update" {$tooltipAttr admin_users sys_update } >
+		<div class="text-muted" >
+		{$tooltip admin_users sys_update }		</div>
+	</div>
+</div>
+
+
+{END sys_update_fieldblock}
+											
+{BEGIN sys_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-vertical-field" 
+	data-signal-error-for="sys_user{$id}" {$required_attr_sys_user}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="sys_user" data-fieldname="sys_user" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_user}">
+		{BEGIN sys_user_label}{$label admin_users sys_user }{END sys_user_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_user" {$tooltipAttr admin_users sys_user } >
+		<div class="text-muted" >
+		{$tooltip admin_users sys_user }		</div>
+	</div>
+</div>
+
+
+{END sys_user_fieldblock}
+											
+{BEGIN sys_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_date}  r-vertical-field" 
+	data-signal-error-for="sys_date{$id}" {$required_attr_sys_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="sys_date" data-fieldname="sys_date" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_date}">
+		{BEGIN sys_date_label}{$label admin_users sys_date }{END sys_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_date" {$tooltipAttr admin_users sys_date } >
+		<div class="text-muted" >
+		{$tooltip admin_users sys_date }		</div>
+	</div>
+</div>
+
+
+{END sys_date_fieldblock}
+											
+{BEGIN sys_level_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_level}  r-vertical-field" 
+	data-signal-error-for="sys_level{$id}" {$required_attr_sys_level}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="sys_level" data-fieldname="sys_level" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_level}">
+		{BEGIN sys_level_label}{$label admin_users sys_level }{END sys_level_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_level_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_level" {$tooltipAttr admin_users sys_level } >
+		<div class="text-muted" >
+		{$tooltip admin_users sys_level }		</div>
+	</div>
+</div>
+
+
+{END sys_level_fieldblock}
+											
+{BEGIN sys_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_status}  r-vertical-field" 
+	data-signal-error-for="sys_status{$id}" {$required_attr_sys_status}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="sys_status" data-fieldname="sys_status" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_status}">
+		{BEGIN sys_status_label}{$label admin_users sys_status }{END sys_status_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_status" {$tooltipAttr admin_users sys_status } >
+		<div class="text-muted" >
+		{$tooltip admin_users sys_status }		</div>
+	</div>
+</div>
+
+
+{END sys_status_fieldblock}
+											
+{BEGIN sys_last_upd_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_last_upd}  r-vertical-field" 
+	data-signal-error-for="sys_last_upd{$id}" {$required_attr_sys_last_upd}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="sys_last_upd" data-fieldname="sys_last_upd" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_last_upd}">
+		{BEGIN sys_last_upd_label}{$label admin_users sys_last_upd }{END sys_last_upd_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sys_last_upd_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_last_upd" {$tooltipAttr admin_users sys_last_upd } >
+		<div class="text-muted" >
+		{$tooltip admin_users sys_last_upd }		</div>
+	</div>
+</div>
+
+
+{END sys_last_upd_fieldblock}
+											
+{BEGIN groupid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_groupid}  r-vertical-field" 
+	data-signal-error-for="groupid{$id}" {$required_attr_groupid}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="groupid" data-fieldname="groupid" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_groupid}">
+		{BEGIN groupid_label}{$label admin_users groupid }{END groupid_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$groupid_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="groupid" {$tooltipAttr admin_users groupid } >
+		<div class="text-muted" >
+		{$tooltip admin_users groupid }		</div>
+	</div>
+</div>
+
+
+{END groupid_fieldblock}
+											
+{BEGIN active_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_active}  r-vertical-field" 
+	data-signal-error-for="active{$id}" {$required_attr_active}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="active" data-fieldname="active" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_active}">
+		{BEGIN active_label}{$label admin_users active }{END active_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$active_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="active" {$tooltipAttr admin_users active } >
+		<div class="text-muted" >
+		{$tooltip admin_users active }		</div>
+	</div>
+</div>
+
+
+{END active_fieldblock}
+											
+{BEGIN contractor_dependientes_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_dependientes}  r-vertical-field" 
+	data-signal-error-for="contractor_dependientes{$id}" {$required_attr_contractor_dependientes}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="contractor_dependientes" data-fieldname="contractor_dependientes" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_dependientes}">
+		{BEGIN contractor_dependientes_label}{$label admin_users contractor_dependientes }{END contractor_dependientes_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_dependientes_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_dependientes" {$tooltipAttr admin_users contractor_dependientes } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_dependientes }		</div>
+	</div>
+</div>
+
+
+{END contractor_dependientes_fieldblock}
+											
+{BEGIN contractor_medicinapre_file_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_medicinapre_file}  r-vertical-field" 
+	data-signal-error-for="contractor_medicinapre_file{$id}" {$required_attr_contractor_medicinapre_file}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="contractor_medicinapre_file" data-fieldname="contractor_medicinapre_file" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_medicinapre_file}">
+		{BEGIN contractor_medicinapre_file_label}{$label admin_users contractor_medicinapre_file }{END contractor_medicinapre_file_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_medicinapre_file_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_medicinapre_file" {$tooltipAttr admin_users contractor_medicinapre_file } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_medicinapre_file }		</div>
+	</div>
+</div>
+
+
+{END contractor_medicinapre_file_fieldblock}
+											
+{BEGIN contractor_picmonetaria_file_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_picmonetaria_file}  r-vertical-field" 
+	data-signal-error-for="contractor_picmonetaria_file{$id}" {$required_attr_contractor_picmonetaria_file}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="contractor_picmonetaria_file" data-fieldname="contractor_picmonetaria_file" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_picmonetaria_file}">
+		{BEGIN contractor_picmonetaria_file_label}{$label admin_users contractor_picmonetaria_file }{END contractor_picmonetaria_file_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_picmonetaria_file_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_picmonetaria_file" {$tooltipAttr admin_users contractor_picmonetaria_file } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_picmonetaria_file }		</div>
+	</div>
+</div>
+
+
+{END contractor_picmonetaria_file_fieldblock}
+											
+{BEGIN contractor_decljur_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_decljur}  r-vertical-field" 
+	data-signal-error-for="contractor_decljur{$id}" {$required_attr_contractor_decljur}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="contractor_decljur" data-fieldname="contractor_decljur" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_decljur}">
+		{BEGIN contractor_decljur_label}{$label admin_users contractor_decljur }{END contractor_decljur_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_decljur_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_decljur" {$tooltipAttr admin_users contractor_decljur } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_decljur }		</div>
+	</div>
+</div>
+
+
+{END contractor_decljur_fieldblock}
+											
+{BEGIN contractor_eps_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_eps}  r-vertical-field" 
+	data-signal-error-for="contractor_eps{$id}" {$required_attr_contractor_eps}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="contractor_eps" data-fieldname="contractor_eps" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_eps}">
+		{BEGIN contractor_eps_label}{$label admin_users contractor_eps }{END contractor_eps_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_eps_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_eps" {$tooltipAttr admin_users contractor_eps } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_eps }		</div>
+	</div>
+</div>
+
+
+{END contractor_eps_fieldblock}
+											
+{BEGIN contractor_fondopensiones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_fondopensiones}  r-vertical-field" 
+	data-signal-error-for="contractor_fondopensiones{$id}" {$required_attr_contractor_fondopensiones}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="contractor_fondopensiones" data-fieldname="contractor_fondopensiones" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_fondopensiones}">
+		{BEGIN contractor_fondopensiones_label}{$label admin_users contractor_fondopensiones }{END contractor_fondopensiones_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_fondopensiones_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_fondopensiones" {$tooltipAttr admin_users contractor_fondopensiones } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_fondopensiones }		</div>
+	</div>
+</div>
+
+
+{END contractor_fondopensiones_fieldblock}
+											
+{BEGIN contractor_cajacompensacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_cajacompensacion}  r-vertical-field" 
+	data-signal-error-for="contractor_cajacompensacion{$id}" {$required_attr_contractor_cajacompensacion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="contractor_cajacompensacion" data-fieldname="contractor_cajacompensacion" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_cajacompensacion}">
+		{BEGIN contractor_cajacompensacion_label}{$label admin_users contractor_cajacompensacion }{END contractor_cajacompensacion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_cajacompensacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_cajacompensacion" {$tooltipAttr admin_users contractor_cajacompensacion } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_cajacompensacion }		</div>
+	</div>
+</div>
+
+
+{END contractor_cajacompensacion_fieldblock}
+											
+{BEGIN contractor_arl_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_arl}  r-vertical-field" 
+	data-signal-error-for="contractor_arl{$id}" {$required_attr_contractor_arl}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="contractor_arl" data-fieldname="contractor_arl" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_arl}">
+		{BEGIN contractor_arl_label}{$label admin_users contractor_arl }{END contractor_arl_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_arl_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_arl" {$tooltipAttr admin_users contractor_arl } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_arl }		</div>
+	</div>
+</div>
+
+
+{END contractor_arl_fieldblock}
+											
+{BEGIN ubica_dep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ubica_dep}  r-vertical-field" 
+	data-signal-error-for="ubica_dep{$id}" {$required_attr_ubica_dep}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="ubica_dep" data-fieldname="ubica_dep" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ubica_dep}">
+		{BEGIN ubica_dep_label}{$label admin_users ubica_dep }{END ubica_dep_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ubica_dep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ubica_dep" {$tooltipAttr admin_users ubica_dep } >
+		<div class="text-muted" >
+		{$tooltip admin_users ubica_dep }		</div>
+	</div>
+</div>
+
+
+{END ubica_dep_fieldblock}
+											
+{BEGIN ubica_extension_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ubica_extension}  r-vertical-field" 
+	data-signal-error-for="ubica_extension{$id}" {$required_attr_ubica_extension}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="ubica_extension" data-fieldname="ubica_extension" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ubica_extension}">
+		{BEGIN ubica_extension_label}{$label admin_users ubica_extension }{END ubica_extension_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ubica_extension_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ubica_extension" {$tooltipAttr admin_users ubica_extension } >
+		<div class="text-muted" >
+		{$tooltip admin_users ubica_extension }		</div>
+	</div>
+</div>
+
+
+{END ubica_extension_fieldblock}
+											
+{BEGIN dem_genero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_genero}  r-vertical-field" 
+	data-signal-error-for="dem_genero{$id}" {$required_attr_dem_genero}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="dem_genero" data-fieldname="dem_genero" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dem_genero}">
+		{BEGIN dem_genero_label}{$label admin_users dem_genero }{END dem_genero_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$dem_genero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dem_genero" {$tooltipAttr admin_users dem_genero } >
+		<div class="text-muted" >
+		{$tooltip admin_users dem_genero }		</div>
+	</div>
+</div>
+
+
+{END dem_genero_fieldblock}
+											
+{BEGIN dem_ocupacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_ocupacion}  r-vertical-field" 
+	data-signal-error-for="dem_ocupacion{$id}" {$required_attr_dem_ocupacion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="dem_ocupacion" data-fieldname="dem_ocupacion" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dem_ocupacion}">
+		{BEGIN dem_ocupacion_label}{$label admin_users dem_ocupacion }{END dem_ocupacion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$dem_ocupacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dem_ocupacion" {$tooltipAttr admin_users dem_ocupacion } >
+		<div class="text-muted" >
+		{$tooltip admin_users dem_ocupacion }		</div>
+	</div>
+</div>
+
+
+{END dem_ocupacion_fieldblock}
+											
+{BEGIN ct_fecha_nacimiento_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ct_fecha_nacimiento}  r-vertical-field" 
+	data-signal-error-for="ct_fecha_nacimiento{$id}" {$required_attr_ct_fecha_nacimiento}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="ct_fecha_nacimiento" data-fieldname="ct_fecha_nacimiento" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ct_fecha_nacimiento}">
+		{BEGIN ct_fecha_nacimiento_label}{$label admin_users ct_fecha_nacimiento }{END ct_fecha_nacimiento_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ct_fecha_nacimiento_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ct_fecha_nacimiento" {$tooltipAttr admin_users ct_fecha_nacimiento } >
+		<div class="text-muted" >
+		{$tooltip admin_users ct_fecha_nacimiento }		</div>
+	</div>
+</div>
+
+
+{END ct_fecha_nacimiento_fieldblock}
+											
+{BEGIN ct_nacionalidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ct_nacionalidad}  r-vertical-field" 
+	data-signal-error-for="ct_nacionalidad{$id}" {$required_attr_ct_nacionalidad}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="ct_nacionalidad" data-fieldname="ct_nacionalidad" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ct_nacionalidad}">
+		{BEGIN ct_nacionalidad_label}{$label admin_users ct_nacionalidad }{END ct_nacionalidad_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ct_nacionalidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ct_nacionalidad" {$tooltipAttr admin_users ct_nacionalidad } >
+		<div class="text-muted" >
+		{$tooltip admin_users ct_nacionalidad }		</div>
+	</div>
+</div>
+
+
+{END ct_nacionalidad_fieldblock}
+											
+{BEGIN dem_edad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_edad}  r-vertical-field" 
+	data-signal-error-for="dem_edad{$id}" {$required_attr_dem_edad}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="dem_edad" data-fieldname="dem_edad" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dem_edad}">
+		{BEGIN dem_edad_label}{$label admin_users dem_edad }{END dem_edad_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$dem_edad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dem_edad" {$tooltipAttr admin_users dem_edad } >
+		<div class="text-muted" >
+		{$tooltip admin_users dem_edad }		</div>
+	</div>
+</div>
+
+
+{END dem_edad_fieldblock}
+											
+{BEGIN dem_educacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_educacion}  r-vertical-field" 
+	data-signal-error-for="dem_educacion{$id}" {$required_attr_dem_educacion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="dem_educacion" data-fieldname="dem_educacion" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dem_educacion}">
+		{BEGIN dem_educacion_label}{$label admin_users dem_educacion }{END dem_educacion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$dem_educacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dem_educacion" {$tooltipAttr admin_users dem_educacion } >
+		<div class="text-muted" >
+		{$tooltip admin_users dem_educacion }		</div>
+	</div>
+</div>
+
+
+{END dem_educacion_fieldblock}
+											
+{BEGIN dem_discapacidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_discapacidad}  r-vertical-field" 
+	data-signal-error-for="dem_discapacidad{$id}" {$required_attr_dem_discapacidad}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="dem_discapacidad" data-fieldname="dem_discapacidad" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dem_discapacidad}">
+		{BEGIN dem_discapacidad_label}{$label admin_users dem_discapacidad }{END dem_discapacidad_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$dem_discapacidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dem_discapacidad" {$tooltipAttr admin_users dem_discapacidad } >
+		<div class="text-muted" >
+		{$tooltip admin_users dem_discapacidad }		</div>
+	</div>
+</div>
+
+
+{END dem_discapacidad_fieldblock}
+											
+{BEGIN emergencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_emergencia}  r-vertical-field" 
+	data-signal-error-for="emergencia{$id}" {$required_attr_emergencia}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="emergencia" data-fieldname="emergencia" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_emergencia}">
+		{BEGIN emergencia_label}{$label admin_users emergencia }{END emergencia_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$emergencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="emergencia" {$tooltipAttr admin_users emergencia } >
+		<div class="text-muted" >
+		{$tooltip admin_users emergencia }		</div>
+	</div>
+</div>
+
+
+{END emergencia_fieldblock}
+											
+{BEGIN terms_msj_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_msj}  r-vertical-field" 
+	data-signal-error-for="terms_msj{$id}" {$required_attr_terms_msj}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="terms_msj" data-fieldname="terms_msj" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_terms_msj}">
+		{BEGIN terms_msj_label}{$label admin_users terms_msj }{END terms_msj_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$terms_msj_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="terms_msj" {$tooltipAttr admin_users terms_msj } >
+		<div class="text-muted" >
+		{$tooltip admin_users terms_msj }		</div>
+	</div>
+</div>
+
+
+{END terms_msj_fieldblock}
+											
+{BEGIN terms_acepta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_acepta}  r-vertical-field" 
+	data-signal-error-for="terms_acepta{$id}" {$required_attr_terms_acepta}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="terms_acepta" data-fieldname="terms_acepta" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_terms_acepta}">
+		{BEGIN terms_acepta_label}{$label admin_users terms_acepta }{END terms_acepta_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$terms_acepta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="terms_acepta" {$tooltipAttr admin_users terms_acepta } >
+		<div class="text-muted" >
+		{$tooltip admin_users terms_acepta }		</div>
+	</div>
+</div>
+
+
+{END terms_acepta_fieldblock}
+											
+{BEGIN dem_profesion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_profesion}  r-vertical-field" 
+	data-signal-error-for="dem_profesion{$id}" {$required_attr_dem_profesion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="dem_profesion" data-fieldname="dem_profesion" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_dem_profesion}">
+		{BEGIN dem_profesion_label}{$label admin_users dem_profesion }{END dem_profesion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$dem_profesion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dem_profesion" {$tooltipAttr admin_users dem_profesion } >
+		<div class="text-muted" >
+		{$tooltip admin_users dem_profesion }		</div>
+	</div>
+</div>
+
+
+{END dem_profesion_fieldblock}
+											
+{BEGIN contractor_sup_jerarquico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_sup_jerarquico}  r-vertical-field" 
+	data-signal-error-for="contractor_sup_jerarquico{$id}" {$required_attr_contractor_sup_jerarquico}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="contractor_sup_jerarquico" data-fieldname="contractor_sup_jerarquico" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_sup_jerarquico}">
+		{BEGIN contractor_sup_jerarquico_label}{$label admin_users contractor_sup_jerarquico }{END contractor_sup_jerarquico_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_sup_jerarquico_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_sup_jerarquico" {$tooltipAttr admin_users contractor_sup_jerarquico } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_sup_jerarquico }		</div>
+	</div>
+</div>
+
+
+{END contractor_sup_jerarquico_fieldblock}
+											
+{BEGIN contractor_dependencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_dependencia}  r-vertical-field" 
+	data-signal-error-for="contractor_dependencia{$id}" {$required_attr_contractor_dependencia}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="contractor_dependencia" data-fieldname="contractor_dependencia" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_dependencia}">
+		{BEGIN contractor_dependencia_label}{$label admin_users contractor_dependencia }{END contractor_dependencia_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contractor_dependencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_dependencia" {$tooltipAttr admin_users contractor_dependencia } >
+		<div class="text-muted" >
+		{$tooltip admin_users contractor_dependencia }		</div>
+	</div>
+</div>
+
+
+{END contractor_dependencia_fieldblock}
+											
+{BEGIN signature_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_signature}  r-vertical-field" 
+	data-signal-error-for="signature{$id}" {$required_attr_signature}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="signature" data-fieldname="signature" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_signature}">
+		{BEGIN signature_label}{$label admin_users signature }{END signature_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$signature_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="signature" {$tooltipAttr admin_users signature } >
+		<div class="text-muted" >
+		{$tooltip admin_users signature }		</div>
+	</div>
+</div>
+
+
+{END signature_fieldblock}
+											
+{BEGIN pin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pin}  r-vertical-field" 
+	data-signal-error-for="pin{$id}" {$required_attr_pin}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="pin" data-fieldname="pin" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_pin}">
+		{BEGIN pin_label}{$label admin_users pin }{END pin_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$pin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pin" {$tooltipAttr admin_users pin } >
+		<div class="text-muted" >
+		{$tooltip admin_users pin }		</div>
+	</div>
+</div>
+
+
+{END pin_fieldblock}
+											
+{BEGIN ct_fecha_nacimiento_mun_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ct_fecha_nacimiento_mun}  r-vertical-field" 
+	data-signal-error-for="ct_fecha_nacimiento_mun{$id}" {$required_attr_ct_fecha_nacimiento_mun}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="ct_fecha_nacimiento_mun" data-fieldname="ct_fecha_nacimiento_mun" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ct_fecha_nacimiento_mun}">
+		{BEGIN ct_fecha_nacimiento_mun_label}{$label admin_users ct_fecha_nacimiento_mun }{END ct_fecha_nacimiento_mun_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ct_fecha_nacimiento_mun_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ct_fecha_nacimiento_mun" {$tooltipAttr admin_users ct_fecha_nacimiento_mun } >
+		<div class="text-muted" >
+		{$tooltip admin_users ct_fecha_nacimiento_mun }		</div>
+	</div>
+</div>
+
+
+{END ct_fecha_nacimiento_mun_fieldblock}
+											
+{BEGIN factura_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_factura}  r-vertical-field" 
+	data-signal-error-for="factura{$id}" {$required_attr_factura}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="factura" data-fieldname="factura" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_factura}">
+		{BEGIN factura_label}{$label admin_users factura }{END factura_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$factura_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="factura" {$tooltipAttr admin_users factura } >
+		<div class="text-muted" >
+		{$tooltip admin_users factura }		</div>
+	</div>
+</div>
+
+
+{END factura_fieldblock}
+											
+{BEGIN actividad_economica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_actividad_economica}  r-vertical-field" 
+	data-signal-error-for="actividad_economica{$id}" {$required_attr_actividad_economica}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field52" {$item_integrated_edit_field52} data-pageid="{$pageid}" data-field="actividad_economica" data-fieldname="actividad_economica" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_actividad_economica}">
+		{BEGIN actividad_economica_label}{$label admin_users actividad_economica }{END actividad_economica_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$actividad_economica_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="actividad_economica" {$tooltipAttr admin_users actividad_economica } >
+		<div class="text-muted" >
+		{$tooltip admin_users actividad_economica }		</div>
+	</div>
+</div>
+
+
+{END actividad_economica_fieldblock}
+											
+{BEGIN responsabilidades_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_responsabilidades}  r-vertical-field" 
+	data-signal-error-for="responsabilidades{$id}" {$required_attr_responsabilidades}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field55" {$item_integrated_edit_field55} data-pageid="{$pageid}" data-field="responsabilidades" data-fieldname="responsabilidades" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_responsabilidades}">
+		{BEGIN responsabilidades_label}{$label admin_users responsabilidades }{END responsabilidades_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$responsabilidades_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="responsabilidades" {$tooltipAttr admin_users responsabilidades } >
+		<div class="text-muted" >
+		{$tooltip admin_users responsabilidades }		</div>
+	</div>
+</div>
+
+
+{END responsabilidades_fieldblock}
+											
+{BEGIN reset_token_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reset_token}  r-vertical-field" 
+	data-signal-error-for="reset_token{$id}" {$required_attr_reset_token}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="reset_token" data-fieldname="reset_token" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_reset_token}">
+		{BEGIN reset_token_label}{$label admin_users reset_token }{END reset_token_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$reset_token_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="reset_token" {$tooltipAttr admin_users reset_token } >
+		<div class="text-muted" >
+		{$tooltip admin_users reset_token }		</div>
+	</div>
+</div>
+
+
+{END reset_token_fieldblock}
+											
+{BEGIN reset_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reset_date}  r-vertical-field" 
+	data-signal-error-for="reset_date{$id}" {$required_attr_reset_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field57" {$item_integrated_edit_field57} data-pageid="{$pageid}" data-field="reset_date" data-fieldname="reset_date" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_reset_date}">
+		{BEGIN reset_date_label}{$label admin_users reset_date }{END reset_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$reset_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="reset_date" {$tooltipAttr admin_users reset_date } >
+		<div class="text-muted" >
+		{$tooltip admin_users reset_date }		</div>
+	</div>
+</div>
+
+
+{END reset_date_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

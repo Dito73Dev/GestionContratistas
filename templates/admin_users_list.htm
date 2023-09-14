@@ -1,0 +1,5839 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px"  class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_adminarea}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_adminarea}
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+
+	<div class="panel-heading">
+		<div class="btn-group r-sp-addfield" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group r-sp-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_active}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_active}" {$filterRow_attrs_active}>
+			<label>{$label admin_users active }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_active}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_active}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_active}</span>
+						</div>
+		{END searchCtrlBlock_active}
+																{BEGIN searchCtrlBlock_reset_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_reset_date}" {$filterRow_attrs_reset_date}>
+			<label>{$label admin_users reset_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_reset_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_reset_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_reset_date}</span>
+						</div>
+		{END searchCtrlBlock_reset_date}
+																{BEGIN searchCtrlBlock_reset_token}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_reset_token}" {$filterRow_attrs_reset_token}>
+			<label>{$label admin_users reset_token }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_reset_token}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_reset_token}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_reset_token}</span>
+						</div>
+		{END searchCtrlBlock_reset_token}
+																{BEGIN searchCtrlBlock_responsabilidades}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_responsabilidades}" {$filterRow_attrs_responsabilidades}>
+			<label>{$label admin_users responsabilidades }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_responsabilidades}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_responsabilidades}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_responsabilidades}</span>
+						</div>
+		{END searchCtrlBlock_responsabilidades}
+																{BEGIN searchCtrlBlock_actividad_economica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_actividad_economica}" {$filterRow_attrs_actividad_economica}>
+			<label>{$label admin_users actividad_economica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_actividad_economica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_actividad_economica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_actividad_economica}</span>
+						</div>
+		{END searchCtrlBlock_actividad_economica}
+																{BEGIN searchCtrlBlock_factura}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_factura}" {$filterRow_attrs_factura}>
+			<label>{$label admin_users factura }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_factura}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_factura}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_factura}</span>
+						</div>
+		{END searchCtrlBlock_factura}
+																{BEGIN searchCtrlBlock_ct_fecha_nacimiento_mun}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ct_fecha_nacimiento_mun}" {$filterRow_attrs_ct_fecha_nacimiento_mun}>
+			<label>{$label admin_users ct_fecha_nacimiento_mun }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ct_fecha_nacimiento_mun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ct_fecha_nacimiento_mun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ct_fecha_nacimiento_mun}</span>
+						</div>
+		{END searchCtrlBlock_ct_fecha_nacimiento_mun}
+																{BEGIN searchCtrlBlock_pin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pin}" {$filterRow_attrs_pin}>
+			<label>{$label admin_users pin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pin}</span>
+						</div>
+		{END searchCtrlBlock_pin}
+																{BEGIN searchCtrlBlock_signature}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_signature}" {$filterRow_attrs_signature}>
+			<label>{$label admin_users signature }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_signature}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_signature}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_signature}</span>
+						</div>
+		{END searchCtrlBlock_signature}
+																{BEGIN searchCtrlBlock_contractor_dependencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_dependencia}" {$filterRow_attrs_contractor_dependencia}>
+			<label>{$label admin_users contractor_dependencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_dependencia}</span>
+						</div>
+		{END searchCtrlBlock_contractor_dependencia}
+																{BEGIN searchCtrlBlock_contractor_sup_jerarquico}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_sup_jerarquico}" {$filterRow_attrs_contractor_sup_jerarquico}>
+			<label>{$label admin_users contractor_sup_jerarquico }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_sup_jerarquico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_sup_jerarquico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_sup_jerarquico}</span>
+						</div>
+		{END searchCtrlBlock_contractor_sup_jerarquico}
+																{BEGIN searchCtrlBlock_dem_profesion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dem_profesion}" {$filterRow_attrs_dem_profesion}>
+			<label>{$label admin_users dem_profesion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dem_profesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dem_profesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dem_profesion}</span>
+						</div>
+		{END searchCtrlBlock_dem_profesion}
+																{BEGIN searchCtrlBlock_ubica_extension}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ubica_extension}" {$filterRow_attrs_ubica_extension}>
+			<label>{$label admin_users ubica_extension }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ubica_extension}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ubica_extension}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ubica_extension}</span>
+						</div>
+		{END searchCtrlBlock_ubica_extension}
+																{BEGIN searchCtrlBlock_ubica_dep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ubica_dep}" {$filterRow_attrs_ubica_dep}>
+			<label>{$label admin_users ubica_dep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ubica_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ubica_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ubica_dep}</span>
+						</div>
+		{END searchCtrlBlock_ubica_dep}
+																{BEGIN searchCtrlBlock_terms_msj}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_terms_msj}" {$filterRow_attrs_terms_msj}>
+			<label>{$label admin_users terms_msj }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_terms_msj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_terms_msj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_terms_msj}</span>
+						</div>
+		{END searchCtrlBlock_terms_msj}
+																{BEGIN searchCtrlBlock_terms_acepta}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_terms_acepta}" {$filterRow_attrs_terms_acepta}>
+			<label>{$label admin_users terms_acepta }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_terms_acepta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_terms_acepta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_terms_acepta}</span>
+						</div>
+		{END searchCtrlBlock_terms_acepta}
+																{BEGIN searchCtrlBlock_sys_user}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_user}" {$filterRow_attrs_sys_user}>
+			<label>{$label admin_users sys_user }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_user}</span>
+						</div>
+		{END searchCtrlBlock_sys_user}
+																{BEGIN searchCtrlBlock_sys_update}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_update}" {$filterRow_attrs_sys_update}>
+			<label>{$label admin_users sys_update }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_update}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_update}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_update}</span>
+						</div>
+		{END searchCtrlBlock_sys_update}
+																{BEGIN searchCtrlBlock_sys_status}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_status}" {$filterRow_attrs_sys_status}>
+			<label>{$label admin_users sys_status }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_status}</span>
+						</div>
+		{END searchCtrlBlock_sys_status}
+																{BEGIN searchCtrlBlock_sys_level}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_level}" {$filterRow_attrs_sys_level}>
+			<label>{$label admin_users sys_level }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_level}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_level}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_level}</span>
+						</div>
+		{END searchCtrlBlock_sys_level}
+																{BEGIN searchCtrlBlock_sys_last_upd}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_last_upd}" {$filterRow_attrs_sys_last_upd}>
+			<label>{$label admin_users sys_last_upd }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_last_upd}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_last_upd}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_last_upd}</span>
+						</div>
+		{END searchCtrlBlock_sys_last_upd}
+																{BEGIN searchCtrlBlock_sys_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_date}" {$filterRow_attrs_sys_date}>
+			<label>{$label admin_users sys_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_date}</span>
+						</div>
+		{END searchCtrlBlock_sys_date}
+																{BEGIN searchCtrlBlock_iva_regimen}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_iva_regimen}" {$filterRow_attrs_iva_regimen}>
+			<label>{$label admin_users iva_regimen }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_iva_regimen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_iva_regimen}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_iva_regimen}</span>
+						</div>
+		{END searchCtrlBlock_iva_regimen}
+																{BEGIN searchCtrlBlock_groupid}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_groupid}" {$filterRow_attrs_groupid}>
+			<label>{$label admin_users groupid }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_groupid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_groupid}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_groupid}</span>
+						</div>
+		{END searchCtrlBlock_groupid}
+																{BEGIN searchCtrlBlock_enlace_sigep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_enlace_sigep}" {$filterRow_attrs_enlace_sigep}>
+			<label>{$label admin_users enlace_sigep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_enlace_sigep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_enlace_sigep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_enlace_sigep}</span>
+						</div>
+		{END searchCtrlBlock_enlace_sigep}
+																{BEGIN searchCtrlBlock_emergencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_emergencia}" {$filterRow_attrs_emergencia}>
+			<label>{$label admin_users emergencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_emergencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_emergencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_emergencia}</span>
+						</div>
+		{END searchCtrlBlock_emergencia}
+																{BEGIN searchCtrlBlock_dem_ocupacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dem_ocupacion}" {$filterRow_attrs_dem_ocupacion}>
+			<label>{$label admin_users dem_ocupacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dem_ocupacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dem_ocupacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dem_ocupacion}</span>
+						</div>
+		{END searchCtrlBlock_dem_ocupacion}
+																{BEGIN searchCtrlBlock_dem_genero}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dem_genero}" {$filterRow_attrs_dem_genero}>
+			<label>{$label admin_users dem_genero }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dem_genero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dem_genero}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dem_genero}</span>
+						</div>
+		{END searchCtrlBlock_dem_genero}
+																{BEGIN searchCtrlBlock_dem_educacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dem_educacion}" {$filterRow_attrs_dem_educacion}>
+			<label>{$label admin_users dem_educacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dem_educacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dem_educacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dem_educacion}</span>
+						</div>
+		{END searchCtrlBlock_dem_educacion}
+																{BEGIN searchCtrlBlock_dem_edad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dem_edad}" {$filterRow_attrs_dem_edad}>
+			<label>{$label admin_users dem_edad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dem_edad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dem_edad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dem_edad}</span>
+						</div>
+		{END searchCtrlBlock_dem_edad}
+																{BEGIN searchCtrlBlock_dem_discapacidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dem_discapacidad}" {$filterRow_attrs_dem_discapacidad}>
+			<label>{$label admin_users dem_discapacidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dem_discapacidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dem_discapacidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dem_discapacidad}</span>
+						</div>
+		{END searchCtrlBlock_dem_discapacidad}
+																{BEGIN searchCtrlBlock_ct_nacionalidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ct_nacionalidad}" {$filterRow_attrs_ct_nacionalidad}>
+			<label>{$label admin_users ct_nacionalidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ct_nacionalidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ct_nacionalidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ct_nacionalidad}</span>
+						</div>
+		{END searchCtrlBlock_ct_nacionalidad}
+																{BEGIN searchCtrlBlock_ct_fecha_nacimiento}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ct_fecha_nacimiento}" {$filterRow_attrs_ct_fecha_nacimiento}>
+			<label>{$label admin_users ct_fecha_nacimiento }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ct_fecha_nacimiento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ct_fecha_nacimiento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ct_fecha_nacimiento}</span>
+						</div>
+		{END searchCtrlBlock_ct_fecha_nacimiento}
+																{BEGIN searchCtrlBlock_contractor_type}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_type}" {$filterRow_attrs_contractor_type}>
+			<label>{$label admin_users contractor_type }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_type}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_type}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_type}</span>
+						</div>
+		{END searchCtrlBlock_contractor_type}
+																{BEGIN searchCtrlBlock_contractor_pwd}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_pwd}" {$filterRow_attrs_contractor_pwd}>
+			<label>{$label admin_users contractor_pwd }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_pwd}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_pwd}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_pwd}</span>
+						</div>
+		{END searchCtrlBlock_contractor_pwd}
+																{BEGIN searchCtrlBlock_contractor_picmonetaria_file}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_picmonetaria_file}" {$filterRow_attrs_contractor_picmonetaria_file}>
+			<label>{$label admin_users contractor_picmonetaria_file }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_picmonetaria_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_picmonetaria_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_picmonetaria_file}</span>
+						</div>
+		{END searchCtrlBlock_contractor_picmonetaria_file}
+																{BEGIN searchCtrlBlock_contractor_phone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_phone}" {$filterRow_attrs_contractor_phone}>
+			<label>{$label admin_users contractor_phone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_phone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_phone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_phone}</span>
+						</div>
+		{END searchCtrlBlock_contractor_phone}
+																{BEGIN searchCtrlBlock_contractor_nombresfull}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_nombresfull}" {$filterRow_attrs_contractor_nombresfull}>
+			<label>{$label admin_users contractor_nombresfull }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_nombresfull}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_nombresfull}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_nombresfull}</span>
+						</div>
+		{END searchCtrlBlock_contractor_nombresfull}
+																{BEGIN searchCtrlBlock_contractor_name}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_name}" {$filterRow_attrs_contractor_name}>
+			<label>{$label admin_users contractor_name }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_name}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_name}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_name}</span>
+						</div>
+		{END searchCtrlBlock_contractor_name}
+																{BEGIN searchCtrlBlock_contractor_mobile}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_mobile}" {$filterRow_attrs_contractor_mobile}>
+			<label>{$label admin_users contractor_mobile }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_mobile}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_mobile}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_mobile}</span>
+						</div>
+		{END searchCtrlBlock_contractor_mobile}
+																{BEGIN searchCtrlBlock_contractor_medicinapre_file}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_medicinapre_file}" {$filterRow_attrs_contractor_medicinapre_file}>
+			<label>{$label admin_users contractor_medicinapre_file }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_medicinapre_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_medicinapre_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_medicinapre_file}</span>
+						</div>
+		{END searchCtrlBlock_contractor_medicinapre_file}
+																{BEGIN searchCtrlBlock_contractor_lname}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_lname}" {$filterRow_attrs_contractor_lname}>
+			<label>{$label admin_users contractor_lname }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_lname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_lname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_lname}</span>
+						</div>
+		{END searchCtrlBlock_contractor_lname}
+																{BEGIN searchCtrlBlock_contractor_image}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_image}" {$filterRow_attrs_contractor_image}>
+			<label>{$label admin_users contractor_image }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_image}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_image}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_image}</span>
+						</div>
+		{END searchCtrlBlock_contractor_image}
+																{BEGIN searchCtrlBlock_contractor_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_id}" {$filterRow_attrs_contractor_id}>
+			<label>{$label admin_users contractor_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_id}</span>
+						</div>
+		{END searchCtrlBlock_contractor_id}
+																{BEGIN searchCtrlBlock_contractor_fondopensiones}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_fondopensiones}" {$filterRow_attrs_contractor_fondopensiones}>
+			<label>{$label admin_users contractor_fondopensiones }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_fondopensiones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_fondopensiones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_fondopensiones}</span>
+						</div>
+		{END searchCtrlBlock_contractor_fondopensiones}
+																{BEGIN searchCtrlBlock_contractor_eps}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_eps}" {$filterRow_attrs_contractor_eps}>
+			<label>{$label admin_users contractor_eps }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_eps}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_eps}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_eps}</span>
+						</div>
+		{END searchCtrlBlock_contractor_eps}
+																{BEGIN searchCtrlBlock_contractor_email_mincit}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_email_mincit}" {$filterRow_attrs_contractor_email_mincit}>
+			<label>{$label admin_users contractor_email_mincit }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_email_mincit}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_email_mincit}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_email_mincit}</span>
+						</div>
+		{END searchCtrlBlock_contractor_email_mincit}
+																{BEGIN searchCtrlBlock_contractor_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_email}" {$filterRow_attrs_contractor_email}>
+			<label>{$label admin_users contractor_email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_email}</span>
+						</div>
+		{END searchCtrlBlock_contractor_email}
+																{BEGIN searchCtrlBlock_contractor_doc_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_doc_id}" {$filterRow_attrs_contractor_doc_id}>
+			<label>{$label admin_users contractor_doc_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_doc_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_doc_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_doc_id}</span>
+						</div>
+		{END searchCtrlBlock_contractor_doc_id}
+																{BEGIN searchCtrlBlock_contractor_doc_dv}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_doc_dv}" {$filterRow_attrs_contractor_doc_dv}>
+			<label>{$label admin_users contractor_doc_dv }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_doc_dv}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_doc_dv}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_doc_dv}</span>
+						</div>
+		{END searchCtrlBlock_contractor_doc_dv}
+																{BEGIN searchCtrlBlock_contractor_dependientes}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_dependientes}" {$filterRow_attrs_contractor_dependientes}>
+			<label>{$label admin_users contractor_dependientes }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_dependientes}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_dependientes}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_dependientes}</span>
+						</div>
+		{END searchCtrlBlock_contractor_dependientes}
+																{BEGIN searchCtrlBlock_contractor_decljur}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_decljur}" {$filterRow_attrs_contractor_decljur}>
+			<label>{$label admin_users contractor_decljur }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_decljur}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_decljur}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_decljur}</span>
+						</div>
+		{END searchCtrlBlock_contractor_decljur}
+																{BEGIN searchCtrlBlock_contractor_city}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_city}" {$filterRow_attrs_contractor_city}>
+			<label>{$label admin_users contractor_city }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_city}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_city}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_city}</span>
+						</div>
+		{END searchCtrlBlock_contractor_city}
+																{BEGIN searchCtrlBlock_contractor_cajacompensacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_cajacompensacion}" {$filterRow_attrs_contractor_cajacompensacion}>
+			<label>{$label admin_users contractor_cajacompensacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_cajacompensacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_cajacompensacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_cajacompensacion}</span>
+						</div>
+		{END searchCtrlBlock_contractor_cajacompensacion}
+																{BEGIN searchCtrlBlock_contractor_arl}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_arl}" {$filterRow_attrs_contractor_arl}>
+			<label>{$label admin_users contractor_arl }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_arl}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_arl}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_arl}</span>
+						</div>
+		{END searchCtrlBlock_contractor_arl}
+																{BEGIN searchCtrlBlock_contractor_address}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_address}" {$filterRow_attrs_contractor_address}>
+			<label>{$label admin_users contractor_address }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_address}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_address}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_address}</span>
+						</div>
+		{END searchCtrlBlock_contractor_address}
+																{BEGIN searchCtrlBlock_bank_name}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_bank_name}" {$filterRow_attrs_bank_name}>
+			<label>{$label admin_users bank_name }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_bank_name}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_bank_name}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_bank_name}</span>
+						</div>
+		{END searchCtrlBlock_bank_name}
+																{BEGIN searchCtrlBlock_bank_cta_type}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_bank_cta_type}" {$filterRow_attrs_bank_cta_type}>
+			<label>{$label admin_users bank_cta_type }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_bank_cta_type}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_bank_cta_type}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_bank_cta_type}</span>
+						</div>
+		{END searchCtrlBlock_bank_cta_type}
+																{BEGIN searchCtrlBlock_bank_cta_number}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_bank_cta_number}" {$filterRow_attrs_bank_cta_number}>
+			<label>{$label admin_users bank_cta_number }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_bank_cta_number}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_bank_cta_number}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_bank_cta_number}</span>
+						</div>
+		{END searchCtrlBlock_bank_cta_number}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="admin_users_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN exitadminarea_link}
+	<li data-itemtype="exit_adminarea_link" data-itemid="exit_adminarea_link" {$item_exit_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exitaalink_attrs}  title="" >
+				
+		Salir de Area Admin		
+		</a>
+	</li>
+{END exitadminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="admin_users_add.php{$stateLink_full}" >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="admin_users_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="admin_users_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_id"]:before {
+		content: "{$label admin_users contractor_id}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_type"]:before {
+		content: "{$label admin_users contractor_type}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_doc_id"]:before {
+		content: "{$label admin_users contractor_doc_id}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_doc_dv"]:before {
+		content: "{$label admin_users contractor_doc_dv}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_pwd"]:before {
+		content: "{$label admin_users contractor_pwd}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_nombresfull"]:before {
+		content: "{$label admin_users contractor_nombresfull}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_name"]:before {
+		content: "{$label admin_users contractor_name}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_lname"]:before {
+		content: "{$label admin_users contractor_lname}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_image"]:before {
+		content: "{$label admin_users contractor_image}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="enlace_sigep"]:before {
+		content: "{$label admin_users enlace_sigep}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_email"]:before {
+		content: "{$label admin_users contractor_email}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_email_mincit"]:before {
+		content: "{$label admin_users contractor_email_mincit}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_address"]:before {
+		content: "{$label admin_users contractor_address}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_phone"]:before {
+		content: "{$label admin_users contractor_phone}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_mobile"]:before {
+		content: "{$label admin_users contractor_mobile}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_city"]:before {
+		content: "{$label admin_users contractor_city}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_sup_jerarquico"]:before {
+		content: "{$label admin_users contractor_sup_jerarquico}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_dependencia"]:before {
+		content: "{$label admin_users contractor_dependencia}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="bank_name"]:before {
+		content: "{$label admin_users bank_name}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="bank_cta_type"]:before {
+		content: "{$label admin_users bank_cta_type}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="bank_cta_number"]:before {
+		content: "{$label admin_users bank_cta_number}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="iva_regimen"]:before {
+		content: "{$label admin_users iva_regimen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="factura"]:before {
+		content: "{$label admin_users factura}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="actividad_economica"]:before {
+		content: "{$label admin_users actividad_economica}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="responsabilidades"]:before {
+		content: "{$label admin_users responsabilidades}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_update"]:before {
+		content: "{$label admin_users sys_update}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_user"]:before {
+		content: "{$label admin_users sys_user}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_date"]:before {
+		content: "{$label admin_users sys_date}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_level"]:before {
+		content: "{$label admin_users sys_level}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_status"]:before {
+		content: "{$label admin_users sys_status}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sys_last_upd"]:before {
+		content: "{$label admin_users sys_last_upd}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="groupid"]:before {
+		content: "{$label admin_users groupid}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="active"]:before {
+		content: "{$label admin_users active}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_dependientes"]:before {
+		content: "{$label admin_users contractor_dependientes}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_medicinapre_file"]:before {
+		content: "{$label admin_users contractor_medicinapre_file}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_picmonetaria_file"]:before {
+		content: "{$label admin_users contractor_picmonetaria_file}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_decljur"]:before {
+		content: "{$label admin_users contractor_decljur}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_eps"]:before {
+		content: "{$label admin_users contractor_eps}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_fondopensiones"]:before {
+		content: "{$label admin_users contractor_fondopensiones}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_cajacompensacion"]:before {
+		content: "{$label admin_users contractor_cajacompensacion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_arl"]:before {
+		content: "{$label admin_users contractor_arl}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ubica_dep"]:before {
+		content: "{$label admin_users ubica_dep}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ubica_extension"]:before {
+		content: "{$label admin_users ubica_extension}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dem_genero"]:before {
+		content: "{$label admin_users dem_genero}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dem_ocupacion"]:before {
+		content: "{$label admin_users dem_ocupacion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dem_profesion"]:before {
+		content: "{$label admin_users dem_profesion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ct_fecha_nacimiento"]:before {
+		content: "{$label admin_users ct_fecha_nacimiento}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ct_fecha_nacimiento_mun"]:before {
+		content: "{$label admin_users ct_fecha_nacimiento_mun}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ct_nacionalidad"]:before {
+		content: "{$label admin_users ct_nacionalidad}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dem_edad"]:before {
+		content: "{$label admin_users dem_edad}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dem_educacion"]:before {
+		content: "{$label admin_users dem_educacion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dem_discapacidad"]:before {
+		content: "{$label admin_users dem_discapacidad}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="emergencia"]:before {
+		content: "{$label admin_users emergencia}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="terms_msj"]:before {
+		content: "{$label admin_users terms_msj}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="terms_acepta"]:before {
+		content: "{$label admin_users terms_acepta}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="signature"]:before {
+		content: "{$label admin_users signature}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pin"]:before {
+		content: "{$label admin_users pin}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="reset_token"]:before {
+		content: "{$label admin_users reset_token}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="reset_date"]:before {
+		content: "{$label admin_users reset_date}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
+	cellpadding="0"
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+			
+																									<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
+									{$gridHeader_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+									{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+									{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_id_class}	"
+
+			data-field="contractor_id"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_id_fieldheadercolumn}
+	{BEGIN contractor_id_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_id" data-fieldname="contractor_id" 
+
+			{$contractor_id_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_id }</span>
+					{$arrow_icon_contractor_id}
+			</span>
+	</span>
+	{END contractor_id_fieldheader}
+{END contractor_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+									{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_type_class}	"
+
+			data-field="contractor_type"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_type_fieldheadercolumn}
+	{BEGIN contractor_type_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_type" data-fieldname="contractor_type" 
+
+			{$contractor_type_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_type }</span>
+					{$arrow_icon_contractor_type}
+			</span>
+	</span>
+	{END contractor_type_fieldheader}
+{END contractor_type_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_doc_id_class}	"
+
+			data-field="contractor_doc_id"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_doc_id_fieldheadercolumn}
+	{BEGIN contractor_doc_id_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_id" data-fieldname="contractor_doc_id" 
+
+			{$contractor_doc_id_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_doc_id }</span>
+					{$arrow_icon_contractor_doc_id}
+			</span>
+	</span>
+	{END contractor_doc_id_fieldheader}
+{END contractor_doc_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_doc_dv_class}	"
+
+			data-field="contractor_doc_dv"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_doc_dv_fieldheadercolumn}
+	{BEGIN contractor_doc_dv_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_dv" data-fieldname="contractor_doc_dv" 
+
+			{$contractor_doc_dv_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_doc_dv }</span>
+					{$arrow_icon_contractor_doc_dv}
+			</span>
+	</span>
+	{END contractor_doc_dv_fieldheader}
+{END contractor_doc_dv_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_pwd_class}	"
+
+			data-field="contractor_pwd"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_pwd_fieldheadercolumn}
+	{BEGIN contractor_pwd_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_pwd" data-fieldname="contractor_pwd" 
+
+			{$contractor_pwd_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_pwd }</span>
+					{$arrow_icon_contractor_pwd}
+			</span>
+	</span>
+	{END contractor_pwd_fieldheader}
+{END contractor_pwd_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_image_class}	"
+
+			data-field="contractor_image"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_image_fieldheadercolumn}
+	{BEGIN contractor_image_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_image" data-fieldname="contractor_image" 
+
+			{$contractor_image_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_image }</span>
+					{$arrow_icon_contractor_image}
+			</span>
+	</span>
+	{END contractor_image_fieldheader}
+{END contractor_image_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_name_class}	"
+
+			data-field="contractor_name"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_name_fieldheadercolumn}
+	{BEGIN contractor_name_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_name" data-fieldname="contractor_name" 
+
+			{$contractor_name_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_name }</span>
+					{$arrow_icon_contractor_name}
+			</span>
+	</span>
+	{END contractor_name_fieldheader}
+{END contractor_name_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_lname_class}	"
+
+			data-field="contractor_lname"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_lname_fieldheadercolumn}
+	{BEGIN contractor_lname_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_lname" data-fieldname="contractor_lname" 
+
+			{$contractor_lname_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_lname }</span>
+					{$arrow_icon_contractor_lname}
+			</span>
+	</span>
+	{END contractor_lname_fieldheader}
+{END contractor_lname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+									{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_nombresfull_class}	"
+
+			data-field="contractor_nombresfull"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_nombresfull_fieldheadercolumn}
+	{BEGIN contractor_nombresfull_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_nombresfull" data-fieldname="contractor_nombresfull" 
+
+			{$contractor_nombresfull_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_nombresfull }</span>
+					{$arrow_icon_contractor_nombresfull}
+			</span>
+	</span>
+	{END contractor_nombresfull_fieldheader}
+{END contractor_nombresfull_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+									{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$enlace_sigep_class}	"
+
+			data-field="enlace_sigep"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN enlace_sigep_fieldheadercolumn}
+	{BEGIN enlace_sigep_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="enlace_sigep" data-fieldname="enlace_sigep" 
+
+			{$enlace_sigep_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users enlace_sigep }</span>
+					{$arrow_icon_enlace_sigep}
+			</span>
+	</span>
+	{END enlace_sigep_fieldheader}
+{END enlace_sigep_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+									{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_email_class}	"
+
+			data-field="contractor_email"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_email_fieldheadercolumn}
+	{BEGIN contractor_email_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email" data-fieldname="contractor_email" 
+
+			{$contractor_email_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_email }</span>
+					{$arrow_icon_contractor_email}
+			</span>
+	</span>
+	{END contractor_email_fieldheader}
+{END contractor_email_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+									{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_email_mincit_class}	"
+
+			data-field="contractor_email_mincit"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_email_mincit_fieldheadercolumn}
+	{BEGIN contractor_email_mincit_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email_mincit" data-fieldname="contractor_email_mincit" 
+
+			{$contractor_email_mincit_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_email_mincit }</span>
+					{$arrow_icon_contractor_email_mincit}
+			</span>
+	</span>
+	{END contractor_email_mincit_fieldheader}
+{END contractor_email_mincit_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+									{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_address_class}	"
+
+			data-field="contractor_address"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_address_fieldheadercolumn}
+	{BEGIN contractor_address_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_address" data-fieldname="contractor_address" 
+
+			{$contractor_address_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_address }</span>
+					{$arrow_icon_contractor_address}
+			</span>
+	</span>
+	{END contractor_address_fieldheader}
+{END contractor_address_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+									{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_phone_class}	"
+
+			data-field="contractor_phone"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_phone_fieldheadercolumn}
+	{BEGIN contractor_phone_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_phone" data-fieldname="contractor_phone" 
+
+			{$contractor_phone_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_phone }</span>
+					{$arrow_icon_contractor_phone}
+			</span>
+	</span>
+	{END contractor_phone_fieldheader}
+{END contractor_phone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+									{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_mobile_class}	"
+
+			data-field="contractor_mobile"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_mobile_fieldheadercolumn}
+	{BEGIN contractor_mobile_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_mobile" data-fieldname="contractor_mobile" 
+
+			{$contractor_mobile_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_mobile }</span>
+					{$arrow_icon_contractor_mobile}
+			</span>
+	</span>
+	{END contractor_mobile_fieldheader}
+{END contractor_mobile_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+									{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_city_class}	"
+
+			data-field="contractor_city"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_city_fieldheadercolumn}
+	{BEGIN contractor_city_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_city" data-fieldname="contractor_city" 
+
+			{$contractor_city_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_city }</span>
+					{$arrow_icon_contractor_city}
+			</span>
+	</span>
+	{END contractor_city_fieldheader}
+{END contractor_city_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+									{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_name_class}	"
+
+			data-field="bank_name"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bank_name_fieldheadercolumn}
+	{BEGIN bank_name_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_name" data-fieldname="bank_name" 
+
+			{$bank_name_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users bank_name }</span>
+					{$arrow_icon_bank_name}
+			</span>
+	</span>
+	{END bank_name_fieldheader}
+{END bank_name_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+									{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_cta_type_class}	"
+
+			data-field="bank_cta_type"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bank_cta_type_fieldheadercolumn}
+	{BEGIN bank_cta_type_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_type" data-fieldname="bank_cta_type" 
+
+			{$bank_cta_type_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users bank_cta_type }</span>
+					{$arrow_icon_bank_cta_type}
+			</span>
+	</span>
+	{END bank_cta_type_fieldheader}
+{END bank_cta_type_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+									{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_cta_number_class}	"
+
+			data-field="bank_cta_number"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bank_cta_number_fieldheadercolumn}
+	{BEGIN bank_cta_number_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_number" data-fieldname="bank_cta_number" 
+
+			{$bank_cta_number_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users bank_cta_number }</span>
+					{$arrow_icon_bank_cta_number}
+			</span>
+	</span>
+	{END bank_cta_number_fieldheader}
+{END bank_cta_number_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+									{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$iva_regimen_class}	"
+
+			data-field="iva_regimen"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN iva_regimen_fieldheadercolumn}
+	{BEGIN iva_regimen_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="iva_regimen" data-fieldname="iva_regimen" 
+
+			{$iva_regimen_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users iva_regimen }</span>
+					{$arrow_icon_iva_regimen}
+			</span>
+	</span>
+	{END iva_regimen_fieldheader}
+{END iva_regimen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+									{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_update_class}	"
+
+			data-field="sys_update"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_update_fieldheadercolumn}
+	{BEGIN sys_update_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_update" data-fieldname="sys_update" 
+
+			{$sys_update_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users sys_update }</span>
+					{$arrow_icon_sys_update}
+			</span>
+	</span>
+	{END sys_update_fieldheader}
+{END sys_update_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+									{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_user_class}	"
+
+			data-field="sys_user"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_user_fieldheadercolumn}
+	{BEGIN sys_user_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user" data-fieldname="sys_user" 
+
+			{$sys_user_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users sys_user }</span>
+					{$arrow_icon_sys_user}
+			</span>
+	</span>
+	{END sys_user_fieldheader}
+{END sys_user_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+									{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_date_class}	"
+
+			data-field="sys_date"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_date_fieldheadercolumn}
+	{BEGIN sys_date_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date" data-fieldname="sys_date" 
+
+			{$sys_date_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users sys_date }</span>
+					{$arrow_icon_sys_date}
+			</span>
+	</span>
+	{END sys_date_fieldheader}
+{END sys_date_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+									{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_level_class}	"
+
+			data-field="sys_level"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_level_fieldheadercolumn}
+	{BEGIN sys_level_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_level" data-fieldname="sys_level" 
+
+			{$sys_level_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users sys_level }</span>
+					{$arrow_icon_sys_level}
+			</span>
+	</span>
+	{END sys_level_fieldheader}
+{END sys_level_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+									{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_status_class}	"
+
+			data-field="sys_status"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_status_fieldheadercolumn}
+	{BEGIN sys_status_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_status" data-fieldname="sys_status" 
+
+			{$sys_status_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users sys_status }</span>
+					{$arrow_icon_sys_status}
+			</span>
+	</span>
+	{END sys_status_fieldheader}
+{END sys_status_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+									{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_last_upd_class}	"
+
+			data-field="sys_last_upd"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_last_upd_fieldheadercolumn}
+	{BEGIN sys_last_upd_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_last_upd" data-fieldname="sys_last_upd" 
+
+			{$sys_last_upd_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users sys_last_upd }</span>
+					{$arrow_icon_sys_last_upd}
+			</span>
+	</span>
+	{END sys_last_upd_fieldheader}
+{END sys_last_upd_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+									{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$groupid_class}	"
+
+			data-field="groupid"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN groupid_fieldheadercolumn}
+	{BEGIN groupid_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="groupid" data-fieldname="groupid" 
+
+			{$groupid_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users groupid }</span>
+					{$arrow_icon_groupid}
+			</span>
+	</span>
+	{END groupid_fieldheader}
+{END groupid_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+									{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$active_class}	"
+
+			data-field="active"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN active_fieldheadercolumn}
+	{BEGIN active_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="active" data-fieldname="active" 
+
+			{$active_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users active }</span>
+					{$arrow_icon_active}
+			</span>
+	</span>
+	{END active_fieldheader}
+{END active_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+									{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_dependientes_class}	"
+
+			data-field="contractor_dependientes"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependientes_fieldheadercolumn}
+	{BEGIN contractor_dependientes_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependientes" data-fieldname="contractor_dependientes" 
+
+			{$contractor_dependientes_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_dependientes }</span>
+					{$arrow_icon_contractor_dependientes}
+			</span>
+	</span>
+	{END contractor_dependientes_fieldheader}
+{END contractor_dependientes_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+									{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_medicinapre_file_class}	"
+
+			data-field="contractor_medicinapre_file"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_medicinapre_file_fieldheadercolumn}
+	{BEGIN contractor_medicinapre_file_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_medicinapre_file" data-fieldname="contractor_medicinapre_file" 
+
+			{$contractor_medicinapre_file_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_medicinapre_file }</span>
+					{$arrow_icon_contractor_medicinapre_file}
+			</span>
+	</span>
+	{END contractor_medicinapre_file_fieldheader}
+{END contractor_medicinapre_file_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+									{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_picmonetaria_file_class}	"
+
+			data-field="contractor_picmonetaria_file"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_picmonetaria_file_fieldheadercolumn}
+	{BEGIN contractor_picmonetaria_file_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_picmonetaria_file" data-fieldname="contractor_picmonetaria_file" 
+
+			{$contractor_picmonetaria_file_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_picmonetaria_file }</span>
+					{$arrow_icon_contractor_picmonetaria_file}
+			</span>
+	</span>
+	{END contractor_picmonetaria_file_fieldheader}
+{END contractor_picmonetaria_file_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+									{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_decljur_class}	"
+
+			data-field="contractor_decljur"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_decljur_fieldheadercolumn}
+	{BEGIN contractor_decljur_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_decljur" data-fieldname="contractor_decljur" 
+
+			{$contractor_decljur_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_decljur }</span>
+					{$arrow_icon_contractor_decljur}
+			</span>
+	</span>
+	{END contractor_decljur_fieldheader}
+{END contractor_decljur_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+									{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_eps_class}	"
+
+			data-field="contractor_eps"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_eps_fieldheadercolumn}
+	{BEGIN contractor_eps_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_eps" data-fieldname="contractor_eps" 
+
+			{$contractor_eps_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_eps }</span>
+					{$arrow_icon_contractor_eps}
+			</span>
+	</span>
+	{END contractor_eps_fieldheader}
+{END contractor_eps_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+									{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_fondopensiones_class}	"
+
+			data-field="contractor_fondopensiones"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_fondopensiones_fieldheadercolumn}
+	{BEGIN contractor_fondopensiones_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_fondopensiones" data-fieldname="contractor_fondopensiones" 
+
+			{$contractor_fondopensiones_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_fondopensiones }</span>
+					{$arrow_icon_contractor_fondopensiones}
+			</span>
+	</span>
+	{END contractor_fondopensiones_fieldheader}
+{END contractor_fondopensiones_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+									{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_cajacompensacion_class}	"
+
+			data-field="contractor_cajacompensacion"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_cajacompensacion_fieldheadercolumn}
+	{BEGIN contractor_cajacompensacion_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_cajacompensacion" data-fieldname="contractor_cajacompensacion" 
+
+			{$contractor_cajacompensacion_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_cajacompensacion }</span>
+					{$arrow_icon_contractor_cajacompensacion}
+			</span>
+	</span>
+	{END contractor_cajacompensacion_fieldheader}
+{END contractor_cajacompensacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+									{BEGIN cellblock_grid_headcell_field35}
+	<th
+	
+	{$cell_grid_headcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_arl_class}	"
+
+			data-field="contractor_arl"
+	
+	data-cellId="grid_headcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_arl_fieldheadercolumn}
+	{BEGIN contractor_arl_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_arl" data-fieldname="contractor_arl" 
+
+			{$contractor_arl_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_arl }</span>
+					{$arrow_icon_contractor_arl}
+			</span>
+	</span>
+	{END contractor_arl_fieldheader}
+{END contractor_arl_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field35}
+									{BEGIN cellblock_grid_headcell_field36}
+	<th
+	
+	{$cell_grid_headcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ubica_dep_class}	"
+
+			data-field="ubica_dep"
+	
+	data-cellId="grid_headcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ubica_dep_fieldheadercolumn}
+	{BEGIN ubica_dep_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_dep" data-fieldname="ubica_dep" 
+
+			{$ubica_dep_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users ubica_dep }</span>
+					{$arrow_icon_ubica_dep}
+			</span>
+	</span>
+	{END ubica_dep_fieldheader}
+{END ubica_dep_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field36}
+									{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ubica_extension_class}	"
+
+			data-field="ubica_extension"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ubica_extension_fieldheadercolumn}
+	{BEGIN ubica_extension_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_extension" data-fieldname="ubica_extension" 
+
+			{$ubica_extension_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users ubica_extension }</span>
+					{$arrow_icon_ubica_extension}
+			</span>
+	</span>
+	{END ubica_extension_fieldheader}
+{END ubica_extension_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+									{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_genero_class}	"
+
+			data-field="dem_genero"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_genero_fieldheadercolumn}
+	{BEGIN dem_genero_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_genero" data-fieldname="dem_genero" 
+
+			{$dem_genero_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users dem_genero }</span>
+					{$arrow_icon_dem_genero}
+			</span>
+	</span>
+	{END dem_genero_fieldheader}
+{END dem_genero_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
+									{BEGIN cellblock_grid_headcell_field39}
+	<th
+	
+	{$cell_grid_headcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_ocupacion_class}	"
+
+			data-field="dem_ocupacion"
+	
+	data-cellId="grid_headcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_ocupacion_fieldheadercolumn}
+	{BEGIN dem_ocupacion_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_ocupacion" data-fieldname="dem_ocupacion" 
+
+			{$dem_ocupacion_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users dem_ocupacion }</span>
+					{$arrow_icon_dem_ocupacion}
+			</span>
+	</span>
+	{END dem_ocupacion_fieldheader}
+{END dem_ocupacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field39}
+									{BEGIN cellblock_grid_headcell_field40}
+	<th
+	
+	{$cell_grid_headcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_fecha_nacimiento_class}	"
+
+			data-field="ct_fecha_nacimiento"
+	
+	data-cellId="grid_headcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_fecha_nacimiento_fieldheadercolumn}
+	{BEGIN ct_fecha_nacimiento_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento" data-fieldname="ct_fecha_nacimiento" 
+
+			{$ct_fecha_nacimiento_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users ct_fecha_nacimiento }</span>
+					{$arrow_icon_ct_fecha_nacimiento}
+			</span>
+	</span>
+	{END ct_fecha_nacimiento_fieldheader}
+{END ct_fecha_nacimiento_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field40}
+									{BEGIN cellblock_grid_headcell_field41}
+	<th
+	
+	{$cell_grid_headcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_nacionalidad_class}	"
+
+			data-field="ct_nacionalidad"
+	
+	data-cellId="grid_headcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_nacionalidad_fieldheadercolumn}
+	{BEGIN ct_nacionalidad_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_nacionalidad" data-fieldname="ct_nacionalidad" 
+
+			{$ct_nacionalidad_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users ct_nacionalidad }</span>
+					{$arrow_icon_ct_nacionalidad}
+			</span>
+	</span>
+	{END ct_nacionalidad_fieldheader}
+{END ct_nacionalidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field41}
+									{BEGIN cellblock_grid_headcell_field42}
+	<th
+	
+	{$cell_grid_headcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_edad_class}	"
+
+			data-field="dem_edad"
+	
+	data-cellId="grid_headcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_edad_fieldheadercolumn}
+	{BEGIN dem_edad_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_edad" data-fieldname="dem_edad" 
+
+			{$dem_edad_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users dem_edad }</span>
+					{$arrow_icon_dem_edad}
+			</span>
+	</span>
+	{END dem_edad_fieldheader}
+{END dem_edad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field42}
+									{BEGIN cellblock_grid_headcell_field43}
+	<th
+	
+	{$cell_grid_headcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_educacion_class}	"
+
+			data-field="dem_educacion"
+	
+	data-cellId="grid_headcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_educacion_fieldheadercolumn}
+	{BEGIN dem_educacion_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_educacion" data-fieldname="dem_educacion" 
+
+			{$dem_educacion_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users dem_educacion }</span>
+					{$arrow_icon_dem_educacion}
+			</span>
+	</span>
+	{END dem_educacion_fieldheader}
+{END dem_educacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field43}
+									{BEGIN cellblock_grid_headcell_field44}
+	<th
+	
+	{$cell_grid_headcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_discapacidad_class}	"
+
+			data-field="dem_discapacidad"
+	
+	data-cellId="grid_headcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_discapacidad_fieldheadercolumn}
+	{BEGIN dem_discapacidad_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_discapacidad" data-fieldname="dem_discapacidad" 
+
+			{$dem_discapacidad_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users dem_discapacidad }</span>
+					{$arrow_icon_dem_discapacidad}
+			</span>
+	</span>
+	{END dem_discapacidad_fieldheader}
+{END dem_discapacidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field44}
+									{BEGIN cellblock_grid_headcell_field45}
+	<th
+	
+	{$cell_grid_headcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$emergencia_class}	"
+
+			data-field="emergencia"
+	
+	data-cellId="grid_headcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN emergencia_fieldheadercolumn}
+	{BEGIN emergencia_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field104" {$item_simple_grid_field104} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="emergencia" data-fieldname="emergencia" 
+
+			{$emergencia_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users emergencia }</span>
+					{$arrow_icon_emergencia}
+			</span>
+	</span>
+	{END emergencia_fieldheader}
+{END emergencia_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field45}
+									{BEGIN cellblock_grid_headcell_field46}
+	<th
+	
+	{$cell_grid_headcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$terms_msj_class}	"
+
+			data-field="terms_msj"
+	
+	data-cellId="grid_headcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN terms_msj_fieldheadercolumn}
+	{BEGIN terms_msj_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field105" {$item_simple_grid_field105} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_msj" data-fieldname="terms_msj" 
+
+			{$terms_msj_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users terms_msj }</span>
+					{$arrow_icon_terms_msj}
+			</span>
+	</span>
+	{END terms_msj_fieldheader}
+{END terms_msj_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field46}
+									{BEGIN cellblock_grid_headcell_field47}
+	<th
+	
+	{$cell_grid_headcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$terms_acepta_class}	"
+
+			data-field="terms_acepta"
+	
+	data-cellId="grid_headcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN terms_acepta_fieldheadercolumn}
+	{BEGIN terms_acepta_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field106" {$item_simple_grid_field106} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_acepta" data-fieldname="terms_acepta" 
+
+			{$terms_acepta_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users terms_acepta }</span>
+					{$arrow_icon_terms_acepta}
+			</span>
+	</span>
+	{END terms_acepta_fieldheader}
+{END terms_acepta_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field47}
+									{BEGIN cellblock_grid_headcell_field48}
+	<th
+	
+	{$cell_grid_headcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_profesion_class}	"
+
+			data-field="dem_profesion"
+	
+	data-cellId="grid_headcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_profesion_fieldheadercolumn}
+	{BEGIN dem_profesion_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field107" {$item_simple_grid_field107} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_profesion" data-fieldname="dem_profesion" 
+
+			{$dem_profesion_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users dem_profesion }</span>
+					{$arrow_icon_dem_profesion}
+			</span>
+	</span>
+	{END dem_profesion_fieldheader}
+{END dem_profesion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field48}
+									{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_sup_jerarquico_class}	"
+
+			data-field="contractor_sup_jerarquico"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_sup_jerarquico_fieldheadercolumn}
+	{BEGIN contractor_sup_jerarquico_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field108" {$item_simple_grid_field108} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_sup_jerarquico" data-fieldname="contractor_sup_jerarquico" 
+
+			{$contractor_sup_jerarquico_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_sup_jerarquico }</span>
+					{$arrow_icon_contractor_sup_jerarquico}
+			</span>
+	</span>
+	{END contractor_sup_jerarquico_fieldheader}
+{END contractor_sup_jerarquico_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+									{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_dependencia_class}	"
+
+			data-field="contractor_dependencia"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependencia_fieldheadercolumn}
+	{BEGIN contractor_dependencia_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field109" {$item_simple_grid_field109} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependencia" data-fieldname="contractor_dependencia" 
+
+			{$contractor_dependencia_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users contractor_dependencia }</span>
+					{$arrow_icon_contractor_dependencia}
+			</span>
+	</span>
+	{END contractor_dependencia_fieldheader}
+{END contractor_dependencia_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+									{BEGIN cellblock_grid_headcell_field51}
+	<th
+	
+	{$cell_grid_headcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$signature_class}	"
+
+			data-field="signature"
+	
+	data-cellId="grid_headcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN signature_fieldheadercolumn}
+	{BEGIN signature_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field110" {$item_simple_grid_field110} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="signature" data-fieldname="signature" 
+
+			{$signature_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users signature }</span>
+					{$arrow_icon_signature}
+			</span>
+	</span>
+	{END signature_fieldheader}
+{END signature_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field51}
+									{BEGIN cellblock_grid_headcell_field52}
+	<th
+	
+	{$cell_grid_headcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$pin_class}	"
+
+			data-field="pin"
+	
+	data-cellId="grid_headcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pin_fieldheadercolumn}
+	{BEGIN pin_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field111" {$item_simple_grid_field111} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pin" data-fieldname="pin" 
+
+			{$pin_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users pin }</span>
+					{$arrow_icon_pin}
+			</span>
+	</span>
+	{END pin_fieldheader}
+{END pin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field52}
+									{BEGIN cellblock_grid_headcell_field53}
+	<th
+	
+	{$cell_grid_headcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_fecha_nacimiento_mun_class}	"
+
+			data-field="ct_fecha_nacimiento_mun"
+	
+	data-cellId="grid_headcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_fecha_nacimiento_mun_fieldheadercolumn}
+	{BEGIN ct_fecha_nacimiento_mun_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field112" {$item_simple_grid_field112} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento_mun" data-fieldname="ct_fecha_nacimiento_mun" 
+
+			{$ct_fecha_nacimiento_mun_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users ct_fecha_nacimiento_mun }</span>
+					{$arrow_icon_ct_fecha_nacimiento_mun}
+			</span>
+	</span>
+	{END ct_fecha_nacimiento_mun_fieldheader}
+{END ct_fecha_nacimiento_mun_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field53}
+									{BEGIN cellblock_grid_headcell_field54}
+	<th
+	
+	{$cell_grid_headcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$factura_class}	"
+
+			data-field="factura"
+	
+	data-cellId="grid_headcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN factura_fieldheadercolumn}
+	{BEGIN factura_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field113" {$item_simple_grid_field113} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="factura" data-fieldname="factura" 
+
+			{$factura_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users factura }</span>
+					{$arrow_icon_factura}
+			</span>
+	</span>
+	{END factura_fieldheader}
+{END factura_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field54}
+									{BEGIN cellblock_grid_headcell_field55}
+	<th
+	
+	{$cell_grid_headcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$actividad_economica_class}	"
+
+			data-field="actividad_economica"
+	
+	data-cellId="grid_headcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN actividad_economica_fieldheadercolumn}
+	{BEGIN actividad_economica_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field114" {$item_simple_grid_field114} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="actividad_economica" data-fieldname="actividad_economica" 
+
+			{$actividad_economica_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users actividad_economica }</span>
+					{$arrow_icon_actividad_economica}
+			</span>
+	</span>
+	{END actividad_economica_fieldheader}
+{END actividad_economica_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field55}
+									{BEGIN cellblock_grid_headcell_field56}
+	<th
+	
+	{$cell_grid_headcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$responsabilidades_class}	"
+
+			data-field="responsabilidades"
+	
+	data-cellId="grid_headcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN responsabilidades_fieldheadercolumn}
+	{BEGIN responsabilidades_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field115" {$item_simple_grid_field115} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="responsabilidades" data-fieldname="responsabilidades" 
+
+			{$responsabilidades_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users responsabilidades }</span>
+					{$arrow_icon_responsabilidades}
+			</span>
+	</span>
+	{END responsabilidades_fieldheader}
+{END responsabilidades_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field56}
+									{BEGIN cellblock_grid_headcell_field57}
+	<th
+	
+	{$cell_grid_headcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reset_token_class}	"
+
+			data-field="reset_token"
+	
+	data-cellId="grid_headcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reset_token_fieldheadercolumn}
+	{BEGIN reset_token_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field116" {$item_simple_grid_field116} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reset_token" data-fieldname="reset_token" 
+
+			{$reset_token_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users reset_token }</span>
+					{$arrow_icon_reset_token}
+			</span>
+	</span>
+	{END reset_token_fieldheader}
+{END reset_token_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field57}
+									{BEGIN cellblock_grid_headcell_field58}
+	<th
+	
+	{$cell_grid_headcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reset_date_class}	"
+
+			data-field="reset_date"
+	
+	data-cellId="grid_headcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reset_date_fieldheadercolumn}
+	{BEGIN reset_date_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field117" {$item_simple_grid_field117} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reset_date" data-fieldname="reset_date" 
+
+			{$reset_date_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label admin_users reset_date }</span>
+					{$arrow_icon_reset_date}
+			</span>
+	</span>
+	{END reset_date_fieldheader}
+{END reset_date_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field58}
+							</tr>
+															
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+							
+																														<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
+				
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn-link   
+	 glyphicon glyphicon-pencil" href="admin_users_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+									{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+									{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_id_class}	"
+
+			data-field="contractor_id"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_id" data-fieldname="contractor_id" data-default-width >
+{$contractor_id_value}
+</span>
+{END contractor_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_type_class}	"
+
+			data-field="contractor_type"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_type_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_type" data-fieldname="contractor_type" data-default-width >
+{$contractor_type_value}
+</span>
+{END contractor_type_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_doc_id_class}	"
+
+			data-field="contractor_doc_id"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_doc_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_id" data-fieldname="contractor_doc_id" data-default-width >
+{$contractor_doc_id_value}
+</span>
+{END contractor_doc_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_doc_dv_class}	"
+
+			data-field="contractor_doc_dv"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_doc_dv_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_dv" data-fieldname="contractor_doc_dv" data-default-width >
+{$contractor_doc_dv_value}
+</span>
+{END contractor_doc_dv_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_pwd_class}	"
+
+			data-field="contractor_pwd"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_pwd_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_pwd" data-fieldname="contractor_pwd" data-default-width >
+{$contractor_pwd_value}
+</span>
+{END contractor_pwd_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_image_class}	"
+
+			data-field="contractor_image"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_image_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_image" data-fieldname="contractor_image" data-default-width >
+{$contractor_image_value}
+</span>
+{END contractor_image_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_name_class}	"
+
+			data-field="contractor_name"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_name_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_name" data-fieldname="contractor_name" data-default-width >
+{$contractor_name_value}
+</span>
+{END contractor_name_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_lname_class}	"
+
+			data-field="contractor_lname"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_lname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_lname" data-fieldname="contractor_lname" data-default-width >
+{$contractor_lname_value}
+</span>
+{END contractor_lname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+									{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_nombresfull_class}	"
+
+			data-field="contractor_nombresfull"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_nombresfull_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_nombresfull" data-fieldname="contractor_nombresfull" data-default-width >
+{$contractor_nombresfull_value}
+</span>
+{END contractor_nombresfull_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+									{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$enlace_sigep_class}	"
+
+			data-field="enlace_sigep"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN enlace_sigep_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="enlace_sigep" data-fieldname="enlace_sigep" data-default-width >
+{$enlace_sigep_value}
+</span>
+{END enlace_sigep_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+									{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_email_class}	"
+
+			data-field="contractor_email"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email" data-fieldname="contractor_email" data-default-width >
+{$contractor_email_value}
+</span>
+{END contractor_email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+									{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_email_mincit_class}	"
+
+			data-field="contractor_email_mincit"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_email_mincit_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email_mincit" data-fieldname="contractor_email_mincit" data-default-width >
+{$contractor_email_mincit_value}
+</span>
+{END contractor_email_mincit_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+									{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_address_class}	"
+
+			data-field="contractor_address"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_address_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_address" data-fieldname="contractor_address" data-default-width >
+{$contractor_address_value}
+</span>
+{END contractor_address_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+									{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_phone_class}	"
+
+			data-field="contractor_phone"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_phone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_phone" data-fieldname="contractor_phone" data-default-width >
+{$contractor_phone_value}
+</span>
+{END contractor_phone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+									{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_mobile_class}	"
+
+			data-field="contractor_mobile"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_mobile_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_mobile" data-fieldname="contractor_mobile" data-default-width >
+{$contractor_mobile_value}
+</span>
+{END contractor_mobile_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+									{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_city_class}	"
+
+			data-field="contractor_city"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_city_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_city" data-fieldname="contractor_city" data-default-width >
+{$contractor_city_value}
+</span>
+{END contractor_city_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+									{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_name_class}	"
+
+			data-field="bank_name"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bank_name_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_name" data-fieldname="bank_name" data-default-width >
+{$bank_name_value}
+</span>
+{END bank_name_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+									{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_cta_type_class}	"
+
+			data-field="bank_cta_type"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bank_cta_type_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_type" data-fieldname="bank_cta_type" data-default-width >
+{$bank_cta_type_value}
+</span>
+{END bank_cta_type_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+									{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_cta_number_class}	"
+
+			data-field="bank_cta_number"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN bank_cta_number_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_number" data-fieldname="bank_cta_number" data-default-width >
+{$bank_cta_number_value}
+</span>
+{END bank_cta_number_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+									{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$iva_regimen_class}	"
+
+			data-field="iva_regimen"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN iva_regimen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="iva_regimen" data-fieldname="iva_regimen" data-default-width >
+{$iva_regimen_value}
+</span>
+{END iva_regimen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+									{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_update_class}	"
+
+			data-field="sys_update"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_update_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_update" data-fieldname="sys_update" data-default-width >
+{$sys_update_value}
+</span>
+{END sys_update_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+									{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_user_class}	"
+
+			data-field="sys_user"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_user_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user" data-fieldname="sys_user" data-default-width >
+{$sys_user_value}
+</span>
+{END sys_user_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+									{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_date_class}	"
+
+			data-field="sys_date"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_date_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date" data-fieldname="sys_date" data-default-width >
+{$sys_date_value}
+</span>
+{END sys_date_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+									{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_level_class}	"
+
+			data-field="sys_level"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_level_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_level" data-fieldname="sys_level" data-default-width >
+{$sys_level_value}
+</span>
+{END sys_level_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+									{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_status_class}	"
+
+			data-field="sys_status"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_status_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_status" data-fieldname="sys_status" data-default-width >
+{$sys_status_value}
+</span>
+{END sys_status_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+									{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_last_upd_class}	"
+
+			data-field="sys_last_upd"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_last_upd_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_last_upd" data-fieldname="sys_last_upd" data-default-width >
+{$sys_last_upd_value}
+</span>
+{END sys_last_upd_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+									{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$groupid_class}	"
+
+			data-field="groupid"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN groupid_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="groupid" data-fieldname="groupid" data-default-width >
+{$groupid_value}
+</span>
+{END groupid_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+									{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$active_class}	"
+
+			data-field="active"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN active_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="active" data-fieldname="active" data-default-width >
+{$active_value}
+</span>
+{END active_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+									{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_dependientes_class}	"
+
+			data-field="contractor_dependientes"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependientes_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependientes" data-fieldname="contractor_dependientes" data-default-width >
+{$contractor_dependientes_value}
+</span>
+{END contractor_dependientes_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+									{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_medicinapre_file_class}	"
+
+			data-field="contractor_medicinapre_file"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_medicinapre_file_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_medicinapre_file" data-fieldname="contractor_medicinapre_file" data-default-width >
+{$contractor_medicinapre_file_value}
+</span>
+{END contractor_medicinapre_file_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+									{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_picmonetaria_file_class}	"
+
+			data-field="contractor_picmonetaria_file"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_picmonetaria_file_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_picmonetaria_file" data-fieldname="contractor_picmonetaria_file" data-default-width >
+{$contractor_picmonetaria_file_value}
+</span>
+{END contractor_picmonetaria_file_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+									{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_decljur_class}	"
+
+			data-field="contractor_decljur"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_decljur_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_decljur" data-fieldname="contractor_decljur" data-default-width >
+{$contractor_decljur_value}
+</span>
+{END contractor_decljur_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+									{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_eps_class}	"
+
+			data-field="contractor_eps"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_eps_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_eps" data-fieldname="contractor_eps" data-default-width >
+{$contractor_eps_value}
+</span>
+{END contractor_eps_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+									{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_fondopensiones_class}	"
+
+			data-field="contractor_fondopensiones"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_fondopensiones_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_fondopensiones" data-fieldname="contractor_fondopensiones" data-default-width >
+{$contractor_fondopensiones_value}
+</span>
+{END contractor_fondopensiones_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+									{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_cajacompensacion_class}	"
+
+			data-field="contractor_cajacompensacion"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_cajacompensacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_cajacompensacion" data-fieldname="contractor_cajacompensacion" data-default-width >
+{$contractor_cajacompensacion_value}
+</span>
+{END contractor_cajacompensacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+									{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_arl_class}	"
+
+			data-field="contractor_arl"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_arl_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_arl" data-fieldname="contractor_arl" data-default-width >
+{$contractor_arl_value}
+</span>
+{END contractor_arl_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+									{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ubica_dep_class}	"
+
+			data-field="ubica_dep"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ubica_dep_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_dep" data-fieldname="ubica_dep" data-default-width >
+{$ubica_dep_value}
+</span>
+{END ubica_dep_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+									{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ubica_extension_class}	"
+
+			data-field="ubica_extension"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ubica_extension_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_extension" data-fieldname="ubica_extension" data-default-width >
+{$ubica_extension_value}
+</span>
+{END ubica_extension_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+									{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_genero_class}	"
+
+			data-field="dem_genero"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_genero_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_genero" data-fieldname="dem_genero" data-default-width >
+{$dem_genero_value}
+</span>
+{END dem_genero_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+									{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_ocupacion_class}	"
+
+			data-field="dem_ocupacion"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_ocupacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_ocupacion" data-fieldname="dem_ocupacion" data-default-width >
+{$dem_ocupacion_value}
+</span>
+{END dem_ocupacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+									{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_fecha_nacimiento_class}	"
+
+			data-field="ct_fecha_nacimiento"
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_fecha_nacimiento_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento" data-fieldname="ct_fecha_nacimiento" data-default-width >
+{$ct_fecha_nacimiento_value}
+</span>
+{END ct_fecha_nacimiento_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field40}
+									{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_nacionalidad_class}	"
+
+			data-field="ct_nacionalidad"
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_nacionalidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_nacionalidad" data-fieldname="ct_nacionalidad" data-default-width >
+{$ct_nacionalidad_value}
+</span>
+{END ct_nacionalidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field41}
+									{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_edad_class}	"
+
+			data-field="dem_edad"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_edad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_edad" data-fieldname="dem_edad" data-default-width >
+{$dem_edad_value}
+</span>
+{END dem_edad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+									{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_educacion_class}	"
+
+			data-field="dem_educacion"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_educacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_educacion" data-fieldname="dem_educacion" data-default-width >
+{$dem_educacion_value}
+</span>
+{END dem_educacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+									{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_discapacidad_class}	"
+
+			data-field="dem_discapacidad"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_discapacidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_discapacidad" data-fieldname="dem_discapacidad" data-default-width >
+{$dem_discapacidad_value}
+</span>
+{END dem_discapacidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+									{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$emergencia_class}	"
+
+			data-field="emergencia"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN emergencia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="emergencia" data-fieldname="emergencia" data-default-width >
+{$emergencia_value}
+</span>
+{END emergencia_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+									{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$terms_msj_class}	"
+
+			data-field="terms_msj"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN terms_msj_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_msj" data-fieldname="terms_msj" data-default-width >
+{$terms_msj_value}
+</span>
+{END terms_msj_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+									{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$terms_acepta_class}	"
+
+			data-field="terms_acepta"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN terms_acepta_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_acepta" data-fieldname="terms_acepta" data-default-width >
+{$terms_acepta_value}
+</span>
+{END terms_acepta_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+									{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_profesion_class}	"
+
+			data-field="dem_profesion"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dem_profesion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_profesion" data-fieldname="dem_profesion" data-default-width >
+{$dem_profesion_value}
+</span>
+{END dem_profesion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+									{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_sup_jerarquico_class}	"
+
+			data-field="contractor_sup_jerarquico"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_sup_jerarquico_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_sup_jerarquico" data-fieldname="contractor_sup_jerarquico" data-default-width >
+{$contractor_sup_jerarquico_value}
+</span>
+{END contractor_sup_jerarquico_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+									{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_dependencia_class}	"
+
+			data-field="contractor_dependencia"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependencia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependencia" data-fieldname="contractor_dependencia" data-default-width >
+{$contractor_dependencia_value}
+</span>
+{END contractor_dependencia_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+									{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$signature_class}	"
+
+			data-field="signature"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN signature_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="signature" data-fieldname="signature" data-default-width >
+{$signature_value}
+</span>
+{END signature_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+									{BEGIN cellblock_grid_cell_field52}
+	<td
+	
+	{$cell_grid_cell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$pin_class}	"
+
+			data-field="pin"
+	
+	data-cellId="grid_cell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pin" data-fieldname="pin" data-default-width >
+{$pin_value}
+</span>
+{END pin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field52}
+									{BEGIN cellblock_grid_cell_field53}
+	<td
+	
+	{$cell_grid_cell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_fecha_nacimiento_mun_class}	"
+
+			data-field="ct_fecha_nacimiento_mun"
+	
+	data-cellId="grid_cell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_fecha_nacimiento_mun_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento_mun" data-fieldname="ct_fecha_nacimiento_mun" data-default-width >
+{$ct_fecha_nacimiento_mun_value}
+</span>
+{END ct_fecha_nacimiento_mun_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field53}
+									{BEGIN cellblock_grid_cell_field54}
+	<td
+	
+	{$cell_grid_cell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$factura_class}	"
+
+			data-field="factura"
+	
+	data-cellId="grid_cell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN factura_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="factura" data-fieldname="factura" data-default-width >
+{$factura_value}
+</span>
+{END factura_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field54}
+									{BEGIN cellblock_grid_cell_field55}
+	<td
+	
+	{$cell_grid_cell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$actividad_economica_class}	"
+
+			data-field="actividad_economica"
+	
+	data-cellId="grid_cell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN actividad_economica_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="actividad_economica" data-fieldname="actividad_economica" data-default-width >
+{$actividad_economica_value}
+</span>
+{END actividad_economica_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field55}
+									{BEGIN cellblock_grid_cell_field56}
+	<td
+	
+	{$cell_grid_cell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$responsabilidades_class}	"
+
+			data-field="responsabilidades"
+	
+	data-cellId="grid_cell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN responsabilidades_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="responsabilidades" data-fieldname="responsabilidades" data-default-width >
+{$responsabilidades_value}
+</span>
+{END responsabilidades_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field56}
+									{BEGIN cellblock_grid_cell_field57}
+	<td
+	
+	{$cell_grid_cell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reset_token_class}	"
+
+			data-field="reset_token"
+	
+	data-cellId="grid_cell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reset_token_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reset_token" data-fieldname="reset_token" data-default-width >
+{$reset_token_value}
+</span>
+{END reset_token_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field57}
+									{BEGIN cellblock_grid_cell_field58}
+	<td
+	
+	{$cell_grid_cell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reset_date_class}	"
+
+			data-field="reset_date"
+	
+	data-cellId="grid_cell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reset_date_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reset_date" data-fieldname="reset_date" data-default-width >
+{$reset_date_value}
+</span>
+{END reset_date_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field58}
+							</tr>
+										
+											{END grid_row}
+					</tbody>
+													<tfoot>
+			
+																																			<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+									{$gridFooter_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+									{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+									{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_id_class}	"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+									{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_type_class}	"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+									{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_doc_id_class}	"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_doc_dv_class}	"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_pwd_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_image_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_name_class}	"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_lname_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+									{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_nombresfull_class}	"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+									{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$enlace_sigep_class}	"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+									{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_email_class}	"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+									{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_email_mincit_class}	"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+									{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_address_class}	"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+									{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_phone_class}	"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+									{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_mobile_class}	"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+									{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_city_class}	"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+									{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_name_class}	"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+									{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_cta_type_class}	"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+									{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$bank_cta_number_class}	"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+									{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$iva_regimen_class}	"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+									{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_update_class}	"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+									{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_user_class}	"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+									{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_date_class}	"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+									{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_level_class}	"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+									{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_status_class}	"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+									{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sys_last_upd_class}	"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+									{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$groupid_class}	"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+									{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$active_class}	"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+									{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_dependientes_class}	"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+									{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_medicinapre_file_class}	"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+									{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_picmonetaria_file_class}	"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+									{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_decljur_class}	"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+									{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_eps_class}	"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+									{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_fondopensiones_class}	"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+									{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_cajacompensacion_class}	"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+									{BEGIN cellblock_grid_footcell_field35}
+	<td
+	
+	{$cell_grid_footcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_arl_class}	"
+
+	
+	data-cellId="grid_footcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field35}
+									{BEGIN cellblock_grid_footcell_field36}
+	<td
+	
+	{$cell_grid_footcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ubica_dep_class}	"
+
+	
+	data-cellId="grid_footcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field36}
+									{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ubica_extension_class}	"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+									{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_genero_class}	"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
+									{BEGIN cellblock_grid_footcell_field39}
+	<td
+	
+	{$cell_grid_footcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_ocupacion_class}	"
+
+	
+	data-cellId="grid_footcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field39}
+									{BEGIN cellblock_grid_footcell_field40}
+	<td
+	
+	{$cell_grid_footcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_fecha_nacimiento_class}	"
+
+	
+	data-cellId="grid_footcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field40}
+									{BEGIN cellblock_grid_footcell_field41}
+	<td
+	
+	{$cell_grid_footcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_nacionalidad_class}	"
+
+	
+	data-cellId="grid_footcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field41}
+									{BEGIN cellblock_grid_footcell_field42}
+	<td
+	
+	{$cell_grid_footcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_edad_class}	"
+
+	
+	data-cellId="grid_footcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field42}
+									{BEGIN cellblock_grid_footcell_field43}
+	<td
+	
+	{$cell_grid_footcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_educacion_class}	"
+
+	
+	data-cellId="grid_footcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field43}
+									{BEGIN cellblock_grid_footcell_field44}
+	<td
+	
+	{$cell_grid_footcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_discapacidad_class}	"
+
+	
+	data-cellId="grid_footcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field44}
+									{BEGIN cellblock_grid_footcell_field45}
+	<td
+	
+	{$cell_grid_footcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$emergencia_class}	"
+
+	
+	data-cellId="grid_footcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field45}
+									{BEGIN cellblock_grid_footcell_field46}
+	<td
+	
+	{$cell_grid_footcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$terms_msj_class}	"
+
+	
+	data-cellId="grid_footcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field46}
+									{BEGIN cellblock_grid_footcell_field47}
+	<td
+	
+	{$cell_grid_footcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$terms_acepta_class}	"
+
+	
+	data-cellId="grid_footcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field47}
+									{BEGIN cellblock_grid_footcell_field48}
+	<td
+	
+	{$cell_grid_footcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dem_profesion_class}	"
+
+	
+	data-cellId="grid_footcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field48}
+									{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_sup_jerarquico_class}	"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+									{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contractor_dependencia_class}	"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+									{BEGIN cellblock_grid_footcell_field51}
+	<td
+	
+	{$cell_grid_footcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$signature_class}	"
+
+	
+	data-cellId="grid_footcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field51}
+									{BEGIN cellblock_grid_footcell_field52}
+	<td
+	
+	{$cell_grid_footcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$pin_class}	"
+
+	
+	data-cellId="grid_footcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field52}
+									{BEGIN cellblock_grid_footcell_field53}
+	<td
+	
+	{$cell_grid_footcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ct_fecha_nacimiento_mun_class}	"
+
+	
+	data-cellId="grid_footcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field53}
+									{BEGIN cellblock_grid_footcell_field54}
+	<td
+	
+	{$cell_grid_footcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$factura_class}	"
+
+	
+	data-cellId="grid_footcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field54}
+									{BEGIN cellblock_grid_footcell_field55}
+	<td
+	
+	{$cell_grid_footcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$actividad_economica_class}	"
+
+	
+	data-cellId="grid_footcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field55}
+									{BEGIN cellblock_grid_footcell_field56}
+	<td
+	
+	{$cell_grid_footcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$responsabilidades_class}	"
+
+	
+	data-cellId="grid_footcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field56}
+									{BEGIN cellblock_grid_footcell_field57}
+	<td
+	
+	{$cell_grid_footcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reset_token_class}	"
+
+	
+	data-cellId="grid_footcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field57}
+									{BEGIN cellblock_grid_footcell_field58}
+	<td
+	
+	{$cell_grid_footcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reset_date_class}	"
+
+	
+	data-cellId="grid_footcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field58}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

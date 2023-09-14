@@ -1,0 +1,318 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel hoja_ruta_event_type search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN evento_type_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_type_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="evento_type_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="evento_type_id" data-fieldname="evento_type_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_evento_type_id}">
+		{$label hoja_ruta_event_type evento_type_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_evento_type_id}
+	</div>
+	<div class="r-search-field">
+		{$evento_type_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$evento_type_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END evento_type_id_fieldblock}
+											
+{BEGIN evento_type_group_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_type_group}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="evento_type_group{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="evento_type_group" data-fieldname="evento_type_group" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_evento_type_group}">
+		{$label hoja_ruta_event_type evento_type_group }	</label>
+	<div class="r-search-option">
+		{$searchtype_evento_type_group}
+	</div>
+	<div class="r-search-field">
+		{$evento_type_group_editcontrol}	</div>
+	<div class="r-search-field">
+		{$evento_type_group_editcontrol1}
+	</div>
+	
+</div>
+
+{END evento_type_group_fieldblock}
+											
+{BEGIN evento_group_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_group_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="evento_group_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="evento_group_id" data-fieldname="evento_group_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_evento_group_id}">
+		{$label hoja_ruta_event_type evento_group_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_evento_group_id}
+	</div>
+	<div class="r-search-field">
+		{$evento_group_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$evento_group_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END evento_group_id_fieldblock}
+											
+{BEGIN evento_type_name_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_type_name}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="evento_type_name{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="evento_type_name" data-fieldname="evento_type_name" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_evento_type_name}">
+		{$label hoja_ruta_event_type evento_type_name }	</label>
+	<div class="r-search-option">
+		{$searchtype_evento_type_name}
+	</div>
+	<div class="r-search-field">
+		{$evento_type_name_editcontrol}	</div>
+	<div class="r-search-field">
+		{$evento_type_name_editcontrol1}
+	</div>
+	
+</div>
+
+{END evento_type_name_fieldblock}
+											
+{BEGIN evento_id_rol_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_id_rol_fk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="evento_id_rol_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="evento_id_rol_fk" data-fieldname="evento_id_rol_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_evento_id_rol_fk}">
+		{$label hoja_ruta_event_type evento_id_rol_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_evento_id_rol_fk}
+	</div>
+	<div class="r-search-field">
+		{$evento_id_rol_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$evento_id_rol_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END evento_id_rol_fk_fieldblock}
+											
+{BEGIN evento_type_desc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_type_desc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="evento_type_desc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="evento_type_desc" data-fieldname="evento_type_desc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_evento_type_desc}">
+		{$label hoja_ruta_event_type evento_type_desc }	</label>
+	<div class="r-search-option">
+		{$searchtype_evento_type_desc}
+	</div>
+	<div class="r-search-field">
+		{$evento_type_desc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$evento_type_desc_editcontrol1}
+	</div>
+	
+</div>
+
+{END evento_type_desc_fieldblock}
+											
+{BEGIN actividad_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_actividad_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="actividad_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="actividad_id" data-fieldname="actividad_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_actividad_id}">
+		{$label hoja_ruta_event_type actividad_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_actividad_id}
+	</div>
+	<div class="r-search-field">
+		{$actividad_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$actividad_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END actividad_id_fieldblock}
+											
+{BEGIN evento_ver2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_ver2}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="evento_ver2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="evento_ver2" data-fieldname="evento_ver2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_evento_ver2}">
+		{$label hoja_ruta_event_type evento_ver2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_evento_ver2}
+	</div>
+	<div class="r-search-field">
+		{$evento_ver2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$evento_ver2_editcontrol1}
+	</div>
+	
+</div>
+
+{END evento_ver2_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

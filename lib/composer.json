@@ -1,0 +1,11 @@
+{
+    "require": {
+        "mpdf/mpdf": "^8.0",
+        "spipu/html2pdf": "^5.2",
+        "phpoffice/phpword": "^0.18.3",
+        "setasign/fpdf": "1.8",
+        "mpdf/qrcode": "^1.2",
+        "phpoffice/phpspreadsheet": "^1.5",
+        "php-imap/php-imap": "^3.0"
+    }
+}

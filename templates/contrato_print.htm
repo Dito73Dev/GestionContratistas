@@ -1,0 +1,1133 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-print" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel contrato print}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+			</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div  data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	<div class="r-grid-columns {$rowclass}" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+		{BEGIN grid_vrecord}
+		<div class="panel panel-default" {$recordattrs}>
+									
+			{BEGIN grid_recordheader}
+			<div class="panel-heading">
+						
+				<table data-location="grid" class="header-table">
+					<tbody>
+				 
+												
+						<tr >
+						 
+							{BEGIN cellblock_grid_cell_top}
+	<th
+	
+	{$cell_grid_cell_top}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_cell_top}
+												</tr>
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+											
+					</tbody>
+				</table>
+
+					</div>
+		{END grid_recordheader}
+												
+			<div class="panel-body">					
+						
+				<table data-location="grid" class="bs-fieldsgrid table">
+					<tbody>
+				 
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label}
+	<td
+	
+	{$cell_grid_cell_label}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$pre_contnumero_class}	"
+
+			data-field="pre_contnumero"
+	
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pre_contnumero_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pre_contnumero" data-fieldname="pre_contnumero" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato pre_contnumero }</span>
+			</span>
+	</span>
+{END pre_contnumero_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label}
+						 
+							{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$pre_contnumero_class}	"
+
+			data-field="pre_contnumero"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pre_contnumero_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pre_contnumero" data-fieldname="pre_contnumero" data-default-width >
+{$pre_contnumero_value}
+</span>
+{END pre_contnumero_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+						 
+							{BEGIN cellblock_grid_cell_label1}
+	<td
+	
+	{$cell_grid_cell_label1}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_obligaciones_class}	"
+
+			data-field="cont_obligaciones"
+	
+	data-cellId="grid_cell_label1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_obligaciones_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_obligaciones" data-fieldname="cont_obligaciones" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_obligaciones }</span>
+			</span>
+	</span>
+{END cont_obligaciones_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label1}
+						 
+							{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_obligaciones_class}	"
+
+			data-field="cont_obligaciones"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_obligaciones_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_obligaciones" data-fieldname="cont_obligaciones" data-default-width >
+{$cont_obligaciones_value}
+</span>
+{END cont_obligaciones_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label2}
+	<td
+	
+	{$cell_grid_cell_label2}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$numregistro_class}	"
+
+			data-field="numregistro"
+	
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN numregistro_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numregistro" data-fieldname="numregistro" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato numregistro }</span>
+			</span>
+	</span>
+{END numregistro_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label2}
+						 
+							{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$numregistro_class}	"
+
+			data-field="numregistro"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN numregistro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numregistro" data-fieldname="numregistro" data-default-width >
+{$numregistro_value}
+</span>
+{END numregistro_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+						 
+							{BEGIN cellblock_grid_cell_label3}
+	<td
+	
+	{$cell_grid_cell_label3}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$contnumero_class}	"
+
+			data-field="contnumero"
+	
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contnumero_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label3" {$item_grid_field_label3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contnumero" data-fieldname="contnumero" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato contnumero }</span>
+			</span>
+	</span>
+{END contnumero_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label3}
+						 
+							{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contnumero_class}	"
+
+			data-field="contnumero"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contnumero_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contnumero" data-fieldname="contnumero" data-default-width >
+{$contnumero_value}
+</span>
+{END contnumero_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label4}
+	<td
+	
+	{$cell_grid_cell_label4}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_codrubro_class}	"
+
+			data-field="cont_codrubro"
+	
+	data-cellId="grid_cell_label4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_codrubro_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label4" {$item_grid_field_label4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_codrubro" data-fieldname="cont_codrubro" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_codrubro }</span>
+			</span>
+	</span>
+{END cont_codrubro_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label4}
+						 
+							{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_codrubro_class}	"
+
+			data-field="cont_codrubro"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_codrubro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field4" {$item_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_codrubro" data-fieldname="cont_codrubro" data-default-width >
+{$cont_codrubro_value}
+</span>
+{END cont_codrubro_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+						 
+							{BEGIN cellblock_grid_cell_label5}
+	<td
+	
+	{$cell_grid_cell_label5}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$prenumero_class}	"
+
+			data-field="prenumero"
+	
+	data-cellId="grid_cell_label5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN prenumero_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label5" {$item_grid_field_label5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prenumero" data-fieldname="prenumero" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato prenumero }</span>
+			</span>
+	</span>
+{END prenumero_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label5}
+						 
+							{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$prenumero_class}	"
+
+			data-field="prenumero"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN prenumero_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field5" {$item_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prenumero" data-fieldname="prenumero" data-default-width >
+{$prenumero_value}
+</span>
+{END prenumero_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label6}
+	<td
+	
+	{$cell_grid_cell_label6}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_fecha_inicio_class}	"
+
+			data-field="cont_fecha_inicio"
+	
+	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_inicio_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label6" {$item_grid_field_label6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio" data-fieldname="cont_fecha_inicio" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_fecha_inicio }</span>
+			</span>
+	</span>
+{END cont_fecha_inicio_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label6}
+						 
+							{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_fecha_inicio_class}	"
+
+			data-field="cont_fecha_inicio"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_inicio_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field6" {$item_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio" data-fieldname="cont_fecha_inicio" data-default-width >
+{$cont_fecha_inicio_value}
+</span>
+{END cont_fecha_inicio_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+						 
+							{BEGIN cellblock_grid_cell_label7}
+	<td
+	
+	{$cell_grid_cell_label7}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_catalogo_presupuestal_class}	"
+
+			data-field="cont_catalogo_presupuestal"
+	
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_catalogo_presupuestal_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label7" {$item_grid_field_label7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_catalogo_presupuestal" data-fieldname="cont_catalogo_presupuestal" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_catalogo_presupuestal }</span>
+			</span>
+	</span>
+{END cont_catalogo_presupuestal_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label7}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_catalogo_presupuestal_class}	"
+
+			data-field="cont_catalogo_presupuestal"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_catalogo_presupuestal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field7" {$item_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_catalogo_presupuestal" data-fieldname="cont_catalogo_presupuestal" data-default-width >
+{$cont_catalogo_presupuestal_value}
+</span>
+{END cont_catalogo_presupuestal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label8}
+	<td
+	
+	{$cell_grid_cell_label8}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_valorinicial_class}	"
+
+			data-field="cont_valorinicial"
+	
+	data-cellId="grid_cell_label8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorinicial_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label8" {$item_grid_field_label8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorinicial" data-fieldname="cont_valorinicial" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_valorinicial }</span>
+			</span>
+	</span>
+{END cont_valorinicial_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label8}
+						 
+							{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_valorinicial_class}	"
+
+			data-field="cont_valorinicial"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorinicial_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field8" {$item_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorinicial" data-fieldname="cont_valorinicial" data-default-width >
+{$cont_valorinicial_value}
+</span>
+{END cont_valorinicial_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+						 
+							{BEGIN cellblock_grid_cell_label9}
+	<td
+	
+	{$cell_grid_cell_label9}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_fechafinal_class}	"
+
+			data-field="cont_fechafinal"
+	
+	data-cellId="grid_cell_label9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechafinal_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label9" {$item_grid_field_label9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal" data-fieldname="cont_fechafinal" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_fechafinal }</span>
+			</span>
+	</span>
+{END cont_fechafinal_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label9}
+						 
+							{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_fechafinal_class}	"
+
+			data-field="cont_fechafinal"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechafinal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field9" {$item_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal" data-fieldname="cont_fechafinal" data-default-width >
+{$cont_fechafinal_value}
+</span>
+{END cont_fechafinal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label10}
+	<td
+	
+	{$cell_grid_cell_label10}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_periodicidad_class}	"
+
+			data-field="cont_periodicidad"
+	
+	data-cellId="grid_cell_label10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_periodicidad_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label10" {$item_grid_field_label10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad" data-fieldname="cont_periodicidad" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_periodicidad }</span>
+			</span>
+	</span>
+{END cont_periodicidad_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label10}
+						 
+							{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_periodicidad_class}	"
+
+			data-field="cont_periodicidad"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_periodicidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field10" {$item_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad" data-fieldname="cont_periodicidad" data-default-width >
+{$cont_periodicidad_value}
+</span>
+{END cont_periodicidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+						 
+							{BEGIN cellblock_grid_cell_label11}
+	<td
+	
+	{$cell_grid_cell_label11}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_valormensual_class}	"
+
+			data-field="cont_valormensual"
+	
+	data-cellId="grid_cell_label11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label11" {$item_grid_field_label11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual" data-fieldname="cont_valormensual" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_valormensual }</span>
+			</span>
+	</span>
+{END cont_valormensual_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label11}
+						 
+							{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_valormensual_class}	"
+
+			data-field="cont_valormensual"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field11" {$item_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual" data-fieldname="cont_valormensual" data-default-width >
+{$cont_valormensual_value}
+</span>
+{END cont_valormensual_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label12}
+	<td
+	
+	{$cell_grid_cell_label12}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_secop_proceso_class}	"
+
+			data-field="cont_secop_proceso"
+	
+	data-cellId="grid_cell_label12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_proceso_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label12" {$item_grid_field_label12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_proceso" data-fieldname="cont_secop_proceso" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_secop_proceso }</span>
+			</span>
+	</span>
+{END cont_secop_proceso_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label12}
+						 
+							{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_secop_proceso_class}	"
+
+			data-field="cont_secop_proceso"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_proceso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field12" {$item_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_proceso" data-fieldname="cont_secop_proceso" data-default-width >
+{$cont_secop_proceso_value}
+</span>
+{END cont_secop_proceso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+						 
+							{BEGIN cellblock_grid_cell_label13}
+	<td
+	
+	{$cell_grid_cell_label13}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_plazo_class}	"
+
+			data-field="cont_plazo"
+	
+	data-cellId="grid_cell_label13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazo_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label13" {$item_grid_field_label13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo" data-fieldname="cont_plazo" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_plazo }</span>
+			</span>
+	</span>
+{END cont_plazo_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label13}
+						 
+							{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_plazo_class}	"
+
+			data-field="cont_plazo"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_plazo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field13" {$item_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo" data-fieldname="cont_plazo" data-default-width >
+{$cont_plazo_value}
+</span>
+{END cont_plazo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label14}
+	<td
+	
+	{$cell_grid_cell_label14}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_secop_enlace_class}	"
+
+			data-field="cont_secop_enlace"
+	
+	data-cellId="grid_cell_label14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_enlace_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label14" {$item_grid_field_label14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace" data-fieldname="cont_secop_enlace" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_secop_enlace }</span>
+			</span>
+	</span>
+{END cont_secop_enlace_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label14}
+						 
+							{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_secop_enlace_class}	"
+
+			data-field="cont_secop_enlace"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_enlace_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field14" {$item_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace" data-fieldname="cont_secop_enlace" data-default-width >
+{$cont_secop_enlace_value}
+</span>
+{END cont_secop_enlace_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+						 
+							{BEGIN cellblock_grid_cell_label15}
+	<td
+	
+	{$cell_grid_cell_label15}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_ano_class}	"
+
+			data-field="cont_ano"
+	
+	data-cellId="grid_cell_label15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_ano_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label15" {$item_grid_field_label15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano" data-fieldname="cont_ano" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_ano }</span>
+			</span>
+	</span>
+{END cont_ano_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label15}
+						 
+							{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_ano_class}	"
+
+			data-field="cont_ano"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_ano_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field15" {$item_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano" data-fieldname="cont_ano" data-default-width >
+{$cont_ano_value}
+</span>
+{END cont_ano_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label16}
+	<td
+	
+	{$cell_grid_cell_label16}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$cont_objeto_class}	"
+
+			data-field="cont_objeto"
+	
+	data-cellId="grid_cell_label16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_objeto_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label16" {$item_grid_field_label16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_objeto" data-fieldname="cont_objeto" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label contrato cont_objeto }</span>
+			</span>
+	</span>
+{END cont_objeto_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label16}
+						 
+							{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$cont_objeto_class}	"
+
+			data-field="cont_objeto"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_objeto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field16" {$item_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_objeto" data-fieldname="cont_objeto" data-default-width >
+{$cont_objeto_value}
+</span>
+{END cont_objeto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+						 
+							{BEGIN cellblock_grid_cell_label17}
+	<td
+	
+	{$cell_grid_cell_label17}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label17}
+						 
+							{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field17}
+												</tr>
+									 
+											
+					</tbody>
+				</table>
+
+				
+			</div>				
+									
+		</div>
+		{END grid_vrecord}
+	{END grid_record}
+	</div>
+
+<div style="clear: both;"></div>
+ 
+	{BEGIN grid_record}
+		 
+{BEGIN details_q_consulta_op}
+{$displayDetailTable_q_consulta_op}
+{END details_q_consulta_op}
+ 
+{BEGIN details_contrato_attached}
+{$displayDetailTable_contrato_attached}
+{END details_contrato_attached}
+	{END grid_record}
+
+
+{END grid_row}
+</div>			
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

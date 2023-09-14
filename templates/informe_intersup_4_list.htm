@@ -1,0 +1,2577 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px"  class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+
+	<div class="panel-heading">
+		<div class="btn-group r-sp-addfield" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group r-sp-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_inf_numerocontrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_numerocontrato}" {$filterRow_attrs_inf_numerocontrato}>
+			<label>{$label informe_intersup_4 inf_numerocontrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_numerocontrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_numerocontrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_numerocontrato}</span>
+						</div>
+		{END searchCtrlBlock_inf_numerocontrato}
+																{BEGIN searchCtrlBlock_hashfirmado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hashfirmado}" {$filterRow_attrs_hashfirmado}>
+			<label>{$label informe_intersup_4 hashfirmado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hashfirmado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hashfirmado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hashfirmado}</span>
+						</div>
+		{END searchCtrlBlock_hashfirmado}
+																{BEGIN searchCtrlBlock_sign_verificacert_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_verificacert_date}" {$filterRow_attrs_sign_verificacert_date}>
+			<label>{$label informe_intersup_4 sign_verificacert_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_verificacert_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_verificacert_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_verificacert_date}</span>
+						</div>
+		{END searchCtrlBlock_sign_verificacert_date}
+																{BEGIN searchCtrlBlock_sign_verificacert_user}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_verificacert_user}" {$filterRow_attrs_sign_verificacert_user}>
+			<label>{$label informe_intersup_4 sign_verificacert_user }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_verificacert_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_verificacert_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_verificacert_user}</span>
+						</div>
+		{END searchCtrlBlock_sign_verificacert_user}
+																{BEGIN searchCtrlBlock_sign_verificacert_ip}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_verificacert_ip}" {$filterRow_attrs_sign_verificacert_ip}>
+			<label>{$label informe_intersup_4 sign_verificacert_ip }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_verificacert_ip}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_verificacert_ip}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_verificacert_ip}</span>
+						</div>
+		{END searchCtrlBlock_sign_verificacert_ip}
+																{BEGIN searchCtrlBlock_sign_file}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_file}" {$filterRow_attrs_sign_file}>
+			<label>{$label informe_intersup_4 sign_file }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_file}</span>
+						</div>
+		{END searchCtrlBlock_sign_file}
+																{BEGIN searchCtrlBlock_sign_verificacert}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_verificacert}" {$filterRow_attrs_sign_verificacert}>
+			<label>{$label informe_intersup_4 sign_verificacert }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_verificacert}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_verificacert}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_verificacert}</span>
+						</div>
+		{END searchCtrlBlock_sign_verificacert}
+																{BEGIN searchCtrlBlock_sign_mailnot}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_mailnot}" {$filterRow_attrs_sign_mailnot}>
+			<label>{$label informe_intersup_4 sign_mailnot }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_mailnot}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_mailnot}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_mailnot}</span>
+						</div>
+		{END searchCtrlBlock_sign_mailnot}
+																{BEGIN searchCtrlBlock_sign_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_date}" {$filterRow_attrs_sign_date}>
+			<label>{$label informe_intersup_4 sign_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_date}</span>
+						</div>
+		{END searchCtrlBlock_sign_date}
+																{BEGIN searchCtrlBlock_sign_hash}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sign_hash}" {$filterRow_attrs_sign_hash}>
+			<label>{$label informe_intersup_4 sign_hash }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sign_hash}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sign_hash}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sign_hash}</span>
+						</div>
+		{END searchCtrlBlock_sign_hash}
+																{BEGIN searchCtrlBlock_cert_compare}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_compare}" {$filterRow_attrs_cert_compare}>
+			<label>{$label informe_intersup_4 cert_compare }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_compare}</span>
+						</div>
+		{END searchCtrlBlock_cert_compare}
+																{BEGIN searchCtrlBlock_cert_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_date}" {$filterRow_attrs_cert_date}>
+			<label>{$label informe_intersup_4 cert_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_date}</span>
+						</div>
+		{END searchCtrlBlock_cert_date}
+																{BEGIN searchCtrlBlock_cert_file}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_file}" {$filterRow_attrs_cert_file}>
+			<label>{$label informe_intersup_4 cert_file }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_file}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_file}</span>
+						</div>
+		{END searchCtrlBlock_cert_file}
+																{BEGIN searchCtrlBlock_cert_mail}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_mail}" {$filterRow_attrs_cert_mail}>
+			<label>{$label informe_intersup_4 cert_mail }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_mail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_mail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_mail}</span>
+						</div>
+		{END searchCtrlBlock_cert_mail}
+																{BEGIN searchCtrlBlock_qty_inf_verifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf_verifica}" {$filterRow_attrs_qty_inf_verifica}>
+			<label>{$label informe_intersup_4 qty_inf_verifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf_verifica}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf_verifica}
+																{BEGIN searchCtrlBlock_cont_modifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_modifica}" {$filterRow_attrs_cont_modifica}>
+			<label>{$label informe_intersup_4 cont_modifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_modifica}</span>
+						</div>
+		{END searchCtrlBlock_cont_modifica}
+																{BEGIN searchCtrlBlock_cont_cesion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_cesion}" {$filterRow_attrs_cont_cesion}>
+			<label>{$label informe_intersup_4 cont_cesion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_cesion}</span>
+						</div>
+		{END searchCtrlBlock_cont_cesion}
+																{BEGIN searchCtrlBlock_inf_intersup}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_intersup}" {$filterRow_attrs_inf_intersup}>
+			<label>{$label informe_intersup_4 inf_intersup }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_intersup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_intersup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_intersup}</span>
+						</div>
+		{END searchCtrlBlock_inf_intersup}
+																{BEGIN searchCtrlBlock_cert_mes}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_mes}" {$filterRow_attrs_cert_mes}>
+			<label>{$label informe_intersup_4 cert_mes }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_mes}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_mes}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_mes}</span>
+						</div>
+		{END searchCtrlBlock_cert_mes}
+																{BEGIN searchCtrlBlock_cert_modalidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_modalidad}" {$filterRow_attrs_cert_modalidad}>
+			<label>{$label informe_intersup_4 cert_modalidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_modalidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_modalidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_modalidad}</span>
+						</div>
+		{END searchCtrlBlock_cert_modalidad}
+																{BEGIN searchCtrlBlock_cert_process}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_process}" {$filterRow_attrs_cert_process}>
+			<label>{$label informe_intersup_4 cert_process }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_process}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_process}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_process}</span>
+						</div>
+		{END searchCtrlBlock_cert_process}
+																{BEGIN searchCtrlBlock_inf_supervisoremail}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_supervisoremail}" {$filterRow_attrs_inf_supervisoremail}>
+			<label>{$label informe_intersup_4 inf_supervisoremail }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_supervisoremail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_supervisoremail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_supervisoremail}</span>
+						</div>
+		{END searchCtrlBlock_inf_supervisoremail}
+																{BEGIN searchCtrlBlock_inf_usopresupuestal}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_usopresupuestal}" {$filterRow_attrs_inf_usopresupuestal}>
+			<label>{$label informe_intersup_4 inf_usopresupuestal }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_usopresupuestal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_usopresupuestal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_usopresupuestal}</span>
+						</div>
+		{END searchCtrlBlock_inf_usopresupuestal}
+																{BEGIN searchCtrlBlock_qty_inf_compare}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf_compare}" {$filterRow_attrs_qty_inf_compare}>
+			<label>{$label informe_intersup_4 qty_inf_compare }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf_compare}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf_compare}
+																{BEGIN searchCtrlBlock_qty_inf}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf}" {$filterRow_attrs_qty_inf}>
+			<label>{$label informe_intersup_4 qty_inf }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf}
+																{BEGIN searchCtrlBlock_mun_ejec}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_mun_ejec}" {$filterRow_attrs_mun_ejec}>
+			<label>{$label informe_intersup_4 mun_ejec }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_mun_ejec}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_mun_ejec}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_mun_ejec}</span>
+						</div>
+		{END searchCtrlBlock_mun_ejec}
+																{BEGIN searchCtrlBlock_num_poliza}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_num_poliza}" {$filterRow_attrs_num_poliza}>
+			<label>{$label informe_intersup_4 num_poliza }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_num_poliza}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_num_poliza}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_num_poliza}</span>
+						</div>
+		{END searchCtrlBlock_num_poliza}
+																{BEGIN searchCtrlBlock_url_secop}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_url_secop}" {$filterRow_attrs_url_secop}>
+			<label>{$label informe_intersup_4 url_secop }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_url_secop}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_url_secop}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_url_secop}</span>
+						</div>
+		{END searchCtrlBlock_url_secop}
+																{BEGIN searchCtrlBlock_inf_mail_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_mail_b}" {$filterRow_attrs_inf_mail_b}>
+			<label>{$label informe_intersup_4 inf_mail_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_mail_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_mail_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_mail_b}</span>
+						</div>
+		{END searchCtrlBlock_inf_mail_b}
+																{BEGIN searchCtrlBlock_inf_mail_a}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_mail_a}" {$filterRow_attrs_inf_mail_a}>
+			<label>{$label informe_intersup_4 inf_mail_a }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_mail_a}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_mail_a}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_mail_a}</span>
+						</div>
+		{END searchCtrlBlock_inf_mail_a}
+																{BEGIN searchCtrlBlock_sys_date}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_date}" {$filterRow_attrs_sys_date}>
+			<label>{$label informe_intersup_4 sys_date }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_date}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_date}</span>
+						</div>
+		{END searchCtrlBlock_sys_date}
+																{BEGIN searchCtrlBlock_inf_ultimopago}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_ultimopago}" {$filterRow_attrs_inf_ultimopago}>
+			<label>{$label informe_intersup_4 inf_ultimopago }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_ultimopago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_ultimopago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_ultimopago}</span>
+						</div>
+		{END searchCtrlBlock_inf_ultimopago}
+																{BEGIN searchCtrlBlock_file_verifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_file_verifica}" {$filterRow_attrs_file_verifica}>
+			<label>{$label informe_intersup_4 file_verifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_file_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_file_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_file_verifica}</span>
+						</div>
+		{END searchCtrlBlock_file_verifica}
+																{BEGIN searchCtrlBlock_inf_recomyobserva}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_recomyobserva}" {$filterRow_attrs_inf_recomyobserva}>
+			<label>{$label informe_intersup_4 inf_recomyobserva }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_recomyobserva}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_recomyobserva}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_recomyobserva}</span>
+						</div>
+		{END searchCtrlBlock_inf_recomyobserva}
+																{BEGIN searchCtrlBlock_inf_otrosaspectostecnicos}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_otrosaspectostecnicos}" {$filterRow_attrs_inf_otrosaspectostecnicos}>
+			<label>{$label informe_intersup_4 inf_otrosaspectostecnicos }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_otrosaspectostecnicos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_otrosaspectostecnicos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_otrosaspectostecnicos}</span>
+						</div>
+		{END searchCtrlBlock_inf_otrosaspectostecnicos}
+																{BEGIN searchCtrlBlock_inf_incumplimiento_obs}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_incumplimiento_obs}" {$filterRow_attrs_inf_incumplimiento_obs}>
+			<label>{$label informe_intersup_4 inf_incumplimiento_obs }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_incumplimiento_obs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_incumplimiento_obs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_incumplimiento_obs}</span>
+						</div>
+		{END searchCtrlBlock_inf_incumplimiento_obs}
+																{BEGIN searchCtrlBlock_inf_incumplimiento}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_incumplimiento}" {$filterRow_attrs_inf_incumplimiento}>
+			<label>{$label informe_intersup_4 inf_incumplimiento }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_incumplimiento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_incumplimiento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_incumplimiento}</span>
+						</div>
+		{END searchCtrlBlock_inf_incumplimiento}
+																{BEGIN searchCtrlBlock_inf_declarainconf_obs}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_declarainconf_obs}" {$filterRow_attrs_inf_declarainconf_obs}>
+			<label>{$label informe_intersup_4 inf_declarainconf_obs }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_declarainconf_obs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_declarainconf_obs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_declarainconf_obs}</span>
+						</div>
+		{END searchCtrlBlock_inf_declarainconf_obs}
+																{BEGIN searchCtrlBlock_inf_declarainconf}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_declarainconf}" {$filterRow_attrs_inf_declarainconf}>
+			<label>{$label informe_intersup_4 inf_declarainconf }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_declarainconf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_declarainconf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_declarainconf}</span>
+						</div>
+		{END searchCtrlBlock_inf_declarainconf}
+																{BEGIN searchCtrlBlock_inf_actividades}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_actividades}" {$filterRow_attrs_inf_actividades}>
+			<label>{$label informe_intersup_4 inf_actividades }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_actividades}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_actividades}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_actividades}</span>
+						</div>
+		{END searchCtrlBlock_inf_actividades}
+																{BEGIN searchCtrlBlock_inf_avgejecucion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_avgejecucion}" {$filterRow_attrs_inf_avgejecucion}>
+			<label>{$label informe_intersup_4 inf_avgejecucion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_avgejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_avgejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_avgejecucion}</span>
+						</div>
+		{END searchCtrlBlock_inf_avgejecucion}
+																{BEGIN searchCtrlBlock_inf_dependencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_dependencia}" {$filterRow_attrs_inf_dependencia}>
+			<label>{$label informe_intersup_4 inf_dependencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_dependencia}</span>
+						</div>
+		{END searchCtrlBlock_inf_dependencia}
+																{BEGIN searchCtrlBlock_inf_cargo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_cargo}" {$filterRow_attrs_inf_cargo}>
+			<label>{$label informe_intersup_4 inf_cargo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_cargo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_cargo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_cargo}</span>
+						</div>
+		{END searchCtrlBlock_inf_cargo}
+																{BEGIN searchCtrlBlock_inf_nombre}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_nombre}" {$filterRow_attrs_inf_nombre}>
+			<label>{$label informe_intersup_4 inf_nombre }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_nombre}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_nombre}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_nombre}</span>
+						</div>
+		{END searchCtrlBlock_inf_nombre}
+																{BEGIN searchCtrlBlock_inf_modificacionesplazo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_modificacionesplazo}" {$filterRow_attrs_inf_modificacionesplazo}>
+			<label>{$label informe_intersup_4 inf_modificacionesplazo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_modificacionesplazo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_modificacionesplazo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_modificacionesplazo}</span>
+						</div>
+		{END searchCtrlBlock_inf_modificacionesplazo}
+																{BEGIN searchCtrlBlock_inf_vigencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_vigencia}" {$filterRow_attrs_inf_vigencia}>
+			<label>{$label informe_intersup_4 inf_vigencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_vigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_vigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_vigencia}</span>
+						</div>
+		{END searchCtrlBlock_inf_vigencia}
+																{BEGIN searchCtrlBlock_inf_plazo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_plazo}" {$filterRow_attrs_inf_plazo}>
+			<label>{$label informe_intersup_4 inf_plazo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_plazo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_plazo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_plazo}</span>
+						</div>
+		{END searchCtrlBlock_inf_plazo}
+																{BEGIN searchCtrlBlock_inf_fechacont_f}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_fechacont_f}" {$filterRow_attrs_inf_fechacont_f}>
+			<label>{$label informe_intersup_4 inf_fechacont_f }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_fechacont_f}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_fechacont_f}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_fechacont_f}</span>
+						</div>
+		{END searchCtrlBlock_inf_fechacont_f}
+																{BEGIN searchCtrlBlock_inf_fechacont_i}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_fechacont_i}" {$filterRow_attrs_inf_fechacont_i}>
+			<label>{$label informe_intersup_4 inf_fechacont_i }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_fechacont_i}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_fechacont_i}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_fechacont_i}</span>
+						</div>
+		{END searchCtrlBlock_inf_fechacont_i}
+																{BEGIN searchCtrlBlock_inf_fechasuscripcion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_fechasuscripcion}" {$filterRow_attrs_inf_fechasuscripcion}>
+			<label>{$label informe_intersup_4 inf_fechasuscripcion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_fechasuscripcion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_fechasuscripcion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_fechasuscripcion}</span>
+						</div>
+		{END searchCtrlBlock_inf_fechasuscripcion}
+																{BEGIN searchCtrlBlock_inf_objeto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_objeto}" {$filterRow_attrs_inf_objeto}>
+			<label>{$label informe_intersup_4 inf_objeto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_objeto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_objeto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_objeto}</span>
+						</div>
+		{END searchCtrlBlock_inf_objeto}
+																{BEGIN searchCtrlBlock_inf_rubroname}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_rubroname}" {$filterRow_attrs_inf_rubroname}>
+			<label>{$label informe_intersup_4 inf_rubroname }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_rubroname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_rubroname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_rubroname}</span>
+						</div>
+		{END searchCtrlBlock_inf_rubroname}
+																{BEGIN searchCtrlBlock_inf_rubrocode}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_rubrocode}" {$filterRow_attrs_inf_rubrocode}>
+			<label>{$label informe_intersup_4 inf_rubrocode }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_rubrocode}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_rubrocode}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_rubrocode}</span>
+						</div>
+		{END searchCtrlBlock_inf_rubrocode}
+																{BEGIN searchCtrlBlock_inf_rp}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_rp}" {$filterRow_attrs_inf_rp}>
+			<label>{$label informe_intersup_4 inf_rp }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_rp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_rp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_rp}</span>
+						</div>
+		{END searchCtrlBlock_inf_rp}
+																{BEGIN searchCtrlBlock_inf_cdp}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_cdp}" {$filterRow_attrs_inf_cdp}>
+			<label>{$label informe_intersup_4 inf_cdp }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_cdp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_cdp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_cdp}</span>
+						</div>
+		{END searchCtrlBlock_inf_cdp}
+																{BEGIN searchCtrlBlock_inf_adicionreduc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_adicionreduc}" {$filterRow_attrs_inf_adicionreduc}>
+			<label>{$label informe_intersup_4 inf_adicionreduc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_adicionreduc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_adicionreduc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_adicionreduc}</span>
+						</div>
+		{END searchCtrlBlock_inf_adicionreduc}
+																{BEGIN searchCtrlBlock_inf_valorcontrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_valorcontrato}" {$filterRow_attrs_inf_valorcontrato}>
+			<label>{$label informe_intersup_4 inf_valorcontrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_valorcontrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_valorcontrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_valorcontrato}</span>
+						</div>
+		{END searchCtrlBlock_inf_valorcontrato}
+																{BEGIN searchCtrlBlock_inf_prenum}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_prenum}" {$filterRow_attrs_inf_prenum}>
+			<label>{$label informe_intersup_4 inf_prenum }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_prenum}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_prenum}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_prenum}</span>
+						</div>
+		{END searchCtrlBlock_inf_prenum}
+																{BEGIN searchCtrlBlock_inf_periodicidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_periodicidad}" {$filterRow_attrs_inf_periodicidad}>
+			<label>{$label informe_intersup_4 inf_periodicidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_periodicidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_periodicidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_periodicidad}</span>
+						</div>
+		{END searchCtrlBlock_inf_periodicidad}
+																{BEGIN searchCtrlBlock_inf_fechapresenta}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_fechapresenta}" {$filterRow_attrs_inf_fechapresenta}>
+			<label>{$label informe_intersup_4 inf_fechapresenta }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_fechapresenta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_fechapresenta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_fechapresenta}</span>
+						</div>
+		{END searchCtrlBlock_inf_fechapresenta}
+																{BEGIN searchCtrlBlock_id_cont_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_cont_fk}" {$filterRow_attrs_id_cont_fk}>
+			<label>{$label informe_intersup_4 id_cont_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_cont_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_cont_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_cont_fk}</span>
+						</div>
+		{END searchCtrlBlock_id_cont_fk}
+																{BEGIN searchCtrlBlock_inf_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_id}" {$filterRow_attrs_inf_id}>
+			<label>{$label informe_intersup_4 inf_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_id}</span>
+						</div>
+		{END searchCtrlBlock_inf_id}
+																{BEGIN searchCtrlBlock_inf_estado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_estado}" {$filterRow_attrs_inf_estado}>
+			<label>{$label informe_intersup_4 inf_estado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_estado}</span>
+						</div>
+		{END searchCtrlBlock_inf_estado}
+																{BEGIN searchCtrlBlock_inf_nombrecontratista}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_nombrecontratista}" {$filterRow_attrs_inf_nombrecontratista}>
+			<label>{$label informe_intersup_4 inf_nombrecontratista }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_nombrecontratista}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_nombrecontratista}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_nombrecontratista}</span>
+						</div>
+		{END searchCtrlBlock_inf_nombrecontratista}
+																{BEGIN searchCtrlBlock_inf_hash}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_hash}" {$filterRow_attrs_inf_hash}>
+			<label>{$label informe_intersup_4 inf_hash }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_hash}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_hash}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_hash}</span>
+						</div>
+		{END searchCtrlBlock_inf_hash}
+																{BEGIN searchCtrlBlock_inf_fecharep_i}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_fecharep_i}" {$filterRow_attrs_inf_fecharep_i}>
+			<label>{$label informe_intersup_4 inf_fecharep_i }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_fecharep_i}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_fecharep_i}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_fecharep_i}</span>
+						</div>
+		{END searchCtrlBlock_inf_fecharep_i}
+																{BEGIN searchCtrlBlock_inf_fecharep_f}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_fecharep_f}" {$filterRow_attrs_inf_fecharep_f}>
+			<label>{$label informe_intersup_4 inf_fecharep_f }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_fecharep_f}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_fecharep_f}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_fecharep_f}</span>
+						</div>
+		{END searchCtrlBlock_inf_fecharep_f}
+																{BEGIN searchCtrlBlock_inf_doccontratista}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_doccontratista}" {$filterRow_attrs_inf_doccontratista}>
+			<label>{$label informe_intersup_4 inf_doccontratista }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_doccontratista}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_doccontratista}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_doccontratista}</span>
+						</div>
+		{END searchCtrlBlock_inf_doccontratista}
+																{BEGIN searchCtrlBlock_inf_consecutivo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_consecutivo}" {$filterRow_attrs_inf_consecutivo}>
+			<label>{$label informe_intersup_4 inf_consecutivo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_consecutivo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_consecutivo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_consecutivo}</span>
+						</div>
+		{END searchCtrlBlock_inf_consecutivo}
+																{BEGIN searchCtrlBlock_inf_anio}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_anio}" {$filterRow_attrs_inf_anio}>
+			<label>{$label informe_intersup_4 inf_anio }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_anio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_anio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_anio}</span>
+						</div>
+		{END searchCtrlBlock_inf_anio}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="informe_intersup_4_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="informe_intersup_4_add.php{$stateLink_full}" >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$inlineaddlink_attrs} >
+							Añadir nuevo			</a>
+</span>
+{END inlineadd_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+	 
+		<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<div class="filterPanelContainer {$filterPanelStateClass}" 
+					data-horizontal
+			>
+	<!-- Begin Filter panel content -->
+
+
+
+
+
+
+{BEGIN filter_control_inf_anio}
+
+	<div class="dropdown filter-field filter-inf_anio-container" {BEGIN filter_selected_inf_anio} data-selected {END filter_selected_inf_anio}>
+		<div class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+							<input class="filter-selectAll-inf_anio" type="checkbox" name="selectAll" {$selectAll_attrs_inf_anio} />
+						{BEGIN clearLink_inf_anio}
+			<a href="#" class="filter-clear filter-clear-inf_anio" title="borrar">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_inf_anio}
+			<span class="r-filter-field">{$label informe_intersup_4 inf_anio }				{BEGIN filter_selected_inf_anio}:{END filter_selected_inf_anio}
+			</span>
+			{BEGIN filter_selected_inf_anio}
+			<span class="r-filter-value">{$filtervalue_inf_anio}</span>
+			{END filter_selected_inf_anio}
+			
+			<span class="caret"></span>
+		</div>
+		<ul class="dropdown-menu">
+					{BEGIN filterCtrlBlock_inf_anio}
+		<li class=" filter-values filter-values-inf_anio  {$visibilityClass_inf_anio}">
+			{$inf_anio_filter}
+						
+					</li>
+		{END filterCtrlBlock_inf_anio}
+
+			{BEGIN filter_button_showmore_inf_anio}
+		<li class=" filter-show-more {$collapsedClass_inf_anio} {$showMoreBtnClass_inf_anio}">
+			<a class="filter-show-more-link filterShowMore_inf_anio" href="#">{$show_n_more_inf_anio}</a>
+		</li>
+		{END filter_button_showmore_inf_anio}
+	
+
+
+	
+
+			{BEGIN filter_button_multiselect_inf_anio}
+		<li class="filter-multiselect  filter-field-btn {$collapsedClass_inf_anio}">
+			<a href="#" class="filter-inf_anio-btn-multiselect filter-apply-inf_anio" {$filterbutton_attrs_inf_anio}>Multiselección</a>
+		</li>
+		{END filter_button_multiselect_inf_anio}
+			</ul>
+	</div>
+
+{END filter_control_inf_anio}
+
+
+
+	<!-- End Filter panel content -->
+	</div>
+</div>			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="informe_intersup_4_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="informe_intersup_4_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Detalles de impresión	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_informe_intersup_oe_contratista}
+			<div>
+				<label for="printDetailsinforme_intersup_oe_contratista{$id}">
+					<input type="checkbox" value="informe_intersup_oe_contratista" id="printDetailsinforme_intersup_oe_contratista{$id}" checked>
+					Obligaciones Específicas				</label>
+			</div>
+			{END print_details_informe_intersup_oe_contratista}
+														{BEGIN print_details_informe_intersup_anexos_contratista}
+			<div>
+				<label for="printDetailsinforme_intersup_anexos_contratista{$id}">
+					<input type="checkbox" value="informe_intersup_anexos_contratista" id="printDetailsinforme_intersup_anexos_contratista{$id}" checked>
+					Anexos al informe				</label>
+			</div>
+			{END print_details_informe_intersup_anexos_contratista}
+														{BEGIN print_details_informe_intersup_oe}
+			<div>
+				<label for="printDetailsinforme_intersup_oe{$id}">
+					<input type="checkbox" value="informe_intersup_oe" id="printDetailsinforme_intersup_oe{$id}" checked>
+					Informe Intersup Oe				</label>
+			</div>
+			{END print_details_informe_intersup_oe}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+			 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c" data-pageid="{$pageid}"	{$cell_above-grid_c}
+	class=" r-ori-vert			col-md-6
+	
+">
+			</div>			 
+				<div 
+	data-cellId="above-grid_c3" data-pageid="{$pageid}"	{$cell_above-grid_c3}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+			</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_consecutivo"]:before {
+		content: "{$label informe_intersup_4 inf_consecutivo}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_hash"]:before {
+		content: "{$label informe_intersup_4 inf_hash}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_estado"]:before {
+		content: "{$label informe_intersup_4 inf_estado}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_fecharep_i"]:before {
+		content: "{$label informe_intersup_4 inf_fecharep_i}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_fecharep_f"]:before {
+		content: "{$label informe_intersup_4 inf_fecharep_f}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_numerocontrato"]:before {
+		content: "{$label informe_intersup_4 inf_numerocontrato}";
+	}
+																																																									[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="hashfirmado"]:before {
+		content: "{$label informe_intersup_4 hashfirmado}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_usopresupuestal"]:before {
+		content: "{$label informe_intersup_4 inf_usopresupuestal}";
+	}
+					}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
+	cellpadding="0"
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+			
+																														<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
+									{$gridHeader_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+									{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+									{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+									{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hashfirmado_class}	"
+
+			data-field="hashfirmado"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hashfirmado_fieldheadercolumn}
+	{BEGIN hashfirmado_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hashfirmado" data-fieldname="hashfirmado" 
+
+			{$hashfirmado_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 hashfirmado }</span>
+					{$arrow_icon_hashfirmado}
+			</span>
+	</span>
+	{END hashfirmado_fieldheader}
+{END hashfirmado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+									{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_consecutivo_class}	"
+
+			data-field="inf_consecutivo"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_consecutivo_fieldheadercolumn}
+	{BEGIN inf_consecutivo_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_consecutivo" data-fieldname="inf_consecutivo" 
+
+			{$inf_consecutivo_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 inf_consecutivo }</span>
+					{$arrow_icon_inf_consecutivo}
+			</span>
+	</span>
+	{END inf_consecutivo_fieldheader}
+{END inf_consecutivo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_hash_class}	"
+
+			data-field="inf_hash"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_hash_fieldheadercolumn}
+	{BEGIN inf_hash_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_hash" data-fieldname="inf_hash" 
+
+			{$inf_hash_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 inf_hash }</span>
+					{$arrow_icon_inf_hash}
+			</span>
+	</span>
+	{END inf_hash_fieldheader}
+{END inf_hash_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_fecharep_i_class}	"
+
+			data-field="inf_fecharep_i"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_fecharep_i_fieldheadercolumn}
+	{BEGIN inf_fecharep_i_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_i" data-fieldname="inf_fecharep_i" 
+
+			{$inf_fecharep_i_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 inf_fecharep_i }</span>
+					{$arrow_icon_inf_fecharep_i}
+			</span>
+	</span>
+	{END inf_fecharep_i_fieldheader}
+{END inf_fecharep_i_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_fecharep_f_class}	"
+
+			data-field="inf_fecharep_f"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_fecharep_f_fieldheadercolumn}
+	{BEGIN inf_fecharep_f_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_f" data-fieldname="inf_fecharep_f" 
+
+			{$inf_fecharep_f_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 inf_fecharep_f }</span>
+					{$arrow_icon_inf_fecharep_f}
+			</span>
+	</span>
+	{END inf_fecharep_f_fieldheader}
+{END inf_fecharep_f_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_numerocontrato_class}	"
+
+			data-field="inf_numerocontrato"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_numerocontrato_fieldheadercolumn}
+	{BEGIN inf_numerocontrato_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_numerocontrato" data-fieldname="inf_numerocontrato" 
+
+			{$inf_numerocontrato_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 inf_numerocontrato }</span>
+					{$arrow_icon_inf_numerocontrato}
+			</span>
+	</span>
+	{END inf_numerocontrato_fieldheader}
+{END inf_numerocontrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_estado_class}	"
+
+			data-field="inf_estado"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_estado_fieldheadercolumn}
+	{BEGIN inf_estado_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_estado" data-fieldname="inf_estado" 
+
+			{$inf_estado_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 inf_estado }</span>
+					{$arrow_icon_inf_estado}
+			</span>
+	</span>
+	{END inf_estado_fieldheader}
+{END inf_estado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_usopresupuestal_class}	"
+
+			data-field="inf_usopresupuestal"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_usopresupuestal_fieldheadercolumn}
+	{BEGIN inf_usopresupuestal_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_usopresupuestal" data-fieldname="inf_usopresupuestal" 
+
+			{$inf_usopresupuestal_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label informe_intersup_4 inf_usopresupuestal }</span>
+					{$arrow_icon_inf_usopresupuestal}
+			</span>
+	</span>
+	{END inf_usopresupuestal_fieldheader}
+{END inf_usopresupuestal_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+							</tr>
+																				
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+							
+																																			<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
+				
+								r-gridrow
+							">
+										<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Cerrar y notificar al supervisor" class="btn btn-warning   
+	" href="informe_intersup_4_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >
+					<span class="fa fa-send-o"></span>
+							Notificar al supervisor			</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Cancelar" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="Cancelar" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn btn-success   
+	" href="informe_intersup_4_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >
+					<span class="glyphicon glyphicon-search"></span>
+										</a>
+</span>
+{END view_link}
+{END view_column}
+	 
+		<span data-itemtype="custom_button_container" data-itemid="custom_button_container" {$item_custom_button_container} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+									Descargas			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="custom_button" data-itemid="custom_button2" {$item_custom_button2} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  id="GenInfCont" href="javascript:void(0)" typeid="ib"  title="" >
+					<span class="fa fa-file-pdf-o"></span>
+				
+		Genera informe de actividades  | SECOP II		
+		</a>
+	</li>
+								<li data-itemtype="custom_button" data-itemid="custom_button" {$item_custom_button} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  id="BtnIS" href="javascript:void(0)" typeid="ib"  title="Informe de supervisión" >
+					<span class="fa fa-file-pdf-o"></span>
+				
+		Informe de supervisión		
+		</a>
+	</li>
+								<li data-itemtype="custom_button" data-itemid="custom_button1" {$item_custom_button1} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  id="BtnCRS" href="javascript:void(0)" typeid="ib"  title="Certificado de Recibo a Satisfacción" >
+					<span class="fa fa-file-pdf-o"></span>
+				
+		CRS		
+		</a>
+	</li>
+					</ul>
+	</span>
+</span>
+	
+	</td>
+										{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+									{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	 
+		{BEGIN dtables_link}
+	<a 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		{$dtables_link_attrs} 
+		class="{$dtables_link_class}" 
+		title="Mostrar detalles"
+				
+	>
+					<span class="fa fa-angle-double-down"></span>
+				Obligaciones y Anexos	</a>
+{END dtables_link}
+	 
+		
+		
+	{BEGIN informe_intersup_oe_contratista_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$informe_intersup_oe_contratista_link_attrs} data-short-details="informe_intersup_oe_contratista"
+		class="{$informe_intersup_oe_contratista_dlink_class}" 
+		title="{$caption informe_intersup_oe_contratista }"			>
+								
+			</a>
+	</span>
+	{END informe_intersup_oe_contratista_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN informe_intersup_oe_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$informe_intersup_oe_link_attrs} data-short-details="informe_intersup_oe"
+		class="{$informe_intersup_oe_dlink_class}" 
+		title="{$caption informe_intersup_oe }"			>
+								
+									{BEGIN informe_intersup_oe_childcount}
+				<span class="details-badge badge informe_intersup_oe_badge" {$informe_intersup_oe_childnumber_attr}>
+					{$informe_intersup_oe_childnumber}				
+				</span>
+				{END informe_intersup_oe_childcount}
+						</a>
+	</span>
+	{END informe_intersup_oe_dtable_link}
+
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
+									{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hashfirmado_class}	"
+
+			data-field="hashfirmado"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hashfirmado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hashfirmado" data-fieldname="hashfirmado" data-default-width >
+{$hashfirmado_value}
+</span>
+{END hashfirmado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_consecutivo_class}	"
+
+			data-field="inf_consecutivo"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_consecutivo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_consecutivo" data-fieldname="inf_consecutivo" data-default-width >
+{$inf_consecutivo_value}
+</span>
+{END inf_consecutivo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_hash_class}	"
+
+			data-field="inf_hash"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_hash_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_hash" data-fieldname="inf_hash" data-default-width >
+{$inf_hash_value}
+</span>
+{END inf_hash_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_fecharep_i_class}	"
+
+			data-field="inf_fecharep_i"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_fecharep_i_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_i" data-fieldname="inf_fecharep_i" data-default-width >
+{$inf_fecharep_i_value}
+</span>
+{END inf_fecharep_i_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_fecharep_f_class}	"
+
+			data-field="inf_fecharep_f"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_fecharep_f_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_f" data-fieldname="inf_fecharep_f" data-default-width >
+{$inf_fecharep_f_value}
+</span>
+{END inf_fecharep_f_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_numerocontrato_class}	"
+
+			data-field="inf_numerocontrato"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_numerocontrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_numerocontrato" data-fieldname="inf_numerocontrato" data-default-width >
+{$inf_numerocontrato_value}
+</span>
+{END inf_numerocontrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_estado_class}	"
+
+			data-field="inf_estado"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_estado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_estado" data-fieldname="inf_estado" data-default-width >
+{$inf_estado_value}
+</span>
+{END inf_estado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_usopresupuestal_class}	"
+
+			data-field="inf_usopresupuestal"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN inf_usopresupuestal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_usopresupuestal" data-fieldname="inf_usopresupuestal" data-default-width >
+{$inf_usopresupuestal_value}
+</span>
+{END inf_usopresupuestal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+							</tr>
+											<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+				
+							">
+									{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+					<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="informe_intersup_oe_contratista,informe_intersup_anexos_contratista,informe_intersup_oe"
+			data-details-informe_intersup_oe_contratista			data-details-informe_intersup_anexos_contratista			data-details-informe_intersup_oe	>
+		<span data-details-inside data-short-table="informe_intersup_oe_contratista">
+			</span>
+		<span data-details-inside data-short-table="informe_intersup_anexos_contratista">
+			</span>
+		<span data-details-inside data-short-table="informe_intersup_oe">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	 
+			 
+			
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+										
+											{END grid_row}
+					</tbody>
+													<tfoot>
+			
+																																													<tr {$rowattrs} {$row_grid_3} class="{$rowclass}
+									{$gridFooter_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+									{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+									{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+									{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hashfirmado_class}	"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+									{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_consecutivo_class}	"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+									{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_hash_class}	"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_fecharep_i_class}	"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_fecharep_f_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_numerocontrato_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_estado_class}	"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$inf_usopresupuestal_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_4_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

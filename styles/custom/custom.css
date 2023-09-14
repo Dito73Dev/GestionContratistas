@@ -1,0 +1,12 @@
+body.function-login {
+height:100%;
+background:transparent url("../../../background/thumbnail_103.jpg") no-repeat center center fixed;
+background-size:cover;
+}
+.function-login .r-panel-page > * {
+background:opacity: 0.5;
+}
+
+.swal2-container {
+  zoom: 1.5;
+} 

@@ -1,0 +1,2028 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px"  class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+
+	<div class="panel-heading">
+		<div class="btn-group r-sp-addfield" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group r-sp-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_etapa}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_etapa}" {$filterRow_attrs_etapa}>
+			<label>{$label hoja_ruta_2020_trpn_jur etapa }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_etapa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_etapa}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_etapa}</span>
+						</div>
+		{END searchCtrlBlock_etapa}
+																{BEGIN searchCtrlBlock_uej}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_uej}" {$filterRow_attrs_uej}>
+			<label>{$label hoja_ruta_2020_trpn_jur uej }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_uej}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_uej}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_uej}</span>
+						</div>
+		{END searchCtrlBlock_uej}
+																{BEGIN searchCtrlBlock_supervisor_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_supervisor_email}" {$filterRow_attrs_supervisor_email}>
+			<label>{$label hoja_ruta_2020_trpn_jur supervisor_email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_supervisor_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_supervisor_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_supervisor_email}</span>
+						</div>
+		{END searchCtrlBlock_supervisor_email}
+																{BEGIN searchCtrlBlock_user_from}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_user_from}" {$filterRow_attrs_user_from}>
+			<label>{$label hoja_ruta_2020_trpn_jur user_from }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_user_from}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_user_from}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_user_from}</span>
+						</div>
+		{END searchCtrlBlock_user_from}
+																{BEGIN searchCtrlBlock_tercero_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tercero_email}" {$filterRow_attrs_tercero_email}>
+			<label>{$label hoja_ruta_2020_trpn_jur tercero_email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tercero_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tercero_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tercero_email}</span>
+						</div>
+		{END searchCtrlBlock_tercero_email}
+																{BEGIN searchCtrlBlock_sys_user}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_user}" {$filterRow_attrs_sys_user}>
+			<label>{$label hoja_ruta_2020_trpn_jur sys_user }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_user}</span>
+						</div>
+		{END searchCtrlBlock_sys_user}
+																{BEGIN searchCtrlBlock_sys_fecha_reg}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sys_fecha_reg}" {$filterRow_attrs_sys_fecha_reg}>
+			<label>{$label hoja_ruta_2020_trpn_jur sys_fecha_reg }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sys_fecha_reg}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sys_fecha_reg}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sys_fecha_reg}</span>
+						</div>
+		{END searchCtrlBlock_sys_fecha_reg}
+																{BEGIN searchCtrlBlock_not_mail}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_not_mail}" {$filterRow_attrs_not_mail}>
+			<label>{$label hoja_ruta_2020_trpn_jur not_mail }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_not_mail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_not_mail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_not_mail}</span>
+						</div>
+		{END searchCtrlBlock_not_mail}
+																{BEGIN searchCtrlBlock_last_act_user}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_last_act_user}" {$filterRow_attrs_last_act_user}>
+			<label>{$label hoja_ruta_2020_trpn_jur last_act_user }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_last_act_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_last_act_user}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_last_act_user}</span>
+						</div>
+		{END searchCtrlBlock_last_act_user}
+																{BEGIN searchCtrlBlock_id_informe_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_informe_fk}" {$filterRow_attrs_id_informe_fk}>
+			<label>{$label hoja_ruta_2020_trpn_jur id_informe_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_informe_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_informe_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_informe_fk}</span>
+						</div>
+		{END searchCtrlBlock_id_informe_fk}
+																{BEGIN searchCtrlBlock_id_cont_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_cont_fk}" {$filterRow_attrs_id_cont_fk}>
+			<label>{$label hoja_ruta_2020_trpn_jur id_cont_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_cont_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_cont_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_cont_fk}</span>
+						</div>
+		{END searchCtrlBlock_id_cont_fk}
+																{BEGIN searchCtrlBlock_hr_valor}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hr_valor}" {$filterRow_attrs_hr_valor}>
+			<label>{$label hoja_ruta_2020_trpn_jur hr_valor }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hr_valor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hr_valor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hr_valor}</span>
+						</div>
+		{END searchCtrlBlock_hr_valor}
+																{BEGIN searchCtrlBlock_hr_nit_contra_ta}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hr_nit_contra_ta}" {$filterRow_attrs_hr_nit_contra_ta}>
+			<label>{$label hoja_ruta_2020_trpn_jur hr_nit_contra_ta }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hr_nit_contra_ta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hr_nit_contra_ta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hr_nit_contra_ta}</span>
+						</div>
+		{END searchCtrlBlock_hr_nit_contra_ta}
+																{BEGIN searchCtrlBlock_hr_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hr_id}" {$filterRow_attrs_hr_id}>
+			<label>{$label hoja_ruta_2020_trpn_jur hr_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hr_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hr_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hr_id}</span>
+						</div>
+		{END searchCtrlBlock_hr_id}
+																{BEGIN searchCtrlBlock_hr_fechaingreso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hr_fechaingreso}" {$filterRow_attrs_hr_fechaingreso}>
+			<label>{$label hoja_ruta_2020_trpn_jur hr_fechaingreso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hr_fechaingreso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hr_fechaingreso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hr_fechaingreso}</span>
+						</div>
+		{END searchCtrlBlock_hr_fechaingreso}
+																{BEGIN searchCtrlBlock_hr_concepto_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hr_concepto_id}" {$filterRow_attrs_hr_concepto_id}>
+			<label>{$label hoja_ruta_2020_trpn_jur hr_concepto_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hr_concepto_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hr_concepto_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hr_concepto_id}</span>
+						</div>
+		{END searchCtrlBlock_hr_concepto_id}
+																{BEGIN searchCtrlBlock_hr_asunto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hr_asunto}" {$filterRow_attrs_hr_asunto}>
+			<label>{$label hoja_ruta_2020_trpn_jur hr_asunto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hr_asunto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hr_asunto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hr_asunto}</span>
+						</div>
+		{END searchCtrlBlock_hr_asunto}
+																{BEGIN searchCtrlBlock_hr_anio}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hr_anio}" {$filterRow_attrs_hr_anio}>
+			<label>{$label hoja_ruta_2020_trpn_jur hr_anio }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hr_anio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hr_anio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hr_anio}</span>
+						</div>
+		{END searchCtrlBlock_hr_anio}
+																{BEGIN searchCtrlBlock_evento_type_id_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_evento_type_id_fk}" {$filterRow_attrs_evento_type_id_fk}>
+			<label>{$label hoja_ruta_2020_trpn_jur evento_type_id_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_evento_type_id_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_evento_type_id_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_evento_type_id_fk}</span>
+						</div>
+		{END searchCtrlBlock_evento_type_id_fk}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Reiniciar</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="filter_panel" {$item_filter_panel} data-topcell-item-type="filter_panel" >
+				<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<div class="filterPanelContainer {$filterPanelStateClass}" 
+			>
+	<!-- Begin Filter panel content -->
+
+
+
+
+
+
+{BEGIN filter_control_hr_anio}
+
+	<div class="panel panel-info filter-field filter-hr_anio-container">
+		<div class="panel-heading filter-expander">
+													<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>
+
+					<input class="filter-selectAll-hr_anio" type="checkbox" name="selectAll" {$selectAll_attrs_hr_anio} />
+		
+			{BEGIN clearLink_hr_anio}
+			<a href="#" class="filter-clear filter-clear-hr_anio" title="borrar">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_hr_anio}
+			{$label hoja_ruta_2020_trpn_jur hr_anio }		</div>
+		<ul class="list-group">
+					{BEGIN filterCtrlBlock_hr_anio}
+		<li class="list-group-item filter-values filter-values-hr_anio {$collapsedClass_hr_anio} {$visibilityClass_hr_anio}">
+			{$hr_anio_filter}
+						
+					</li>
+		{END filterCtrlBlock_hr_anio}
+
+			{BEGIN filter_button_showmore_hr_anio}
+		<li class="list-group-item filter-show-more {$collapsedClass_hr_anio} {$showMoreBtnClass_hr_anio}">
+			<a class="filter-show-more-link filterShowMore_hr_anio" href="#">{$show_n_more_hr_anio}</a>
+		</li>
+		{END filter_button_showmore_hr_anio}
+	
+
+
+	
+
+			{BEGIN filter_button_multiselect_hr_anio}
+		<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_hr_anio}">
+			<a href="#" class="filter-hr_anio-btn-multiselect filter-apply-hr_anio" {$filterbutton_attrs_hr_anio}>Multiselección</a>
+		</li>
+		{END filter_button_multiselect_hr_anio}
+			</ul>
+	</div>
+
+{END filter_control_hr_anio}
+
+
+
+	<!-- End Filter panel content -->
+	</div>
+</div>			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Reiniciar">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="hoja_ruta_2020_trpn_jur_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="hoja_ruta_2020_trpn_jur_import.php{$stateLink_full}"  title="" >
+				
+		Importar		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success   
+	" {$addlink_attrs} href="hoja_ruta_2020_trpn_jur_add.php{$stateLink_full}" data-popup >
+					<span class="fa fa-plus-circle"></span>
+							Radicar solicitud de pago			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="hoja_ruta_2020_trpn_jur_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="hoja_ruta_2020_trpn_jur_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Detalles de impresión	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_informe_intersup_anexos_contratista}
+			<div>
+				<label for="printDetailsinforme_intersup_anexos_contratista{$id}">
+					<input type="checkbox" value="informe_intersup_anexos_contratista" id="printDetailsinforme_intersup_anexos_contratista{$id}" checked>
+					Anexos al informe				</label>
+			</div>
+			{END print_details_informe_intersup_anexos_contratista}
+														{BEGIN print_details_hoja_ruta_2020_tracking}
+			<div>
+				<label for="printDetailshoja_ruta_2020_tracking{$id}">
+					<input type="checkbox" value="hoja_ruta_2020_tracking" id="printDetailshoja_ruta_2020_tracking{$id}" checked>
+					Historial				</label>
+			</div>
+			{END print_details_hoja_ruta_2020_tracking}
+														{BEGIN print_details_hoja_ruta_2020_files}
+			<div>
+				<label for="printDetailshoja_ruta_2020_files{$id}">
+					<input type="checkbox" value="hoja_ruta_2020_files" id="printDetailshoja_ruta_2020_files{$id}" checked>
+					Otros anexos				</label>
+			</div>
+			{END print_details_hoja_ruta_2020_files}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="hr_id"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur hr_id}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="hr_nit_contra_ta"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur hr_nit_contra_ta}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_cont_fk"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur id_cont_fk}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_informe_fk"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur id_informe_fk}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="hr_asunto"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur hr_asunto}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="hr_valor"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur hr_valor}";
+	}
+								[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="etapa"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur etapa}";
+	}
+							[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sysdate"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur sysdate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="supervisor_email"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur supervisor_email}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="uej"]:before {
+		content: "{$label hoja_ruta_2020_trpn_jur uej}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
+	cellpadding="0"
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+			
+																														<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
+									{$gridHeader_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+									{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+									{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+									{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_id_class}	"
+
+			data-field="hr_id"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_id_fieldheadercolumn}
+	{BEGIN hr_id_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_id" data-fieldname="hr_id" 
+
+			{$hr_id_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur hr_id }</span>
+					{$arrow_icon_hr_id}
+			</span>
+	</span>
+	{END hr_id_fieldheader}
+{END hr_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+									{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_cont_fk_class}	"
+
+			data-field="id_cont_fk"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_cont_fk_fieldheadercolumn}
+	{BEGIN id_cont_fk_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cont_fk" data-fieldname="id_cont_fk" 
+
+			{$id_cont_fk_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur id_cont_fk }</span>
+					{$arrow_icon_id_cont_fk}
+			</span>
+	</span>
+	{END id_cont_fk_fieldheader}
+{END id_cont_fk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_informe_fk_class}	"
+
+			data-field="id_informe_fk"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_informe_fk_fieldheadercolumn}
+	{BEGIN id_informe_fk_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_informe_fk" data-fieldname="id_informe_fk" 
+
+			{$id_informe_fk_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur id_informe_fk }</span>
+					{$arrow_icon_id_informe_fk}
+			</span>
+	</span>
+	{END id_informe_fk_fieldheader}
+{END id_informe_fk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_nit_contra_ta_class}	"
+
+			data-field="hr_nit_contra_ta"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_nit_contra_ta_fieldheadercolumn}
+	{BEGIN hr_nit_contra_ta_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_nit_contra_ta" data-fieldname="hr_nit_contra_ta" 
+
+			{$hr_nit_contra_ta_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur hr_nit_contra_ta }</span>
+					{$arrow_icon_hr_nit_contra_ta}
+			</span>
+	</span>
+	{END hr_nit_contra_ta_fieldheader}
+{END hr_nit_contra_ta_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_asunto_class}	"
+
+			data-field="hr_asunto"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_asunto_fieldheadercolumn}
+	{BEGIN hr_asunto_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_asunto" data-fieldname="hr_asunto" 
+
+			{$hr_asunto_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur hr_asunto }</span>
+					{$arrow_icon_hr_asunto}
+			</span>
+	</span>
+	{END hr_asunto_fieldheader}
+{END hr_asunto_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_valor_class}	"
+
+			data-field="hr_valor"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_valor_fieldheadercolumn}
+	{BEGIN hr_valor_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_valor" data-fieldname="hr_valor" 
+
+			{$hr_valor_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur hr_valor }</span>
+					{$arrow_icon_hr_valor}
+			</span>
+	</span>
+	{END hr_valor_fieldheader}
+{END hr_valor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$etapa_class}	"
+
+			data-field="etapa"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN etapa_fieldheadercolumn}
+	{BEGIN etapa_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etapa" data-fieldname="etapa" 
+
+			{$etapa_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur etapa }</span>
+					{$arrow_icon_etapa}
+			</span>
+	</span>
+	{END etapa_fieldheader}
+{END etapa_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+									{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sysdate_class}	"
+
+			data-field="sysdate"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sysdate_fieldheadercolumn}
+	{BEGIN sysdate_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sysdate" data-fieldname="sysdate" 
+
+			{$sysdate_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur sysdate }</span>
+					{$arrow_icon_sysdate}
+			</span>
+	</span>
+	{END sysdate_fieldheader}
+{END sysdate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+									{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$supervisor_email_class}	"
+
+			data-field="supervisor_email"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN supervisor_email_fieldheadercolumn}
+	{BEGIN supervisor_email_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="supervisor_email" data-fieldname="supervisor_email" 
+
+			{$supervisor_email_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur supervisor_email }</span>
+					{$arrow_icon_supervisor_email}
+			</span>
+	</span>
+	{END supervisor_email_fieldheader}
+{END supervisor_email_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$uej_class}	"
+
+			data-field="uej"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN uej_fieldheadercolumn}
+	{BEGIN uej_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="uej" data-fieldname="uej" 
+
+			{$uej_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label hoja_ruta_2020_trpn_jur uej }</span>
+					{$arrow_icon_uej}
+			</span>
+	</span>
+	{END uej_fieldheader}
+{END uej_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+							</tr>
+																				
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+							
+																																			<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
+				
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn btn-warning   
+	" href="hoja_ruta_2020_trpn_jur_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >
+					<span class="glyphicon glyphicon-pencil"></span>
+										</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn btn-info   
+	" href="hoja_ruta_2020_trpn_jur_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >
+					<span class="glyphicon glyphicon-search"></span>
+										</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+									{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+									{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN dtables_link}
+	<a 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		{$dtables_link_attrs} 
+		class="{$dtables_link_class}" 
+		title="Mostrar detalles"
+				
+	>
+					<span class="glyphicon glyphicon-th-list"></span>
+					</a>
+{END dtables_link}
+	 
+		
+		
+	{BEGIN informe_intersup_anexos_contratista_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$informe_intersup_anexos_contratista_link_attrs} data-short-details="informe_intersup_anexos_contratista"
+		class="{$informe_intersup_anexos_contratista_dlink_class}" 
+		title="{$caption informe_intersup_anexos_contratista }"			>
+								
+									{BEGIN informe_intersup_anexos_contratista_childcount}
+				<span class="details-badge badge informe_intersup_anexos_contratista_badge" {$informe_intersup_anexos_contratista_childnumber_attr}>
+					{$informe_intersup_anexos_contratista_childnumber}				
+				</span>
+				{END informe_intersup_anexos_contratista_childcount}
+						</a>
+	</span>
+	{END informe_intersup_anexos_contratista_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN hoja_ruta_2020_tracking_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$hoja_ruta_2020_tracking_link_attrs} data-short-details="hoja_ruta_2020_tracking"
+		class="{$hoja_ruta_2020_tracking_dlink_class}" 
+		title="{$caption hoja_ruta_2020_tracking }"			>
+								
+									{BEGIN hoja_ruta_2020_tracking_childcount}
+				<span class="details-badge badge hoja_ruta_2020_tracking_badge" {$hoja_ruta_2020_tracking_childnumber_attr}>
+					{$hoja_ruta_2020_tracking_childnumber}				
+				</span>
+				{END hoja_ruta_2020_tracking_childcount}
+						</a>
+	</span>
+	{END hoja_ruta_2020_tracking_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN hoja_ruta_2020_files_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$hoja_ruta_2020_files_link_attrs} data-short-details="hoja_ruta_2020_files"
+		class="{$hoja_ruta_2020_files_dlink_class}" 
+		title="{$caption hoja_ruta_2020_files }"			>
+								
+									{BEGIN hoja_ruta_2020_files_childcount}
+				<span class="details-badge badge hoja_ruta_2020_files_badge" {$hoja_ruta_2020_files_childnumber_attr}>
+					{$hoja_ruta_2020_files_childnumber}				
+				</span>
+				{END hoja_ruta_2020_files_childcount}
+						</a>
+	</span>
+	{END hoja_ruta_2020_files_dtable_link}
+
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
+									{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_id_class}	"
+
+			data-field="hr_id"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_id" data-fieldname="hr_id" data-default-width >
+{$hr_id_value}
+</span>
+{END hr_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_cont_fk_class}	"
+
+			data-field="id_cont_fk"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_cont_fk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cont_fk" data-fieldname="id_cont_fk" data-default-width >
+{$id_cont_fk_value}
+</span>
+{END id_cont_fk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_informe_fk_class}	"
+
+			data-field="id_informe_fk"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_informe_fk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_informe_fk" data-fieldname="id_informe_fk" data-default-width >
+{$id_informe_fk_value}
+</span>
+{END id_informe_fk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_nit_contra_ta_class}	"
+
+			data-field="hr_nit_contra_ta"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_nit_contra_ta_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_nit_contra_ta" data-fieldname="hr_nit_contra_ta" data-default-width >
+{$hr_nit_contra_ta_value}
+</span>
+{END hr_nit_contra_ta_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_asunto_class}	"
+
+			data-field="hr_asunto"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_asunto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_asunto" data-fieldname="hr_asunto" data-default-width >
+{$hr_asunto_value}
+</span>
+{END hr_asunto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_valor_class}	"
+
+			data-field="hr_valor"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN hr_valor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="hr_valor" data-fieldname="hr_valor" data-default-width >
+{$hr_valor_value}
+</span>
+{END hr_valor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$etapa_class}	"
+
+			data-field="etapa"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN etapa_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etapa" data-fieldname="etapa" data-default-width >
+{$etapa_value}
+</span>
+{END etapa_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+									{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sysdate_class}	"
+
+			data-field="sysdate"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sysdate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sysdate" data-fieldname="sysdate" data-default-width >
+{$sysdate_value}
+</span>
+{END sysdate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$supervisor_email_class}	"
+
+			data-field="supervisor_email"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN supervisor_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="supervisor_email" data-fieldname="supervisor_email" data-default-width >
+{$supervisor_email_value}
+</span>
+{END supervisor_email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$uej_class}	"
+
+			data-field="uej"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN uej_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="uej" data-fieldname="uej" data-default-width >
+{$uej_value}
+</span>
+{END uej_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+							</tr>
+											<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+				
+							">
+									{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+					<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="informe_intersup_anexos_contratista,hoja_ruta_2020_tracking,hoja_ruta_2020_files"
+			data-details-informe_intersup_anexos_contratista			data-details-hoja_ruta_2020_tracking			data-details-hoja_ruta_2020_files	>
+		<span data-details-inside data-short-table="informe_intersup_anexos_contratista">
+			</span>
+		<span data-details-inside data-short-table="hoja_ruta_2020_tracking">
+			</span>
+		<span data-details-inside data-short-table="hoja_ruta_2020_files">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	 
+			 
+			
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+										
+											{END grid_row}
+					</tbody>
+													<tfoot>
+			
+																																													<tr {$rowattrs} {$row_grid_3} class="{$rowclass}
+									{$gridFooter_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+									{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+									{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+									{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_id_class}	"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+									{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_cont_fk_class}	"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+									{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_informe_fk_class}	"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_nit_contra_ta_class}	"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_asunto_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$hr_valor_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$etapa_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+									{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sysdate_class}	"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$supervisor_email_class}	"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$uej_class}	"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="hoja_ruta_2020_trpn_jur_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

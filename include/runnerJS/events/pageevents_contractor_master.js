@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('contractor_master',Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){Swal.fire({position:'top',icon:'success',title:'Actualización de datos!',html:'Presione el botón actualizar datos, es importante mantaner tus datos actualizados',background:'#F7F7F7',timerProgressBar:true,showConfirmButton:false,timer:5000})});

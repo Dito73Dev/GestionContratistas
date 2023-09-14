@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('<global>',Runner.pages.constants.PAGE_LOGIN,"afterInit",function(pageObj,proxy,pageid){$("input[type=text]").css('fontSize','200%');$("input[type=password]").css('fontSize','200%');});

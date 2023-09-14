@@ -1,0 +1,1088 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel informe_intersup_cxc search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cxc_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="cxc_id" data-fieldname="cxc_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_id}">
+		{$label informe_intersup_cxc cxc_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_id}
+	</div>
+	<div class="r-search-field">
+		{$cxc_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_id_fieldblock}
+											
+{BEGIN inf_id_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_id_fk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="inf_id_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="inf_id_fk" data-fieldname="inf_id_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_inf_id_fk}">
+		{$label informe_intersup_cxc inf_id_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_inf_id_fk}
+	</div>
+	<div class="r-search-field">
+		{$inf_id_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$inf_id_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END inf_id_fk_fieldblock}
+											
+{BEGIN inf_hash_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_hash_fk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="inf_hash_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="inf_hash_fk" data-fieldname="inf_hash_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_inf_hash_fk}">
+		{$label informe_intersup_cxc inf_hash_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_inf_hash_fk}
+	</div>
+	<div class="r-search-field">
+		{$inf_hash_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$inf_hash_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END inf_hash_fk_fieldblock}
+											
+{BEGIN cxc_tipocontrato_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_tipocontrato}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_tipocontrato{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="cxc_tipocontrato" data-fieldname="cxc_tipocontrato" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_tipocontrato}">
+		{$label informe_intersup_cxc cxc_tipocontrato }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_tipocontrato}
+	</div>
+	<div class="r-search-field">
+		{$cxc_tipocontrato_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_tipocontrato_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_tipocontrato_fieldblock}
+											
+{BEGIN cxc_cont_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_cont}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_cont{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="cxc_cont" data-fieldname="cxc_cont" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_cont}">
+		{$label informe_intersup_cxc cxc_cont }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_cont}
+	</div>
+	<div class="r-search-field">
+		{$cxc_cont_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_cont_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_cont_fieldblock}
+											
+{BEGIN cxc_anio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_anio}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_anio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="cxc_anio" data-fieldname="cxc_anio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_anio}">
+		{$label informe_intersup_cxc cxc_anio }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_anio}
+	</div>
+	<div class="r-search-field">
+		{$cxc_anio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_anio_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_anio_fieldblock}
+											
+{BEGIN cxc_razonsocial_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_razonsocial}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_razonsocial{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="cxc_razonsocial" data-fieldname="cxc_razonsocial" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_razonsocial}">
+		{$label informe_intersup_cxc cxc_razonsocial }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_razonsocial}
+	</div>
+	<div class="r-search-field">
+		{$cxc_razonsocial_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_razonsocial_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_razonsocial_fieldblock}
+											
+{BEGIN cxc_tipodoc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_tipodoc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_tipodoc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="cxc_tipodoc" data-fieldname="cxc_tipodoc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_tipodoc}">
+		{$label informe_intersup_cxc cxc_tipodoc }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_tipodoc}
+	</div>
+	<div class="r-search-field">
+		{$cxc_tipodoc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_tipodoc_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_tipodoc_fieldblock}
+											
+{BEGIN cxc_numdoc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_numdoc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_numdoc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="cxc_numdoc" data-fieldname="cxc_numdoc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_numdoc}">
+		{$label informe_intersup_cxc cxc_numdoc }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_numdoc}
+	</div>
+	<div class="r-search-field">
+		{$cxc_numdoc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_numdoc_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_numdoc_fieldblock}
+											
+{BEGIN cxc_periodoi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_periodoi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_periodoi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="cxc_periodoi" data-fieldname="cxc_periodoi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_periodoi}">
+		{$label informe_intersup_cxc cxc_periodoi }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_periodoi}
+	</div>
+	<div class="r-search-field">
+		{$cxc_periodoi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_periodoi_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_periodoi_fieldblock}
+											
+{BEGIN cxc_periodof_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_periodof}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_periodof{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="cxc_periodof" data-fieldname="cxc_periodof" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_periodof}">
+		{$label informe_intersup_cxc cxc_periodof }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_periodof}
+	</div>
+	<div class="r-search-field">
+		{$cxc_periodof_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_periodof_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_periodof_fieldblock}
+											
+{BEGIN cxc_valor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_valor}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_valor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="cxc_valor" data-fieldname="cxc_valor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_valor}">
+		{$label informe_intersup_cxc cxc_valor }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_valor}
+	</div>
+	<div class="r-search-field">
+		{$cxc_valor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_valor_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_valor_fieldblock}
+											
+{BEGIN cxc_fechaelab_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_fechaelab}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_fechaelab{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="cxc_fechaelab" data-fieldname="cxc_fechaelab" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_fechaelab}">
+		{$label informe_intersup_cxc cxc_fechaelab }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_fechaelab}
+	</div>
+	<div class="r-search-field">
+		{$cxc_fechaelab_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_fechaelab_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_fechaelab_fieldblock}
+											
+{BEGIN cxc_planilla_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_planilla}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_planilla{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="cxc_planilla" data-fieldname="cxc_planilla" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_planilla}">
+		{$label informe_intersup_cxc cxc_planilla }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_planilla}
+	</div>
+	<div class="r-search-field">
+		{$cxc_planilla_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_planilla_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_planilla_fieldblock}
+											
+{BEGIN cxc_planillafecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_planillafecha}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_planillafecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="cxc_planillafecha" data-fieldname="cxc_planillafecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_planillafecha}">
+		{$label informe_intersup_cxc cxc_planillafecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_planillafecha}
+	</div>
+	<div class="r-search-field">
+		{$cxc_planillafecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_planillafecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_planillafecha_fieldblock}
+											
+{BEGIN cxc_planillavalor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_planillavalor}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_planillavalor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="cxc_planillavalor" data-fieldname="cxc_planillavalor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_planillavalor}">
+		{$label informe_intersup_cxc cxc_planillavalor }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_planillavalor}
+	</div>
+	<div class="r-search-field">
+		{$cxc_planillavalor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_planillavalor_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_planillavalor_fieldblock}
+											
+{BEGIN sup_name_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_name}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sup_name{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="sup_name" data-fieldname="sup_name" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sup_name}">
+		{$label informe_intersup_cxc sup_name }	</label>
+	<div class="r-search-option">
+		{$searchtype_sup_name}
+	</div>
+	<div class="r-search-field">
+		{$sup_name_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sup_name_editcontrol1}
+	</div>
+	
+</div>
+
+{END sup_name_fieldblock}
+											
+{BEGIN sup_cargo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_cargo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sup_cargo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="sup_cargo" data-fieldname="sup_cargo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sup_cargo}">
+		{$label informe_intersup_cxc sup_cargo }	</label>
+	<div class="r-search-option">
+		{$searchtype_sup_cargo}
+	</div>
+	<div class="r-search-field">
+		{$sup_cargo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sup_cargo_editcontrol1}
+	</div>
+	
+</div>
+
+{END sup_cargo_fieldblock}
+											
+{BEGIN sup_dep_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_dep}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sup_dep{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="sup_dep" data-fieldname="sup_dep" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sup_dep}">
+		{$label informe_intersup_cxc sup_dep }	</label>
+	<div class="r-search-option">
+		{$searchtype_sup_dep}
+	</div>
+	<div class="r-search-field">
+		{$sup_dep_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sup_dep_editcontrol1}
+	</div>
+	
+</div>
+
+{END sup_dep_fieldblock}
+											
+{BEGIN sys_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="sys_user" data-fieldname="sys_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_user}">
+		{$label informe_intersup_cxc sys_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_user}
+	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_user_fieldblock}
+											
+{BEGIN sys_fecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_fecha}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_fecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="sys_fecha" data-fieldname="sys_fecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_fecha}">
+		{$label informe_intersup_cxc sys_fecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_fecha}
+	</div>
+	<div class="r-search-field">
+		{$sys_fecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_fecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_fecha_fieldblock}
+											
+{BEGIN sys_status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_status}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="sys_status" data-fieldname="sys_status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_status}">
+		{$label informe_intersup_cxc sys_status }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_status}
+	</div>
+	<div class="r-search-field">
+		{$sys_status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_status_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_status_fieldblock}
+											
+{BEGIN cxc_fondopenvol_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_fondopenvol}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_fondopenvol{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="cxc_fondopenvol" data-fieldname="cxc_fondopenvol" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_fondopenvol}">
+		{$label informe_intersup_cxc cxc_fondopenvol }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_fondopenvol}
+	</div>
+	<div class="r-search-field">
+		{$cxc_fondopenvol_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_fondopenvol_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_fondopenvol_fieldblock}
+											
+{BEGIN cxc_pagoafc_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cxc_pagoafc}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cxc_pagoafc{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="cxc_pagoafc" data-fieldname="cxc_pagoafc" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cxc_pagoafc}">
+		{$label informe_intersup_cxc cxc_pagoafc }	</label>
+	<div class="r-search-option">
+		{$searchtype_cxc_pagoafc}
+	</div>
+	<div class="r-search-field">
+		{$cxc_pagoafc_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cxc_pagoafc_editcontrol1}
+	</div>
+	
+</div>
+
+{END cxc_pagoafc_fieldblock}
+											
+{BEGIN de_pre_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_de_pre}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="de_pre{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="de_pre" data-fieldname="de_pre" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_de_pre}">
+		{$label informe_intersup_cxc de_pre }	</label>
+	<div class="r-search-option">
+		{$searchtype_de_pre}
+	</div>
+	<div class="r-search-field">
+		{$de_pre_editcontrol}	</div>
+	<div class="r-search-field">
+		{$de_pre_editcontrol1}
+	</div>
+	
+</div>
+
+{END de_pre_fieldblock}
+											
+{BEGIN de_num_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_de_num}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="de_num{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="de_num" data-fieldname="de_num" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_de_num}">
+		{$label informe_intersup_cxc de_num }	</label>
+	<div class="r-search-option">
+		{$searchtype_de_num}
+	</div>
+	<div class="r-search-field">
+		{$de_num_editcontrol}	</div>
+	<div class="r-search-field">
+		{$de_num_editcontrol1}
+	</div>
+	
+</div>
+
+{END de_num_fieldblock}
+											
+{BEGIN id_cont_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_cont{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field39" {$item_integrated_search_field39} data-pageid="{$pageid}" data-field="id_cont" data-fieldname="id_cont" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_cont}">
+		{$label informe_intersup_cxc id_cont }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_cont}
+	</div>
+	<div class="r-search-field">
+		{$id_cont_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_cont_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_cont_fieldblock}
+											
+{BEGIN id_consecutivo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_consecutivo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_consecutivo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field41" {$item_integrated_search_field41} data-pageid="{$pageid}" data-field="id_consecutivo" data-fieldname="id_consecutivo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_consecutivo}">
+		{$label informe_intersup_cxc id_consecutivo }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_consecutivo}
+	</div>
+	<div class="r-search-field">
+		{$id_consecutivo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_consecutivo_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_consecutivo_fieldblock}
+											
+{BEGIN cont_fechai_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechai}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_fechai{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field42" {$item_integrated_search_field42} data-pageid="{$pageid}" data-field="cont_fechai" data-fieldname="cont_fechai" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_fechai}">
+		{$label informe_intersup_cxc cont_fechai }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_fechai}
+	</div>
+	<div class="r-search-field">
+		{$cont_fechai_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_fechai_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_fechai_fieldblock}
+											
+{BEGIN cont_fechaf_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechaf}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_fechaf{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field43" {$item_integrated_search_field43} data-pageid="{$pageid}" data-field="cont_fechaf" data-fieldname="cont_fechaf" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_fechaf}">
+		{$label informe_intersup_cxc cont_fechaf }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_fechaf}
+	</div>
+	<div class="r-search-field">
+		{$cont_fechaf_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_fechaf_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_fechaf_fieldblock}
+											
+{BEGIN cont_cdp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_cdp}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_cdp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field44" {$item_integrated_search_field44} data-pageid="{$pageid}" data-field="cont_cdp" data-fieldname="cont_cdp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_cdp}">
+		{$label informe_intersup_cxc cont_cdp }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_cdp}
+	</div>
+	<div class="r-search-field">
+		{$cont_cdp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_cdp_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_cdp_fieldblock}
+											
+{BEGIN cont_rp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_rp}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_rp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field45" {$item_integrated_search_field45} data-pageid="{$pageid}" data-field="cont_rp" data-fieldname="cont_rp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_rp}">
+		{$label informe_intersup_cxc cont_rp }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_rp}
+	</div>
+	<div class="r-search-field">
+		{$cont_rp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_rp_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_rp_fieldblock}
+											
+{BEGIN cont_rubro_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_rubro}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_rubro{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field46" {$item_integrated_search_field46} data-pageid="{$pageid}" data-field="cont_rubro" data-fieldname="cont_rubro" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_rubro}">
+		{$label informe_intersup_cxc cont_rubro }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_rubro}
+	</div>
+	<div class="r-search-field">
+		{$cont_rubro_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_rubro_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_rubro_fieldblock}
+											
+{BEGIN cont_uej_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_uej}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_uej{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field47" {$item_integrated_search_field47} data-pageid="{$pageid}" data-field="cont_uej" data-fieldname="cont_uej" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_uej}">
+		{$label informe_intersup_cxc cont_uej }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_uej}
+	</div>
+	<div class="r-search-field">
+		{$cont_uej_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_uej_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_uej_fieldblock}
+											
+{BEGIN cont_uso_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_uso}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_uso{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field48" {$item_integrated_search_field48} data-pageid="{$pageid}" data-field="cont_uso" data-fieldname="cont_uso" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_uso}">
+		{$label informe_intersup_cxc cont_uso }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_uso}
+	</div>
+	<div class="r-search-field">
+		{$cont_uso_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_uso_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_uso_fieldblock}
+											
+{BEGIN cont_valorcontrato_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorcontrato}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_valorcontrato{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field49" {$item_integrated_search_field49} data-pageid="{$pageid}" data-field="cont_valorcontrato" data-fieldname="cont_valorcontrato" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_valorcontrato}">
+		{$label informe_intersup_cxc cont_valorcontrato }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_valorcontrato}
+	</div>
+	<div class="r-search-field">
+		{$cont_valorcontrato_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_valorcontrato_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_valorcontrato_fieldblock}
+											
+{BEGIN cont_pagomensual_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_pagomensual}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_pagomensual{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field50" {$item_integrated_search_field50} data-pageid="{$pageid}" data-field="cont_pagomensual" data-fieldname="cont_pagomensual" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_pagomensual}">
+		{$label informe_intersup_cxc cont_pagomensual }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_pagomensual}
+	</div>
+	<div class="r-search-field">
+		{$cont_pagomensual_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_pagomensual_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_pagomensual_fieldblock}
+											
+{BEGIN cont_banco_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_banco}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_banco{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field51" {$item_integrated_search_field51} data-pageid="{$pageid}" data-field="cont_banco" data-fieldname="cont_banco" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_banco}">
+		{$label informe_intersup_cxc cont_banco }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_banco}
+	</div>
+	<div class="r-search-field">
+		{$cont_banco_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_banco_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_banco_fieldblock}
+											
+{BEGIN cont_cuentatipo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_cuentatipo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_cuentatipo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field52" {$item_integrated_search_field52} data-pageid="{$pageid}" data-field="cont_cuentatipo" data-fieldname="cont_cuentatipo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_cuentatipo}">
+		{$label informe_intersup_cxc cont_cuentatipo }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_cuentatipo}
+	</div>
+	<div class="r-search-field">
+		{$cont_cuentatipo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_cuentatipo_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_cuentatipo_fieldblock}
+											
+{BEGIN cont_cuentanumero_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_cuentanumero}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_cuentanumero{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field53" {$item_integrated_search_field53} data-pageid="{$pageid}" data-field="cont_cuentanumero" data-fieldname="cont_cuentanumero" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_cuentanumero}">
+		{$label informe_intersup_cxc cont_cuentanumero }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_cuentanumero}
+	</div>
+	<div class="r-search-field">
+		{$cont_cuentanumero_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_cuentanumero_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_cuentanumero_fieldblock}
+											
+{BEGIN cont_factura_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_factura}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_factura{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field54" {$item_integrated_search_field54} data-pageid="{$pageid}" data-field="cont_factura" data-fieldname="cont_factura" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_factura}">
+		{$label informe_intersup_cxc cont_factura }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_factura}
+	</div>
+	<div class="r-search-field">
+		{$cont_factura_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_factura_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_factura_fieldblock}
+											
+{BEGIN inf_mes_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_mes}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="inf_mes{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="inf_mes" data-fieldname="inf_mes" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_inf_mes}">
+		{$label informe_intersup_cxc inf_mes }	</label>
+	<div class="r-search-option">
+		{$searchtype_inf_mes}
+	</div>
+	<div class="r-search-field">
+		{$inf_mes_editcontrol}	</div>
+	<div class="r-search-field">
+		{$inf_mes_editcontrol1}
+	</div>
+	
+</div>
+
+{END inf_mes_fieldblock}
+											
+{BEGIN inf_tipopago_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_tipopago}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="inf_tipopago{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="inf_tipopago" data-fieldname="inf_tipopago" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_inf_tipopago}">
+		{$label informe_intersup_cxc inf_tipopago }	</label>
+	<div class="r-search-option">
+		{$searchtype_inf_tipopago}
+	</div>
+	<div class="r-search-field">
+		{$inf_tipopago_editcontrol}	</div>
+	<div class="r-search-field">
+		{$inf_tipopago_editcontrol1}
+	</div>
+	
+</div>
+
+{END inf_tipopago_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
